@@ -1,0 +1,28 @@
+{
+  "name": "waterloo-coop-2020-bootstrap-lite",
+  "version": "1.0.0",
+  "description": "CSS library and documentation website project for Waterloo 2020 Coop",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "echo \"Error: Implement Build Steps\" && exit 1",
+    "start": "echo \"Error: Implement Start Script\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/opentext/waterloo-coop-2020-bootstrap-lite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/opentext/waterloo-coop-2020-bootstrap-lite/issues"
+  },
+  "homepage": "https://github.com/opentext/waterloo-coop-2020-bootstrap-lite#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "clean-css-cli": "^4.3.0",
+    "node-sass": "^4.14.1",
+    "postcss-cli": "^8.0.0",
+    "stylelint": "^13.7.2"
+  }
+}
