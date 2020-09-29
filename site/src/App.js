@@ -55,7 +55,34 @@ function App() {
           <h3>How it works</h3>
           <p>Some info on how to use</p>
           <p>example</p>
-          <code>Code used to create above example</code>
+          <button className="button">
+            submit
+          </button>
+          <button className="button1">
+            submit
+          </button>
+          <button className="button2">
+            submit
+          </button>
+          <button className="button3">
+            submit
+          </button>
+          <button className="button4">
+            submit
+          </button>
+          <p>
+            <code>
+  background-color: #4caf40;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+</code>
+          </p>
+          
         </div>
 
         <div>
