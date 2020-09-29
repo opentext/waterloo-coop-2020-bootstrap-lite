@@ -37,6 +37,7 @@ function App() {
         </ul>
         <p>This will be a scrollable thing on left side of screen</p>
       </div>
+      
       <div>
         <p>This will be main content pane with examples of components</p>
         
@@ -46,7 +47,9 @@ function App() {
           <h3>How it works</h3>
           <p>Some info on how to use</p>
           <p>example</p>
-          <code>Code used to create above example</code>
+          <pre>
+            <code>Code used to create above example</code>
+          </pre>
         </div>
 
         <div>
@@ -55,7 +58,9 @@ function App() {
           <h3>How it works</h3>
           <p>Some info on how to use</p>
           <p>example</p>
-          <code>Code used to create above example</code>
+          <pre>
+            <code>Code used to create above example</code>
+          </pre>
         </div>
 
         <div>
@@ -65,9 +70,23 @@ function App() {
           <p>Some info on how to use</p>
           <p>example</p>
           <div className = "card">
-            <p>Some sample text in card</p>
+            <div className = "card-header">
+              Header
+            </div>
+            <img src = "..." className = "card-img" alt="react logo"/>
+            <div className = "card-body">
+              <p className= "card-title">Some sample text in card</p>
+              <p className = "card-subtitle">Subttile</p>
+              <p className = "card-text">Some text</p>
+              <p className = "card-text">More text</p>
+            </div>
+            <div className = "card-footer">
+              Footer
+            </div>
           </div>
-          <code>Code used to create above example</code>
+          <pre>
+            <code>Code used to create above example</code>
+          </pre>
         </div>
 
         <div>
@@ -76,7 +95,9 @@ function App() {
           <h3>How it works</h3>
           <p>Some info on how to use</p>
           <p>example</p>
-          <code>Code used to create above example</code>
+          <pre>
+            <code>Code used to create above example</code>
+          </pre>
         </div>
 
         <div>
@@ -85,7 +106,9 @@ function App() {
           <h3>How it works</h3>
           <p>Some info on how to use</p>
           <p>example</p>
-          <code>Code used to create above example</code>
+          <pre>
+            <code>Code used to create above example</code>
+          </pre>
         </div>
       </div>
      </div>
