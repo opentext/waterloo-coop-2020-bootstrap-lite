@@ -41,7 +41,7 @@ function App() {
         <p>This will be main content pane with examples of components</p>
         
         <div>
-          <h1>Badge <span className = "badge">new</span></h1>
+          <h1>Badge <span className = "badge badge-primary">new</span></h1>
           <h4>Description of component</h4>
           <h3>How it works</h3>
           <p>Some info on how to use</p>

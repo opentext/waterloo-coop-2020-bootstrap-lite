@@ -22,3 +22,16 @@
   position: relative;
   top: -1px;
 }
+
+.badge-primary {
+  background-color: $primary;
+}
+
+.badge-warning {
+  color: grey;
+  background-color: $warning;
+}
+
+.badge-danger {
+  background-color: $danger;
+}
