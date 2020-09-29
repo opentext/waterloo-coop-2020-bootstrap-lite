@@ -6,6 +6,7 @@
   word-wrap: break-word;
   background-color: white;
   background-clip: border-box;
+<<<<<<< HEAD:scss/card.scss
   border: 1px solid rgba(black, .125);
   border-radius: .25 rem;
 
@@ -55,4 +56,11 @@
   .card-img-bottom {
     width: 100%;
   }
+||||||| merged common ancestors
+  border: 1px solid rgba(black, .125);
+  border-radius: .25 rem;
+=======
+  border: 1px solid rgba(black, 0.125);
+  border-radius: 0.25 rem;
+>>>>>>> refs/remotes/origin/master:scss/_card.scss
 }
