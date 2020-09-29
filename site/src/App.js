@@ -44,7 +44,6 @@ function App() {
         <div>
           <h1>Badge</h1>
           <h4>Description of component</h4>
-          <span class = "badge">new</span>
           <h3>How it works</h3>
           <p>Some info on how to use</p>
           <p>example</p>
