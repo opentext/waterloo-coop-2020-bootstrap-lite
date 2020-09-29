@@ -42,7 +42,7 @@ function App() {
         <p>This will be main content pane with examples of components</p>
         
         <div>
-          <h1>Badge <span className = "badge">new</span></h1>
+          <h1>Badge <span className = "badge badge-warning">new</span></h1>
           <h4>Description of component</h4>
           <h3>How it works</h3>
           <p>Some info on how to use</p>
@@ -73,7 +73,7 @@ function App() {
             <div className = "card-header">
               Header
             </div>
-            <img src = "/logo512.png" className = "card-img" alt="react logo"/>
+            <img src = "..." className = "card-img" alt="react logo"/>
             <div className = "card-body">
               <p className= "card-title">Some sample text in card</p>
               <p className = "card-subtitle">Subttile</p>
