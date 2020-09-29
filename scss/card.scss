@@ -8,4 +8,51 @@
   background-clip: border-box;
   border: 1px solid rgba(black, .125);
   border-radius: .25 rem;
+
+  .card-body {
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
+  }
+
+  .card-title {
+    margin-bottom: 1rem;
+  }
+
+  .card-subtitle {
+    color: grey;
+    margin-top: -0.5rem;
+    margin-bottom: 0;
+  }
+
+  .card-text:last-child {
+    margin-bottom: 0;
+  }
+
+  .card-header {
+    padding: .5rem 1rem;
+    margin-bottom: 0;
+    background-color: rgba(black, .03);
+    border-bottom: 1px solid rgba(black, .125);
+  }
+
+  .card-footer {
+    padding: .5rem 1rem;
+    background-color: rgba(black, .03);
+    border-top: 1px solid rgba(black, .125);
+  }
+
+  .card-img-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+  }
+
+  .card-img,
+  .card-img-top,
+  .card-img-bottom {
+    width: 100%;
+  }
 }
