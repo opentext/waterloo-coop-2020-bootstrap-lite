@@ -3,5 +3,6 @@
 *.sass.map
 *.scss.map
 node_modules
-
 dist/
+site/src/*.css
+.cache/
