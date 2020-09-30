@@ -21,6 +21,7 @@
   position: sticky;
   top: 4rem;
   height: calc(100vh - 4rem);
+  border-right: 1px solid rgba(black, 0.1);
 }
 
 @for $i from 1 through 12 {

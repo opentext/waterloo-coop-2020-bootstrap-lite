@@ -10,6 +10,7 @@
   justify-content: flex-start;
   background-color: $navbar-color;
   margin-bottom: 30px;
+  z-index: 1000;
 
   a {
     float: left;
