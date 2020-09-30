@@ -43,6 +43,7 @@ function App() {
 
   return (
   <div>
+     
     <nav className = "navbar navbar-fixed navbar-light">
        <a className = "navbar-brand">
           <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/768px-Bootstrap_logo.svg.png"/>
@@ -154,6 +155,42 @@ function App() {
               <h3>How it works</h3>
               <p>Some info on how to use</p>
               <p>example</p>
+              <div class="header">
+            
+            <h1>Profile</h1>
+            <img src = "/profile_pic.jpg" width ="100px" height = "150px"  alt="react logo"/>
+          </div>
+
+<div class="row">
+<div class="col-3 col-s-3 menu">
+    <ul>
+      <li>Name: John</li> 
+      <li>Email: xxxxx@gmail.com</li>
+      <li>Tel: xxx-xxx-xxxx</li>
+  <li>post: postNum</li>
+    </ul>
+  </div>
+
+  <div class="col-6">
+    <h1>Introduction</h1>
+    <p>helloooo world</p>
+  </div>
+
+  <div>
+    <div class="aside">
+      <h2>Post one</h2>
+      <p>dsfdajfokasnhofakdjkofahsoifkjeaeokfhaios</p>
+      <h2>Post two</h2>
+      <p>flkasjdlkasjflkadjskfjdfckjoasjfkeao</p>
+      <h2>Post three</h2>
+      <p>asdojhweifjoepajcfoapsjfpied</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <p>This is footer</p>
+</div>
               <Highlight>
                 {media_object_code}
               </Highlight>
@@ -173,7 +210,7 @@ function App() {
 
         </div>
       </div>
-
+      
   </div>
   );
 }
