@@ -11,8 +11,14 @@ html {
   margin-top: 90px;
 }
 
-@media (max-width: 477px) {
+@media screen and (max-width: 477px) {
   .content {
-    margin-top: 130px;
+    margin-top: 150px;
+  }
+}
+
+@media screen and (max-width: 387px) {
+  .content {
+    margin-top: 230px;
   }
 }

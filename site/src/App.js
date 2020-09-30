@@ -4,11 +4,13 @@ function App() {
    <div clssname = "main">
      <nav className = "navbar navbar-fixed navbar-light">
        <a className = "navbar-brand">
-          <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/768px-Bootstrap_logo.svg.png"/>
+          BootStrap Lite
        </a>
-        <a href="#">Home</a>
-        <a href="#">Documentation (make selected)</a>
-        <a href="#">Examples</a>       
+        <div class = "navbar-links">
+          <a href="#">Home</a>
+          <a href="#">Documentation (make selected)</a>
+          <a href="#">Examples</a>     
+        </div>     
      </nav>
      <div className="content">
       <div>

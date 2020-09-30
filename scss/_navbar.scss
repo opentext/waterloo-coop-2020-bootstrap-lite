@@ -31,6 +31,9 @@
 }
 
 .navbar-brand {
+  font-size: 30px;
+  font-weight: 600;
+
   img {
     width: 36px;
     height: 36px;
@@ -45,7 +48,7 @@
   }
 }
 
-@media (max-width: 477px) {
+@media (max-width: 613px) {
   .navbar {
     justify-content: center;
 
@@ -57,5 +60,29 @@
         margin-right: auto;
       }
     }
+  }
+}
+
+@media screen and (max-width: 477px) {
+  .navbar {
+    justify-content: center;
+
+    .navbar-brand {
+      width: 100%;
+
+      a {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 387px) {
+  .navbar-links {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
   }
 }
