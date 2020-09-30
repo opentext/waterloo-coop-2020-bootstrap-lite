@@ -3,9 +3,17 @@
   @include format;
 }
 
+.button:hover {
+  @include hover;
+}
+
 .button1 {
   @include fontAndBackgroundColor($color1, $color3);
   @include format;
+}
+
+.button1:hover {
+  @include hover;
 }
 
 .button2 {
@@ -13,12 +21,24 @@
   @include format;
 }
 
+.button2:hover {
+  @include hover;
+}
+
 .button3 {
   @include fontAndBackgroundColor($color3, $color1);
   @include format;
 }
 
+.button3:hover {
+  @include hover;
+}
+
 .button4 {
   @include fontAndBackgroundColor($color4, $color2);
   @include format;
+}
+
+.button4:hover {
+  @include hover;
 }
