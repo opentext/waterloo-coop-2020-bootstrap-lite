@@ -6,6 +6,7 @@ import "./bootstrap-lite.css"
 
 ReactDOM.render(
   <React.StrictMode>
+    <link rel="stylesheet" href="https://highlightjs.org/static/demo/styles/tomorrow.css" />
     <App />
   </React.StrictMode>,
   document.getElementById('root')

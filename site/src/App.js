@@ -1,8 +1,49 @@
 import React from 'react';
+import Highlight from 'react-highlight.js'
+
 function App() {
+  
+  let badge_code = `<span className = "badge badge-primary">primary</span>
+<span className = "badge badge-success">success</span>
+<span className = "badge badge-warning">warning</span>`
+  let buttons_code = `<button className="button">
+  submit
+</button>
+<button className="button1">
+  submit
+</button>
+<button className="button2">
+  submit
+</button>
+<button className="button3">
+  submit
+</button>
+<button className="button4">
+  submit
+</button>`
+  let card_code = `<div className = "card" style="width: 36rem">
+  <div className = "card-header"> Header </div>
+  <img src = "smallPic.png" className = "card-img" alt="ring" style= "height: "auto", width: 256 + "px"}}/>
+  <div className = "card-body">
+    <h3 className= "card-title">Empty Circle</h3>
+    <p className = "card-subtitle">Ring</p>
+    <p className = "card-text">Some text</p>
+    <p className = "card-text">More text</p>
+  </div>
+  <ul className = "list-group list-group-flush">
+    <li className = "list-group-item">Item 1</li>
+    <li className = "list-group-item">Item 2</li>
+    <li className = "list-group-item">Item 3</li>
+    <li className = "list-group-item">Item 4</li>
+  </ul>
+  <div className = "card-footer"> Footer </div>
+</div>`
+  let media_object_code = `<h1>REPLACE ME WITH CODE</h1>`
+  let navbar_code = `<h1>REPLACE ME WITH CODE</h1>`
+
   return (
-   <div clssname = "main">
-     <nav className = "navbar navbar-fixed navbar-light">
+  <div>
+    <nav className = "navbar navbar-fixed navbar-light">
        <a className = "navbar-brand">
           BootStrap Lite
        </a>
@@ -12,131 +53,130 @@ function App() {
           <a href="#">Examples</a>     
         </div>     
      </nav>
-     <div className="content">
-      <div>
-        <ul>
-          <li>
-            <a href="#">Badge</a>
-            </li>
-            <li>
-            <a href="#">Buttons</a>
-            </li>
-            <li>
-            <a href="#">Cards</a>
-            </li>
-            <li>
-            <a href="#">Media Object</a>
-            </li>
-            <li>
-            <a href="#">Navbar</a>
-            </li>
-        </ul>
-        <p>This will be a scrollable thing on left side of screen</p>
-      </div>
-      
-      <div>
-        <p>This will be main content pane with examples of components</p>
-        
-        <div>
-          <h1>Badge <span className = "badge badge-primary">new</span></h1>
-          <h4>Description of component</h4>
-          <h3>How it works</h3>
-          <p>Some info on how to use</p>
-          <p>example</p>
-          <span className = "badge badge-primary">primary</span>
-          <span className = "badge badge-success">success</span>
-          <span className = "badge badge-warning">warning</span>
-          <pre>
-            <code>Code used to create above example</code>
-          </pre>
-        </div>
 
-        <div>
-          <h1>Buttons</h1>
-          <h4>Description of component</h4>
-          <h3>How it works</h3>
-          <p>Some info on how to use</p>
-          <p>example</p>
-          <button className="button">
-            submit
-          </button>
-          <button className="button1">
-            submit
-          </button>
-          <button className="button2">
-            submit
-          </button>
-          <button className="button3">
-            submit
-          </button>
-          <button className="button4">
-            submit
-          </button>
-          <p>
-            <code>
-  background-color: #4caf40;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-</code>
-          </p>
+    <div className = "container">
+        <div className = "row">
           
-        </div>
+          <div className = "col-2 sidebar" style={{"background-color": "azure"}}>
+            <ul>
+              <li>
+                <a href="#Badge">Badge</a>
+                </li>
+                <li>
+                <a href="#Buttons">Buttons</a>
+                </li>
+                <li>
+                <a href="#Card">Card</a>
+                </li>
+                <li>
+                <a href="#Media-Object">Media Object</a>
+                </li>
+                <li>
+                <a href="#Navbar">Navbar</a>
+                </li>
+            </ul>
+          </div>
 
-        <div>
-          <h1>Cards</h1>
-          <h4>Description of component</h4>
-          <h3>How it works</h3>
-          <p>Some info on how to use</p>
-          <p>example</p>
-          <div className = "card">
-            <div className = "card-header">
-              Header
+          <div className = "col" style={{"background-color": "beige"}}>
+            
+            <div id="Badge">
+              <h1>Badge <span className = "badge badge-warning">New</span></h1>
+              <h4>Description of component</h4>
+              <h3>How it works</h3>
+              <p>Some info on how to use</p>
+              <p>example</p>
+              <span className = "badge badge-primary">primary</span>
+              <span className = "badge badge-success">success</span>
+              <span className = "badge badge-warning">warning</span>
+              <Highlight>
+                {badge_code}
+              </Highlight>
             </div>
-            <img src = "..." className = "card-img" alt="react logo"/>
-            <div className = "card-body">
-              <p className= "card-title">Some sample text in card</p>
-              <p className = "card-subtitle">Subttile</p>
-              <p className = "card-text">Some text</p>
-              <p className = "card-text">More text</p>
+
+            <div id="Buttons">
+              <h1>Buttons</h1>
+              <h4>Description of component</h4>
+              <h3>How it works</h3>
+              <p>Some info on how to use</p>
+              <p>example</p>
+              <div>
+                <button className="button">
+                  submit
+                </button>
+                <button className="button1">
+                  submit
+                </button>
+                <button className="button2">
+                  submit
+                </button>
+                <button className="button3">
+                  submit
+                </button>
+                <button className="button4">
+                  submit
+                </button>
+              </div>
+              <Highlight>
+                {buttons_code}
+              </Highlight>
             </div>
-            <div className = "card-footer">
-              Footer
+
+            <div id="Card">
+              <h1>Card</h1>
+              <h4>A content container with multiple options and wide variety of uses</h4>
+              <h3>How it works</h3>
+              <p>Some info on how to use</p>
+              <p>example</p>
+              <div className = "card" style={{width: 36 + 'rem'}}>
+                <div className = "card-header"> Header </div>
+                <img src = "smallPic.png" className = "card-img" alt="ring" style= {{height: "auto", width: 256 + "px"}}/>
+                <div className = "card-body">
+                  <h3 className= "card-title">Empty Circle</h3>
+                  <p className = "card-subtitle">Ring</p>
+                  <p className = "card-text">Some text</p>
+                  <p className = "card-text">More text</p>
+                </div>
+                <ul className = "list-group list-group-flush">
+                  <li className = "list-group-item">Item 1</li>
+                  <li className = "list-group-item">Item 2</li>
+                  <li className = "list-group-item">Item 3</li>
+                  <li className = "list-group-item">Item 4</li>
+                </ul>
+                <div className = "card-footer"> Footer </div>
+              </div>
+              <h4>Code</h4>
+              <Highlight language = {"html"}>
+                {card_code}
+              </Highlight>
+            </div>
+
+            <div id = "Media-Object">
+              <h1>Media Object</h1>
+              <h4>Description of component</h4>
+              <h3>How it works</h3>
+              <p>Some info on how to use</p>
+              <p>example</p>
+              <Highlight>
+                {media_object_code}
+              </Highlight>
+            </div>
+
+            <div id="Navbar">
+              <h1>Navbar</h1>
+              <h4>Description of component</h4>
+              <h3>How it works</h3>
+              <p>Some info on how to use</p>
+              <p>example</p>
+              <Highlight>
+                {navbar_code}
+              </Highlight>
             </div>
           </div>
-          <pre>
-            <code>Code used to create above example</code>
-          </pre>
-        </div>
 
-        <div>
-          <h1>Media Object</h1>
-          <h4>Description of component</h4>
-          <h3>How it works</h3>
-          <p>Some info on how to use</p>
-          <p>example</p>
-          <pre>
-            <code>Code used to create above example</code>
-          </pre>
-        </div>
-
-        <div>
-          <h1>Navbar</h1>
-          <h4>Description of component</h4>
-          <h3>How it works</h3>
-          <p>Some info on how to use</p>
-          <p>example</p>
-          <pre>
-            <code>Code used to create above example</code>
-          </pre>
         </div>
       </div>
-     </div>
-   </div>
+
+  </div>
   );
 }
 

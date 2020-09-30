@@ -1,0 +1,30 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 15px;
+  margin-left: 15px;
+
+  > * {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+  }
+}
+
+.col {
+  flex: 1 0 0%;
+}
+
+.sidebar {
+  position: sticky;
+  top: 4rem;
+  height: calc(100vh - 4rem);
+}
+
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    @include make-col($i, 12);
+  }
+}
