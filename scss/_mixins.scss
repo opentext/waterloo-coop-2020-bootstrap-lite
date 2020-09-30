@@ -1,3 +1,18 @@
 @mixin badge-variant($color) {
   background-color: $color;
 }
+
+//button
+@mixin format {
+  border: none;
+  padding: $padding;
+  text-align: $text-align;
+  text-decoration: none;
+  display: $display;
+  font-size: 16px;
+}
+
+@mixin fontAndBackgroundColor ($b_color:$color, $f_color: $color1) {
+  background-color: $b_color;
+  color: $f_color;
+}
