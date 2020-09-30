@@ -38,13 +38,16 @@
 }
 
 @media (max-width: 477px) {
-  .navbar-brand {
-    width: 100%;
-    overflow: hidden;
+  .navbar {
+    justify-content: center;
 
-    a {
-      margin-left: auto;
-      margin-right: auto;
+    .navbar-brand {
+      width: 100%;
+
+      a {
+        margin-left: auto;
+        margin-right: auto;
+      }
     }
   }
 }
