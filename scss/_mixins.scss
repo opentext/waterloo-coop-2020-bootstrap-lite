@@ -1,3 +1,10 @@
+// reponsive and layout
+@mixin media($width) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}
+
 // badge
 @mixin badge-variant($color) {
   background-color: $color;
