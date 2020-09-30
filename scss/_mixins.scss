@@ -1,5 +1,19 @@
+// badge
 @mixin badge-variant($color) {
   background-color: $color;
+}
+
+// navbar
+@mixin navbar-variant($color, $textColor, $highlightColor) {
+  background-color: $color;
+
+  a {
+    color: $textColor;
+
+    &:hover {
+      background: $highlightColor;
+    }
+  }
 }
 
 //button

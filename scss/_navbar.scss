@@ -8,7 +8,7 @@
   left: 0;
   align-items: center;
   justify-content: flex-start;
-  background-color: #563d7c;
+  background-color: $navbar-color;
   margin-bottom: 30px;
 
   a {
@@ -34,6 +34,14 @@
   img {
     width: 36px;
     height: 36px;
+  }
+}
+
+// Takes care of the class modifiers such
+// as navbar-dark etc.
+@each $color, $value, $value2, $value3 in $navbar-variants {
+  .navbar-#{$color} {
+    @include navbar-variant($value, $value2, $value3);
   }
 }
 

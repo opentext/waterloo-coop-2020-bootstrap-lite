@@ -2,7 +2,7 @@ import React from 'react';
 function App() {
   return (
    <div clssname = "main">
-     <nav className = "navbar navbar-fixed">
+     <nav className = "navbar navbar-fixed navbar-light">
        <a className = "navbar-brand">
           <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/768px-Bootstrap_logo.svg.png"/>
        </a>
