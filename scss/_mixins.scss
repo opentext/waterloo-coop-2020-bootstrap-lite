@@ -1,3 +1,8 @@
 @mixin badge-variant($color) {
   background-color: $color;
 }
+
+@mixin make-col($size, $columns: 12) {
+  flex: 0 0 auto;
+  width: percentage($size / $columns);
+}
