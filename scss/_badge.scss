@@ -23,6 +23,8 @@
   top: -1px;
 }
 
+// Takes care of the class modifiers such
+// as badge-warning etc.
 @each $color, $value in $badge-variants {
   .badge-#{$color} {
     @include badge-variant($value);

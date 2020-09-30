@@ -5,7 +5,10 @@ $font-family: system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue", ar
 $primary: #0d6efd !default;
 $success: #198754 !default;
 $warning: #dc3545 !default;
-
+$light: #d7d5d1 !default;
+$dark: #414749 !default;
+$darker: #383d3f !default;
+$bluer: #0e52b8 !default;
 //Badges
 $badge-font-size: 0.75em !default;
 $badge-font-weight: $font-weight-bold !default;
@@ -19,3 +22,37 @@ $badge-variants: (
   "success": $success,
   "warning": $warning,
 );
+
+//Navbar
+$navbar-color:  #563d7c;
+
+// "name" "backgroundColor" "textColor" "hover"
+$navbar-variants: (
+  "light" $light $dark $dark,
+  "dark" $dark $light $darker,
+  "primary" $primary $light $bluer,
+);
+
+//button
+// Colours
+$color: #4907398e !default;
+$color1: #5a6c88 !default;
+$color2: #429b36 !default;
+$color3: #bb1c93 !default;
+$color4: #14f3f3 !default;
+
+//format
+$padding: 15px 32px;
+$text-align: center;
+$display: inline-block;
+
+$button-variants: (
+  "color": $color,
+  "color1": $color1,
+  "color2": $color2,
+  "color3": $color3,
+  "color4": $color4
+);
+
+//Navbar
+$fixed: "fixed";

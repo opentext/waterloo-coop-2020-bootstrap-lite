@@ -3,8 +3,24 @@ import Highlight from 'react-highlight.js'
 
 function App() {
   
-  let badge_code = `<h1>Badge <span className = "badge badge-warning">New</span></h1>`
-  let buttons_code = `<h1>REPLACE ME WITH CODE</h1>`
+  let badge_code = `<span className = "badge badge-primary">primary</span>
+<span className = "badge badge-success">success</span>
+<span className = "badge badge-warning">warning</span>`
+  let buttons_code = `<button className="button">
+  submit
+</button>
+<button className="button1">
+  submit
+</button>
+<button className="button2">
+  submit
+</button>
+<button className="button3">
+  submit
+</button>
+<button className="button4">
+  submit
+</button>`
   let card_code = `<div className = "card" style="width: 36rem">
   <div className = "card-header"> Header </div>
   <img src = "smallPic.png" className = "card-img" alt="ring" style= "height: "auto", width: 256 + "px"}}/>
@@ -25,26 +41,20 @@ function App() {
   let media_object_code = `<h1>REPLACE ME WITH CODE</h1>`
   let navbar_code = `<h1>REPLACE ME WITH CODE</h1>`
 
-
   return (
   <div>
-    <nav>
-       <ul>
-         <li>
-           <a href="#">Home</a>
-          </li>
-         <li>
-           <a href="#">Documentation (make selected)</a>
-          </li>
-         <li>
-           <a href="#">Examples</a>
-           
-          </li>
-       </ul>       
+    <nav className = "navbar navbar-fixed navbar-light">
+       <a className = "navbar-brand">
+          <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/768px-Bootstrap_logo.svg.png"/>
+       </a>
+        <a href="#">Home</a>
+        <a href="#">Documentation (make selected)</a>
+        <a href="#">Examples</a>       
      </nav>
-    <div>
-      <div className = "container">
+
+    <div className = "container">
         <div className = "row">
+          
           <div className = "col-2 sidebar" style={{"background-color": "azure"}}>
             <ul>
               <li>
@@ -73,6 +83,9 @@ function App() {
               <h3>How it works</h3>
               <p>Some info on how to use</p>
               <p>example</p>
+              <span className = "badge badge-primary">primary</span>
+              <span className = "badge badge-success">success</span>
+              <span className = "badge badge-warning">warning</span>
               <Highlight>
                 {badge_code}
               </Highlight>
@@ -84,6 +97,23 @@ function App() {
               <h3>How it works</h3>
               <p>Some info on how to use</p>
               <p>example</p>
+              <div>
+                <button className="button">
+                  submit
+                </button>
+                <button className="button1">
+                  submit
+                </button>
+                <button className="button2">
+                  submit
+                </button>
+                <button className="button3">
+                  submit
+                </button>
+                <button className="button4">
+                  submit
+                </button>
+              </div>
               <Highlight>
                 {buttons_code}
               </Highlight>
@@ -143,7 +173,7 @@ function App() {
 
         </div>
       </div>
-    </div>
+
   </div>
   );
 }

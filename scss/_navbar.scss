@@ -2,6 +2,60 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
+  font-size: 14px;
+  top: 0;
+  width: 100%;
+  left: 0;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
+  background-color: $navbar-color;
+  margin-bottom: 30px;
+
+  a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+    &:hover {
+      background: #402d5c;
+      color: white;
+    }
+  }
+}
+
+.navbar-fixed {
+  position: fixed;
+}
+
+.navbar-brand {
+  img {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+// Takes care of the class modifiers such
+// as navbar-dark etc.
+@each $color, $value, $value2, $value3 in $navbar-variants {
+  .navbar-#{$color} {
+    @include navbar-variant($value, $value2, $value3);
+  }
+}
+
+@media (max-width: 477px) {
+  .navbar {
+    justify-content: center;
+
+    .navbar-brand {
+      width: 100%;
+
+      a {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
 }
