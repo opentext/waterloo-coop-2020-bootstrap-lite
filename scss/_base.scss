@@ -1,3 +1,18 @@
 html {
   font-family: $font-family;
+  padding: 0;
+}
+
+.main {
+  margin: 0;
+}
+
+.content {
+  margin-top: 90px;
+}
+
+@media (max-width: 477px) {
+  .content {
+    margin-top: 130px;
+  }
 }

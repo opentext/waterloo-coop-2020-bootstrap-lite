@@ -1,22 +1,16 @@
 import React from 'react';
 function App() {
   return (
-   <div>
-     <nav>
-       <ul>
-         <li>
-           <a href="#">Home</a>
-          </li>
-         <li>
-           <a href="#">Documentation (make selected)</a>
-          </li>
-         <li>
-           <a href="#">Examples</a>
-           
-          </li>
-       </ul>       
+   <div clssname = "main">
+     <nav className = "navbar navbar-fixed">
+       <a className = "navbar-brand">
+          <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/768px-Bootstrap_logo.svg.png"/>
+       </a>
+        <a href="#">Home</a>
+        <a href="#">Documentation (make selected)</a>
+        <a href="#">Examples</a>       
      </nav>
-     <div>
+     <div className="content">
       <div>
         <ul>
           <li>
@@ -47,6 +41,9 @@ function App() {
           <h3>How it works</h3>
           <p>Some info on how to use</p>
           <p>example</p>
+          <span className = "badge badge-primary">primary</span>
+          <span className = "badge badge-success">success</span>
+          <span className = "badge badge-warning">warning</span>
           <pre>
             <code>Code used to create above example</code>
           </pre>
