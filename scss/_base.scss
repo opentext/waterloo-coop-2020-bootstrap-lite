@@ -10,12 +10,18 @@ html {
 }
 
 .content {
-  margin-top: 90px;
+  margin-top: 190px;
 }
 
-@media (max-width: 477px) {
+@media screen and (max-width: 477px) {
   .content {
-    margin-top: 130px;
+    margin-top: 150px;
+  }
+}
+
+@media screen and (max-width: 387px) {
+  .content {
+    margin-top: 230px;
   }
 }
 

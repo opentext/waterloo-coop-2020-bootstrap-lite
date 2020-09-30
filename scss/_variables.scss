@@ -9,6 +9,12 @@ $h4-font-size: 1.5rem;
 $h5-font-size: 1.25rem;
 $h6-font-size: 1rem;
 
+// responsiveness and layout
+$desktop: 960px;
+$tablet: 769px;
+$phone-large: 413px;
+$phone-small: 320px;
+
 // Colours
 $primary: #0d6efd !default;
 $success: #198754 !default;
@@ -17,6 +23,7 @@ $light: #d7d5d1 !default;
 $dark: #414749 !default;
 $darker: #383d3f !default;
 $bluer: #0e52b8 !default;
+
 //Badges
 $badge-font-size: 0.75em !default;
 $badge-font-weight: $font-weight-bold !default;
@@ -33,6 +40,7 @@ $badge-variants: (
 
 //Navbar
 $navbar-color:  #563d7c;
+$fixed: "fixed";
 
 // "name" "backgroundColor" "textColor" "hover"
 $navbar-variants: (
@@ -41,13 +49,13 @@ $navbar-variants: (
   "primary" $primary $light $bluer,
 );
 
-//button
+//Button
 // Colours
 $color: #4907398e !default;
 $color1: #5a6c88 !default;
-$color2: #429b36 !default;
+$color2: #d85c15 !default;
 $color3: #bb1c93 !default;
-$color4: #14f3f3 !default;
+$color4: #200d8d !default;
 
 //format
 $padding: 15px 32px;
@@ -61,6 +69,3 @@ $button-variants: (
   "color3": $color3,
   "color4": $color4
 );
-
-//Navbar
-$fixed: "fixed";

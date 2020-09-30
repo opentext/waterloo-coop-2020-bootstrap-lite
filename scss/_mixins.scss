@@ -1,3 +1,10 @@
+// reponsive and layout
+@mixin media($width) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}
+
 // badge
 @mixin badge-variant($color) {
   background-color: $color;
@@ -29,9 +36,15 @@
   text-decoration: none;
   display: $display;
   font-size: 16px;
+  border-radius: 12px;
+  margin: 4px 3px;
 }
 
 @mixin fontAndBackgroundColor ($b_color:$color, $f_color: $color1) {
   background-color: $b_color;
-  color: $f_color;
+  color: #040805;
+}
+
+@mixin hover {
+  background-color: #0b962e;
 }

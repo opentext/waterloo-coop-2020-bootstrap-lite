@@ -32,6 +32,9 @@
 }
 
 .navbar-brand {
+  font-size: 30px;
+  font-weight: 600;
+
   img {
     width: 36px;
     height: 36px;
@@ -46,7 +49,7 @@
   }
 }
 
-@media (max-width: 477px) {
+@include media($tablet) {
   .navbar {
     justify-content: center;
 
@@ -58,5 +61,14 @@
         margin-right: auto;
       }
     }
+  }
+}
+
+@include media($phone-large) {
+  .navbar-links {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
   }
 }
