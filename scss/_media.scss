@@ -1,22 +1,25 @@
 .menu li {
   padding: 8px;
   margin-bottom: 7px;
-  background-color: #290bad;
-  color: #fff;
+  background-color: #942c2c;
+  color: rgb(16, 19, 9);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 12px;
 }
 
 .menu li:hover {
-  background-color: rgb(7, 13, 15);
+  background-color: rgb(36, 189, 16);
 }
 
 .aside {
   background-color: #03080a;
-  padding: 15px;
+  margin-bottom: 7px;
+  padding: 18px;
   color: #fff;
   text-align: center;
   font-size: 14px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 20px;
 }
 
 .footer {
@@ -24,7 +27,17 @@
   color: #fff;
   text-align: center;
   font-size: 12px;
-  padding: 15px;
+  padding: 10px;
+  border-radius: 12px;
+}
+
+.margin-left {
+  margin-left: 20px;
+}
+
+.aParent div {
+  float: left;
+  clear: none;
 }
 
 @media only screen and (min-width: 600px) {
