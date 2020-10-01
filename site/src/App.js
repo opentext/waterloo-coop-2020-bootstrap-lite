@@ -119,7 +119,7 @@ function App() {
             <div className = "outline">
               <p>They can also be used as notification counters</p>
               <div className = "outline-row">
-              <button class = "button1">
+              <button class = "button-primary">
                 Notifications <span className = "badge badge-warning">4</span>
               </button>
               </div>
@@ -149,21 +149,19 @@ function App() {
             <p>Some info on how to use</p>
             <p>example</p>
             <div>
-              <button className="button">
-                submit
+              <button className="button-primary">
+                Primary
               </button>
-              <button className="button1">
-                submit
+              <button className="button-warning">
+                Warning
               </button>
-              <button className="button2">
-                submit
+              <button className="button-success">
+                Success
               </button>
-              <button className="button3">
-                submit
+              <button className="button-info">
+                Info
               </button>
-              <button className="button4">
-                submit
-              </button>
+
             </div>
             <Highlight>
               {buttons_code}
