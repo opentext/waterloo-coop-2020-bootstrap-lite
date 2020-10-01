@@ -104,8 +104,9 @@ function App() {
             </div>
             
             <h3>Example</h3>
-            <p>They scale to the immediate parent element</p>
+            
             <div className = "outline">
+            <p>They scale to the immediate parent element</p>
               <h3>Example <span className = "badge badge-dark">New</span></h3>
               <h4>Example <span className = "badge badge-dark">New</span></h4>
               <h5>Example <span className = "badge badge-dark">New</span></h5>
@@ -114,8 +115,9 @@ function App() {
               {badge_code_text}
               </Highlight>
             </div>
-            <p>They can also be used as notification counters</p>
+            <br />
             <div className = "outline">
+              <p>They can also be used as notification counters</p>
               <div className = "outline-row">
               <button class = "button1">
                 Notifications <span className = "badge badge-warning">4</span>
@@ -125,8 +127,10 @@ function App() {
               {badge_code}
             </Highlight>
             </div>
-            <p>Class modifiers can also be added to acheive unique appearances of the badges</p>
+            <br />
+            
             <div className="outline">
+            <p>Class modifiers can also be added to acheive unique appearances of the badges</p>
               <div classname="outline-row">
               <span className = "badge badge-primary">primary</span>
                <span className = "badge badge-success">success</span>
