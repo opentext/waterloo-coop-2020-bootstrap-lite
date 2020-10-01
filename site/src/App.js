@@ -166,7 +166,7 @@ function App() {
             </div>
             <div class = ".aParent">
             <div className = "margin-left">
-            <img src = "/profile_pic.jpg" width ="100px" height = "150px"  alt="react logo" />
+            <img src = "/profile_pic.jpg" width ="10%" height = "10%" alt="react logo" />
             </div>
             
           
