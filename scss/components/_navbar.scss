@@ -25,6 +25,30 @@
       color: white;
     }
   }
+
+  @include tablet {
+    justify-content: center;
+
+    .navbar-brand {
+      width: 100%;
+      //background-color: darkgrey;
+
+      a {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+
+  @include phone {
+    .navbar-links {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: flex-start;
+      //background-color: #402d5c;
+    }
+  }
 }
 
 .navbar-fixed {
@@ -46,29 +70,5 @@
 @each $color, $value, $value2, $value3 in $navbar-variants {
   .navbar-#{$color} {
     @include navbar-variant($value, $value2, $value3);
-  }
-}
-
-@include media($tablet) {
-  .navbar {
-    justify-content: center;
-
-    .navbar-brand {
-      width: 100%;
-
-      a {
-        margin-left: auto;
-        margin-right: auto;
-      }
-    }
-  }
-}
-
-@include media($phone-large) {
-  .navbar-links {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-start;
   }
 }

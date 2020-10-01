@@ -57,29 +57,27 @@ function App() {
 
     <div className = "container">
       <div className = "row">
-        <div className = "col-2">
-          <div className = "col-10 sidebar" >
-            <ul>
+        <div className = "col-2 sidebar">
+          <ul>
+            <li>
+              <a href="#Badge">Badge</a>
+              </li>
               <li>
-                <a href="#Badge">Badge</a>
-                </li>
-                <li>
-                <a href="#Buttons">Buttons</a>
-                </li>
-                <li>
-                <a href="#Card">Card</a>
-                </li>
-                <li>
-                <a href="#Media-Object">Media Object</a>
-                </li>
-                <li>
-                <a href="#Navbar">Navbar</a>
-                </li>
-            </ul>
-          </div>
+              <a href="#Buttons">Buttons</a>
+              </li>
+              <li>
+              <a href="#Card">Card</a>
+              </li>
+              <li>
+              <a href="#Media-Object">Media Object</a>
+              </li>
+              <li>
+              <a href="#Navbar">Navbar</a>
+              </li>
+          </ul>
         </div>
 
-        <div className = "col-8" >
+        <div className = "col-9" >
           
           <div id="Badge">
             <h1>Badge <span className = "badge badge-warning">New</span></h1>

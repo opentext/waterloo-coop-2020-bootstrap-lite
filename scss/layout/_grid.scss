@@ -1,6 +1,7 @@
 .row {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   margin-right: 15px;
   margin-left: 15px;
 
@@ -11,17 +12,15 @@
     padding-right: 0.75rem;
     padding-left: 0.75rem;
   }
+
+  @include tablet {
+    flex-direction: column;
+    width: 100%;
+  }
 }
 
 .col {
   flex: 1 0 0%;
-}
-
-.sidebar {
-  position: sticky;
-  top: 4rem;
-  height: calc(100vh - 4rem);
-  border-right: 1px solid rgba(black, 0.1);
 }
 
 @for $i from 1 through 12 {
