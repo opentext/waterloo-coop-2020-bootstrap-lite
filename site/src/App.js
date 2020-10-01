@@ -259,7 +259,7 @@ function App() {
                 <p>SETTINGS</p>
               </div>
             </div>
-            <div class="footer"> <p>This is footer</p> </div>
+            
             
             <Highlight>
               {media_object_code}
