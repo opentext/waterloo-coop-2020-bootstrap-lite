@@ -1,7 +1,6 @@
 // fonts
 $font-weight-bold: 700 !default;
-$font-family: system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif;
-
+$font-family: "Inter var", "Helvetica Neue", helvetica, arial, sans-serif;
 $h1-font-size: 2.5rem;
 $h2-font-size: 2rem;
 $h3-font-size: 1.75rem;
@@ -16,20 +15,28 @@ $tablet-width: 769px;
 $phone-width: 413px;
 
 // Colours
-$primary: #0d6efd !default;
-$success: #198754 !default;
-$warning: #dc3545 !default;
+$blue: #06f;
+$darkBlue:#00009f;
+$red: #dc3545;
+$darkRed: #a72a36;
+$white: #fff;
+$darkWhite: #f7f7f8;
+$grey: #666;
+$darkGrey: #333; // text color
+$green: #198754;
+$darkGreen:#146841;
+$purple: #8c00b5;
+$yellow: #faad1f;
+$darkYellow: #c78b1c;
+
+$primary: $blue !default;
+$success: $green !default;
+$warning: $red !default;
+$info: $yellow;
 $light: #d7d5d1 !default;
 $dark: #414749 !default;
-$darker: #383d3f !default;
+$darker: $grey !default;
 $bluer: #0e52b8 !default;
-
-$blue:#00009f;
-$blueSelected: #06f;
-$white: #fff;
-$whiteSelected: #f7f7f8;
-$grey: #666;
-$purple: #8c00b5;
 
 //Badges
 $badge-font-size: 0.75em !default;
@@ -51,7 +58,7 @@ $badge-variants: (
 $navbar-color:  #563d7c;
 $fixed: "fixed";
 
-// "name" "backgroundColor" "textColor" "hover"
+// "Modifer Name" "backgroundColor" "textColor" "hover"
 $navbar-variants: (
   "light" $light $dark $dark,
   "dark" $dark $light $darker,
@@ -59,22 +66,21 @@ $navbar-variants: (
 );
 
 //Button
-// Colours
-$color: #4907398e !default;
-$color1: #5a6c88 !default;
-$color2: #d85c15 !default;
-$color3: #bb1c93 !default;
-$color4: #200d8d !default;
+$button-font-size: 16px !default;
+$button-font-weight: $font-weight-bold !default;
+$button-color: rgb(226, 224, 224) !default;
+$button-padding: 10px !default;
+$button-border-radius:  8px !default;
+
+// "Modifier Name" "backgroundColor" "textColor" "hover"
+$button-variants: (
+  "primary" $primary $white $darkBlue,
+  "warning" $warning $white $darkRed,
+  "success" $success $white $darkGreen,
+  "info" $info $darkGrey $darkYellow,
+);
 
 //format
 $padding: 15px 32px;
 $text-align: center;
 $display: inline-block;
-
-$button-variants: (
-  "color": $color,
-  "color1": $color1,
-  "color2": $color2,
-  "color3": $color3,
-  "color4": $color4
-);
