@@ -1,11 +1,18 @@
+// fonts
 $font-weight-bold: 700 !default;
 $font-family: system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif;
 
+$h1-font-size: 2.5rem;
+$h2-font-size: 2rem;
+$h3-font-size: 1.75rem;
+$h4-font-size: 1.5rem;
+$h5-font-size: 1.25rem;
+$h6-font-size: 1rem;
+
 // responsiveness and layout
-$desktop: 960px;
-$tablet: 769px;
-$phone-large: 413px;
-$phone-small: 320px;
+$desktop-width: 960px;
+$tablet-width: 769px;
+$phone-width: 413px;
 
 // Colours
 $primary: #0d6efd !default;
