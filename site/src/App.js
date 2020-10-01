@@ -166,7 +166,7 @@ function App() {
               </div>
 
               <div>
-                <div class="col-3 col-s-1 menu li">
+                <div class="col-3 col-s-5 menu li">
                   <ul>
                     <li>Name: John</li> 
                     <li>Email: xxxxx@gmail.com</li>
