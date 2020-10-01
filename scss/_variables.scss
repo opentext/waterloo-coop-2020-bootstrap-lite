@@ -2,10 +2,10 @@ $font-weight-bold: 700 !default;
 $font-family: system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif;
 
 // responsiveness and layout
-$desktop: 960px;
-$tablet: 769px;
-$phone-large: 413px;
-$phone-small: 320px;
+$desktop: 1200px; // col-xl
+$laptop: 992; // col-lg
+$tablet: 769px; // md
+$phone: 480px; // sm
 
 // Colours
 $primary: #0d6efd !default;

@@ -63,7 +63,7 @@
   }
 }
 
-@include media($phone-large) {
+@include media($phone) {
   .navbar-links {
     display: flex;
     flex-wrap: wrap;

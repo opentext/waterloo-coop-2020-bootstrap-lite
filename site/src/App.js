@@ -50,7 +50,7 @@ function App() {
        </a>
         <div class = "navbar-links">
           <a href="#">Home</a>
-          <a href="#">Documentation (make selected)</a>
+          <a href="#"><b>Documentation</b></a>
           <a href="#">Examples</a>     
         </div>     
      </nav>
