@@ -10,6 +10,7 @@
   justify-content: flex-start;
   background-color: $navbar-color;
   margin-bottom: 30px;
+  z-index: 1000;
 
   a {
     float: left;
@@ -22,6 +23,30 @@
     &:hover {
       background: #402d5c;
       color: white;
+    }
+  }
+
+  @include tablet {
+    justify-content: center;
+
+    .navbar-brand {
+      width: 100%;
+      //background-color: darkgrey;
+
+      a {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+
+  @include phone {
+    .navbar-links {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: flex-start;
+      //background-color: #402d5c;
     }
   }
 }
@@ -45,29 +70,5 @@
 @each $color, $value, $value2, $value3 in $navbar-variants {
   .navbar-#{$color} {
     @include navbar-variant($value, $value2, $value3);
-  }
-}
-
-@include media($tablet) {
-  .navbar {
-    justify-content: center;
-
-    .navbar-brand {
-      width: 100%;
-
-      a {
-        margin-left: auto;
-        margin-right: auto;
-      }
-    }
-  }
-}
-
-@include media($phone) {
-  .navbar-links {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-start;
   }
 }

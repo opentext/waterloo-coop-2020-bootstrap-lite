@@ -1,0 +1,12 @@
+.sidebar {
+  position: sticky;
+  top: 4rem;
+  height: calc(100vh - 4rem);
+  border-right: 1px solid rgba(black, 0.1);
+
+  @include tablet {
+    position: relative;
+    width: auto;
+    border-bottom: 1px solid rgba(black, 0.1);
+  }
+}
