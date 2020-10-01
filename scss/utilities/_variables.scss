@@ -24,6 +24,13 @@ $dark: #414749 !default;
 $darker: #383d3f !default;
 $bluer: #0e52b8 !default;
 
+$blue:#00009f;
+$blueSelected: #06f;
+$white: #fff;
+$whiteSelected: #f7f7f8;
+$grey: #666;
+$purple: #8c00b5;
+
 //Badges
 $badge-font-size: 0.75em !default;
 $badge-font-weight: $font-weight-bold !default;
@@ -36,6 +43,8 @@ $badge-variants: (
   "primary": $primary,
   "success": $success,
   "warning": $warning,
+  "light": $light,
+  "dark": $dark
 );
 
 //Navbar

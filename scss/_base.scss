@@ -13,6 +13,21 @@ html {
   margin-top: 190px;
 }
 
+.outline {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: flex-start;
+  border: 2px solid $whiteSelected;
+  background-color: $whiteSelected;
+  border-radius: 10px;
+  padding: 14px;
+
+  .outline-row {
+    flex-direction: row;
+  }
+}
+
 @media screen and (max-width: 477px) {
   .content {
     margin-top: 150px;
