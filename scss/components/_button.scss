@@ -6,6 +6,10 @@ button {
   border: 0;
   margin: 10px;
   border-radius: $button-border-radius;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 // Takes care of the class modifiers such
