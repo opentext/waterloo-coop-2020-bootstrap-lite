@@ -62,7 +62,7 @@ function App() {
      </nav>
     
     <div className = "container" style = {{top: 90 + 'px'}}>
-      <div className = "con-sidebar">
+      <div className = "con-sidebar sticky">
         <ul>
           <li>
             <a href="#Badge">Badge</a>
@@ -81,7 +81,6 @@ function App() {
             </li>
         </ul>
       </div>
-      <div className = "con-dump"></div>
       <div className = "main-content con-content" >
         
         <div id="Badge">
