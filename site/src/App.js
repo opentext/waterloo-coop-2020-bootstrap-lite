@@ -72,7 +72,7 @@ function App() {
       <div className = "main-content con-content" >
         
         <div id="Badge">
-          <h1>Badge</h1>
+          <h1><b>Badge</b></h1>
           <h4>Description of component</h4>
           <p>Badges display additional information next to a button or any other element. Its clear and consice.
             It may also be used to add highlighed information to text making them stand out
@@ -129,7 +129,7 @@ function App() {
         </div>
 
         <div id="Buttons">
-          <h1>Buttons</h1>
+          <h1><b>Buttons</b></h1>
           <h4>Description of component</h4>
           <h3>How it works</h3>
           <p>Some info on how to use</p>
@@ -155,7 +155,7 @@ function App() {
         </div>
 
         <div id="Card">
-          <h1>Card</h1>
+          <h1><b>Card</b></h1>
           <h4>A content container with multiple options and wide variety of uses</h4>
           <h3>How it works</h3>
           <p>Some info on how to use</p>
