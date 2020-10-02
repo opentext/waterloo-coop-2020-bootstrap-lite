@@ -4,6 +4,7 @@ html {
   font-weight: 400;
   line-height: 1.5;
   padding: 0;
+  width: 100%;
 }
 
 .main {
@@ -26,18 +27,6 @@ html {
 
   .outline-row {
     flex-direction: row;
-  }
-}
-
-@media screen and (max-width: 477px) {
-  .content {
-    margin-top: 150px;
-  }
-}
-
-@media screen and (max-width: 387px) {
-  .content {
-    margin-top: 230px;
   }
 }
 
