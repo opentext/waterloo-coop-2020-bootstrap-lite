@@ -221,8 +221,8 @@ function App() {
                 <img src = "/profile_pic.jpg" width ="100px" height = "150px"  alt="react logo" />
               </div>
 
-              <div>
-                <div class="col-3 col-s-5 menu li">
+              <div className = "margin-left1">
+                <div class="col-3 col-s-6 menu li">
                   <ul>
                     <li>Name: John</li> 
                     <li>Email: xxxxx@gmail.com</li>

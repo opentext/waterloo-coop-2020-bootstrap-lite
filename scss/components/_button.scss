@@ -7,8 +7,16 @@ button {
   margin: 10px;
   border-radius: $button-border-radius;
 
-  &:hover {
-    cursor: pointer;
+  @media (min-width: $desktop-width) {
+    padding: 10px;
+  }
+
+  @media (max-width: $desktop-width) and (min-width: $tablet-width) {
+    padding: 6px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 3px;
   }
 }
 
