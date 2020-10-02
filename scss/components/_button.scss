@@ -1,44 +1,29 @@
-.button {
-  @include fontAndBackgroundColor($color, $color4);
-  @include format;
+button {
+  font-size: $button-font-size;
+  font-weight: $button-font-weight;
+  color: $button-color;
+  padding: $button-padding;
+  border: 0;
+  margin: 10px;
+  border-radius: $button-border-radius;
+
+  @media (min-width: $desktop-width) {
+    padding: 10px;
+  }
+
+  @media (max-width: $desktop-width) and (min-width: $tablet-width) {
+    padding: 6px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 3px;
+  }
 }
 
-.button:hover {
-  @include hover;
-}
-
-.button1 {
-  @include fontAndBackgroundColor($color1, $color3);
-  @include format;
-}
-
-.button1:hover {
-  @include hover;
-}
-
-.button2 {
-  @include fontAndBackgroundColor($color2, $color);
-  @include format;
-}
-
-.button2:hover {
-  @include hover;
-}
-
-.button3 {
-  @include fontAndBackgroundColor($color3, $color1);
-  @include format;
-}
-
-.button3:hover {
-  @include hover;
-}
-
-.button4 {
-  @include fontAndBackgroundColor($color4, $color2);
-  @include format;
-}
-
-.button4:hover {
-  @include hover;
+// Takes care of the class modifiers such
+// as button-primary etc.
+@each $modifier, $backgroundColor, $textColor, $hover  in $button-variants {
+  .button-#{$modifier} {
+    @include button-variant($backgroundColor, $textColor, $hover);
+  }
 }

@@ -1,5 +1,6 @@
 html {
   font-family: $font-family;
+  color: $darkGrey;
   font-weight: 400;
   line-height: 1.5;
   padding: 0;
@@ -11,6 +12,21 @@ html {
 
 .content {
   margin-top: 190px;
+}
+
+.outline {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: flex-start;
+  border: 2px solid $darkWhite;
+  background-color: $darkWhite;
+  border-radius: 10px;
+  padding: 14px;
+
+  .outline-row {
+    flex-direction: row;
+  }
 }
 
 @media screen and (max-width: 477px) {

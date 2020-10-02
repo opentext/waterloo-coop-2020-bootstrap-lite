@@ -6,6 +6,11 @@ function App() {
   let badge_code = `<span className = "badge badge-primary">primary</span>
 <span className = "badge badge-success">success</span>
 <span className = "badge badge-warning">warning</span>`
+  let badge_code_text = 
+  `<h3>Example <span className = "badge badge-dark">New</span></h3>
+<h4>Example <span className = "badge badge-dark">New</span></h4>
+<h5>Example <span className = "badge badge-dark">New</span></h5>
+<h6>Example <span className = "badge badge-dark">New</span></h6>`
   let buttons_code = `<button className="button">
   submit
 </button>
@@ -51,7 +56,7 @@ function App() {
        </a>
         <div class = "navbar-links">
           <a href="#">Home</a>
-          <a href="#">Documentation (make selected)</a>
+          <a href="#"><b>Documentation</b></a>
           <a href="#">Examples</a>     
         </div>     
      </nav>
@@ -81,17 +86,60 @@ function App() {
         <div className = "col-9" >
           
           <div id="Badge">
-            <h1>Badge <span className = "badge badge-warning">New</span></h1>
+            <h1>Badge</h1>
             <h4>Description of component</h4>
-            <h3>How it works</h3>
-            <p>Some info on how to use</p>
-            <p>example</p>
-            <span className = "badge badge-primary">primary</span>
-            <span className = "badge badge-success">success</span>
-            <span className = "badge badge-warning">warning</span>
-            <Highlight>
+            <p>Badges display additional information next to a button or any other element. Its clear and consice.
+              It may also be used to add highlighed information to text making them stand out
+            </p>
+            <h3>How its used</h3>
+
+            <div className="outline">
+            <p>After installing our bootstrap lite library, developers can easily access badge styling by calling 
+              the badge class. Different scenerios call for different styling and this can be acheived by adding
+              class modifers which are as follows:</p>
+              <Highlight>
+              {badge_code_text}
+              </Highlight>
+              <p>The following section provides more detail about how badges might be used</p>
+            </div>
+            
+            <h3>Example</h3>
+            
+            <div className = "outline">
+            <p>They scale to the immediate parent element</p>
+              <h3>Example <span className = "badge badge-dark">New</span></h3>
+              <h4>Example <span className = "badge badge-dark">New</span></h4>
+              <h5>Example <span className = "badge badge-dark">New</span></h5>
+              <h6>Example <span className = "badge badge-dark">New</span></h6>
+              <Highlight>
+              {badge_code_text}
+              </Highlight>
+            </div>
+            <br />
+            <div className = "outline">
+              <p>They can also be used as notification counters</p>
+              <div className = "outline-row">
+              <button class = "button-primary">
+                Notifications <span className = "badge badge-warning">4</span>
+              </button>
+              </div>
+              <Highlight>
               {badge_code}
             </Highlight>
+            </div>
+            <br />
+            
+            <div className="outline">
+            <p>Class modifiers can also be added to acheive unique appearances of the badges</p>
+              <div classname="outline-row">
+              <span className = "badge badge-primary">primary</span>
+               <span className = "badge badge-success">success</span>
+              <span className = "badge badge-warning">warning</span>
+              </div>
+              <Highlight>
+              {badge_code}
+            </Highlight>
+            </div>
           </div>
 
           <div id="Buttons">
@@ -101,21 +149,19 @@ function App() {
             <p>Some info on how to use</p>
             <p>example</p>
             <div>
-              <button className="button">
-                submit
+              <button className="button-primary">
+                Primary
               </button>
-              <button className="button1">
-                submit
+              <button className="button-warning">
+                Warning
               </button>
-              <button className="button2">
-                submit
+              <button className="button-success">
+                Success
               </button>
-              <button className="button3">
-                submit
+              <button className="button-info">
+                Info
               </button>
-              <button className="button4">
-                submit
-              </button>
+
             </div>
             <Highlight>
               {buttons_code}
@@ -165,8 +211,8 @@ function App() {
                 <img src = "/profile_pic.jpg" width ="100px" height = "150px"  alt="react logo" />
               </div>
 
-              <div>
-                <div class="col-3 col-s-5 menu li">
+              <div className = "margin-left1">
+                <div class="col-3 col-s-6 menu li">
                   <ul>
                     <li>Name: John</li> 
                     <li>Email: xxxxx@gmail.com</li>
@@ -213,7 +259,7 @@ function App() {
                 <p>SETTINGS</p>
               </div>
             </div>
-            <div class="footer"> <p>This is footer</p> </div>
+            
             
             <Highlight>
               {media_object_code}
