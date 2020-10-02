@@ -58,30 +58,17 @@ function App() {
           <a href="#">Home</a>
           <a href="#"><b>Documentation</b></a>
           <a href="#">Examples</a>     
-        </div>     
+        </div>   
      </nav>
-    
-    <div className = "container" style = {{top: 90 + 'px'}}>
-      <div className = "con-sidebar">
-        <ul>
-          <li>
-            <a href="#Badge">Badge</a>
-            </li>
-            <li>
-            <a href="#Buttons">Buttons</a>
-            </li>
-            <li>
-            <a href="#Card">Card</a>
-            </li>
-            <li>
-            <a href="#Media-Object">Media Object</a>
-            </li>
-            <li>
-            <a href="#Navbar">Navbar</a>
-            </li>
-        </ul>
-      </div>
-      <div className = "con-dump"></div>
+      
+    <div className = "container">
+      <div class = "side-bar con-content">
+          <a href="#Badge">Badge</a>
+          <a href="#Buttons">Buttons</a>
+          <a href="#Badge">Card</a>
+          <a href="#Badge">Media Object</a>
+          <a href="#Badge">Navbar</a>
+        </div>
       <div className = "main-content con-content" >
         
         <div id="Badge">

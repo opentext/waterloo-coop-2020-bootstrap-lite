@@ -1,21 +1,60 @@
-.sidebar {
-  position: sticky;
-  top: 4rem;
-  height: calc(100vh - 4rem);
-  border-right: 1px solid rgba(black, 0.1);
+.side-bar {
+  padding: 10px;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+
+  a {
+    font-size: 14px;
+  }
+
+  @include desktop {
+    color: white;
+    flex-direction: row;
+    position: fixed;
+    top: 60px;
+    width: 100%;
+    border-bottom: 1px solid rgba(black, 0.1);
+    background-color: $darkGrey;
+    justify-content: center;
+
+    a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px 0 20px;
+    }
+  }
 
   @include tablet {
-    position: relative;
+    color: white;
+    flex-direction: row;
+    position: fixed;
+    top: 60px;
     width: 100%;
-    height: auto;
     border-bottom: 1px solid rgba(black, 0.1);
+    background-color: $darkGrey;
+    justify-content: center;
+
+    a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px 0 20px;
+    }
   }
 
   @include phone {
-    position: relative;
+    color: white;
+    flex-direction: row;
+    position: fixed;
+    top: 120px;
     width: 100%;
-    height: auto;
     border-bottom: 1px solid rgba(black, 0.1);
-    display: inline;
+    background-color: $darkGrey;
+    justify-content: space-evenly;
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
   }
 }

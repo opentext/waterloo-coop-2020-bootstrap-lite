@@ -14,9 +14,8 @@
   }
 
   @include tablet {
-    background-color: azure;
+    background-color: rgba(255, 0, 0, 0.479);
     flex-direction: row;
-    flex-wrap: wrap;
     margin-top: 120px;
   }
 
@@ -28,39 +27,8 @@
   }
 }
 
-.con-sidebar {
-  order: 1;
-  flex: 1.5 0;
-  position: sticky;
-
-  @include desktop {
-    ul li {
-      list-style-type: none;
-    }
-  }
-
-  @include tablet {
-    ul li {
-      display: inline;
-      list-style-type: none;
-      padding: 1rem;
-    }
-  }
-
-  @include phone {
-    ul {
-      white-space: wrap;
-
-      li {
-        display: inline;
-        list-style-type: none;
-        padding: 1rem;
-      }
-    }
-  }
-}
-
 .con-content {
+  float: left;
   order: 2;
   flex: 9 1;
 }
@@ -73,7 +41,6 @@
 .main-content {
   padding-left: 2rem;
   padding-right: 2rem;
-  width: 80%;
 }
 
 pre {
