@@ -203,7 +203,7 @@ function App() {
           <h3>How it works</h3>
           <p>Some info on how to use</p>
           <p>example</p>
-            
+          <div className="outline">        
           <div class="block">
   <img src="./profile_pic.png" alt=""/>
   <h2>Henry</h2>
@@ -214,7 +214,7 @@ function App() {
   <h2>John</h2>
   <p>me too!</p>
 </div>          
-          
+</div>          
           <Highlight>
             {media_object_code}
           </Highlight>

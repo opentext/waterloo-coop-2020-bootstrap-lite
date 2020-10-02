@@ -10,6 +10,14 @@
   font-family: 'Roboto', sans-serif;
   font-size: 85%;
   line-height: 1.4;
+
+  @media (max-width: $desktop-width) and (min-width: $tablet-width) {
+    padding: 15px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 1px;
+  }
 }
 
 .block img {
@@ -17,11 +25,29 @@
   height: 75px;
   float: left;
   margin: 0 1rem 0 0;
+
+  @media (max-width: $desktop-width) and (min-width: $tablet-width) {
+    width: 70px;
+    height: 70px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 52px;
+    height: 52px;
+  }
 }
 
 .block h2 {
   font-weight: 500;
   margin: 0 0 0.5rem 0;
+
+  @media (max-width: $desktop-width) and (min-width: $tablet-width) {
+    font-size: 32px;
+  }
+
+  @media (max-width: $tablet-width) {
+    font-size: 25px;
+  }
 }
 
 .block1 {
@@ -37,6 +63,14 @@
   font-size: 85%;
   line-height: 1.4;
   margin-left: 80px;
+
+  @media (max-width: $desktop-width) and (min-width: $tablet-width) {
+    padding: 15px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 1px;
+  }
 }
 
 .block1 img {
@@ -44,9 +78,27 @@
   height: 75px;
   float: left;
   margin: 0 1rem 0 0;
+
+  @media (max-width: $desktop-width) and (min-width: $tablet-width) {
+    width: 70px;
+    height: 70px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 52px;
+    height: 52px;
+  }
 }
 
 .block1 h2 {
   font-weight: 500;
   margin: 0 0 0.5rem 0;
+
+  @media (max-width: $desktop-width) and (min-width: $tablet-width) {
+    font-size: 32px;
+  }
+
+  @media (max-width: $tablet-width) {
+    font-size: 25px;
+  }
 }
