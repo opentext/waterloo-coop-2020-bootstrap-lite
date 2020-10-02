@@ -59,7 +59,7 @@ function App() {
           <a href="#"><b>Documentation</b></a>
           <a href="#">Examples</a>     
         </div>   
-     </nav>
+    </nav>
       
     <div className = "container">
       <div class = "side-bar con-content">

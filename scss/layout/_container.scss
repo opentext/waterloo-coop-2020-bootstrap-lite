@@ -20,7 +20,7 @@
   }
 
   @include phone {
-    background-color: lightsalmon;
+    background-color: rgba(255, 0, 0, 0.479);
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 120px;
