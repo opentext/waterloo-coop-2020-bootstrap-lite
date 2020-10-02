@@ -1,7 +1,6 @@
 .side-bar {
   display: flex;
   flex-direction: row;
-  position: fixed;
   width: 100%;
   padding: 10px;
   right: 0;
@@ -12,37 +11,39 @@
 
   a {
     font-size: 14px;
+    color: white;
+    text-decoration: none;
   }
 
   @include desktop {
-    top: 60px;
-    justify-content: center;
+    flex-direction: column;
+    float: left;
+    order: 1;
+    flex: 1.5 0;
+    height: calc(100vh - 4rem);
+    background-color: inherit;
+    border-right: 1px solid rgba(black, 0.1);
 
     a {
-      color: white;
-      text-decoration: none;
-      margin: 0 20px 0 20px;
+      font-size: $font-size-base * 1.125;
+      color: black;
+      margin: 0 0 10px 0;
     }
   }
 
   @include tablet {
+    position: fixed;
     top: 60px;
     justify-content: center;
 
     a {
-      color: white;
-      text-decoration: none;
       margin: 0 20px 0 20px;
     }
   }
 
   @include phone {
+    position: fixed;
     top: 120px;
     justify-content: space-evenly;
-
-    a {
-      color: white;
-      text-decoration: none;
-    }
   }
 }

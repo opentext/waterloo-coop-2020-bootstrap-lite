@@ -62,7 +62,7 @@ function App() {
      </nav>
     
     <div className = "container" style = {{top: 90 + 'px'}}>
-      <div className = "con-sidebar sticky" style = {{display: "none"}}>
+      <div className = "con-sidebar sticky" style = {{display: "inherit"}}>
         <ul>
           <li>
             <a href="#Badge">Badge</a>
@@ -81,14 +81,16 @@ function App() {
             </li>
         </ul>
       </div>
-      
-      <div class = "side-bar con-content">
-          <a href="#Badge">Badge</a>
-          <a href="#Buttons">Buttons</a>
-          <a href="#Card">Card</a>
-          <a href="#Media-Object">Media Object</a>
-          <a href="#Navbar">Navbar</a>
-        </div>
+      <div className = "sticky">
+        TEST
+      </div>
+      <div className = "side-bar sticky">
+        <a href="#Badge">Badge</a>
+        <a href="#Buttons">Buttons</a>
+        <a href="#Card">Card</a>
+        <a href="#Media-Object">Media Object</a>
+        <a href="#Navbar">Navbar</a>
+      </div>
       
       <div className = "main-content con-content" >
         

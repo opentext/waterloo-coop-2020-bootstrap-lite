@@ -1,10 +1,19 @@
 html {
   font-family: $font-family;
+  font-size: $font-size-lg;
   color: $darkGrey;
   font-weight: 400;
   line-height: 1.5;
   padding: 0;
   width: 100%;
+
+  @include tablet {
+    font-size: $font-size-base;
+  }
+
+  @include phone {
+    font-size: $font-size-sm;
+  }
 }
 
 .main {
