@@ -205,60 +205,11 @@ function App() {
             <p>Some info on how to use</p>
             <p>example</p>
               
-            <div class="header"> <h1>Profile</h1> </div>
-            <div class = ".aParent">
-              <div className = "margin-left">
-                <img src = "/profile_pic.jpg" width ="100px" height = "150px"  alt="react logo" />
-              </div>
-
-              <div className = "margin-left1">
-                <div class="col-3 col-s-6 menu li">
-                  <ul>
-                    <li>Name: John</li> 
-                    <li>Email: xxxxx@gmail.com</li>
-                    <li>Tel: xxx-xxx-xxxx</li>
-                <li>post: postNum</li>
-                  </ul>
-                </div>
-              </div>
-              <div className = "margin-left">
-                <div class="aside">
-                  <h2>Post one</h2>
-                  <p>We've all seen them; we've even taken pictures of ourselves pretending to hold them up or to push them over.
-
-              These are the precariously balanced rocks on a hill or a coastal cliff. It's as if the gentlest nudge would send them tumbling.
-
-              In truth, the disturbance needed to unsettle the blocks is quite significant, and that got husband and wife geologists Drs Dylan and Anna Rood wondering about how these great stones could be used to decipher earthquake history.
-
-              Think about it: if a precariously balanced rock has held its position for 10,000 years without tipping over, it means the land around the stone hasn't experienced shaking above a certain level in all that time.
-
-              </p>
-                  <h2>Post two</h2>
-                  <p>In truth, the disturbance needed to unsettle the blocks is quite significant, and that got husband and wife geologists Drs Dylan and Anna Rood wondering about how these great stones could be used to decipher earthquake history.
-
-              Think about it: if a precariously balanced rock has held its position for 10,000 years without tipping over, it means the land around the stone hasn't experienced shaking above a certain level in all that time.
-
-              "The turn of phrase we're trying to coin is that these precariously balanced rocks, or PBRs, are an 'inverse seismometer'," explains Anna.
-
-              "A normal seismometer records an event that has happened, whereas our PBR is still standing there, and so it records an earthquake that hasn't happened. Specifically, a large earthquake," the Imperial College London, UK, researcher tells BBC News.
-
-              This is really useful information if you want to build a nuclear power station or waste repository; or maybe a major dam or bridge.</p>
-                  <h2>Post three</h2>
-                  <p>Knowing how robust that structure needs to be requires an understanding of the seismic hazards that could reasonably be foreseen during its lifetime.
-
-              Can it expect a certain threshold of shaking once every 100 years, or every 1,000 years, or indeed only once every 10,000 years? The answer will bear directly on the cost of a safe construction as well as the insurance risk.
-
-              Planners may be fortunate in that the location where they want to put up that new power station already has a detailed, instrumented record of seismic behaviour. But there will be places where that record is sparse - places where it's known large tremors can occur but where the history of the size and frequency of events is extremely patchy.
-
-              </p>
-                </div>
-              </div>
-            </div>
-            <div className = "margin-left">
-              <div class="footer">
-                <p>SETTINGS</p>
-              </div>
-            </div>
+            <div class="block">
+  <img src="https://api.adorable.io/avatars/285/abott@adorable.io.png" alt=""/>
+  <h2>Sandy Sandwiches</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+</div>
             
             
             <Highlight>
