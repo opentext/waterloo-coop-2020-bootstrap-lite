@@ -1,21 +1,21 @@
 .side-bar {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  width: 100%;
   padding: 10px;
   right: 0;
   z-index: 1000;
-  display: flex;
+  color: white;
+  border-bottom: 1px solid rgba(black, 0.1);
+  background-color: $darkGrey;
 
   a {
     font-size: 14px;
   }
 
   @include desktop {
-    color: white;
-    flex-direction: row;
-    position: fixed;
     top: 60px;
-    width: 100%;
-    border-bottom: 1px solid rgba(black, 0.1);
-    background-color: $darkGrey;
     justify-content: center;
 
     a {
@@ -26,13 +26,7 @@
   }
 
   @include tablet {
-    color: white;
-    flex-direction: row;
-    position: fixed;
     top: 60px;
-    width: 100%;
-    border-bottom: 1px solid rgba(black, 0.1);
-    background-color: $darkGrey;
     justify-content: center;
 
     a {
@@ -43,13 +37,7 @@
   }
 
   @include phone {
-    color: white;
-    flex-direction: row;
-    position: fixed;
-    top: 120px;
-    width: 100%;
-    border-bottom: 1px solid rgba(black, 0.1);
-    background-color: $darkGrey;
+    top: 92px;
     justify-content: space-evenly;
 
     a {

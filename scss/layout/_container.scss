@@ -1,8 +1,11 @@
 .container {
   display: flex;
   flex-wrap: nowrap;
-  justify-content: flex-start;
+  justify-content: center;
   width: 100%;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
   margin-left: auto;
   margin-right: auto;
   padding-top: 1rem;
@@ -27,6 +30,49 @@
   }
 }
 
+.con-sidebar {
+  order: 1;
+  flex: 1.5 0;
+  height: calc(100vh - 4rem);
+
+  ul li {
+    list-style-type: none;
+  }
+
+  @include desktop {
+    border-right: 1px solid rgba(black, 0.1);
+  }
+
+  @include tablet {
+    height: auto;
+    position: relative;
+    border-bottom: 1px solid rgba(black, 0.1);
+
+    ul li {
+      display: inline;
+      padding: 1rem;
+    }
+  }
+
+  @include phone {
+    height: auto;
+    position: relative;
+    border-bottom: 1px solid rgba(black, 0.1);
+
+    ul li {
+      display: inline;
+      padding: 1rem;
+    }
+  }
+}
+
+.sticky {
+  top: 4rem;
+  align-self: flex-start;
+  position: sticky;
+  position: -webkit-sticky;
+}
+
 .con-content {
   float: left;
   order: 2;
@@ -36,11 +82,27 @@
 .con-dump {
   order: 3;
   flex: 1 25;
+
+  @include phone {
+    flex: 0 0;
+  }
 }
 
 .main-content {
   padding-left: 2rem;
   padding-right: 2rem;
+
+  @include desktop {
+    max-width: 70%;
+  }
+
+  @include tablet {
+    max-width: 80%;
+  }
+
+  @include phone {
+    max-width: 90%;
+  }
 }
 
 pre {
