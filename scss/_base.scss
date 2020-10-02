@@ -29,19 +29,20 @@ html {
   }
 }
 
-@media screen and (max-width: 477px) {
-  .content {
-    margin-top: 150px;
+@media screen and (min-width: $laptop-width) {
+  .col-9 {
+    margin-top: 90px;
   }
 }
 
 @media screen and (max-width: 387px) {
-  .content {
+  .col-9 {
     margin-top: 230px;
   }
 }
 
 %heading {
+  display: table;
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-weight: 500;

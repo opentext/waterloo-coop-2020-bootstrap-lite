@@ -6,7 +6,16 @@
 
   @include tablet {
     position: relative;
-    width: auto;
+    width: 100%;
+    height: auto;
     border-bottom: 1px solid rgba(black, 0.1);
+  }
+
+  @include phone {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid rgba(black, 0.1);
+    display: inline;
   }
 }
