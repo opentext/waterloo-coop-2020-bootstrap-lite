@@ -1,0 +1,27 @@
+@function text-color($color) {
+  @if (alpha($color) == 0) {
+    @return $text-dark;
+  }
+
+  @else if (lightness($color) > 40) {
+    @return $text-dark;
+  }
+
+  @else {
+    @return $text-light;
+  }
+}
+
+@function hover-color($color) {
+  @if (alpha($color) == 0) {
+    @return #B2BEC5;
+  }
+
+  @else if (lightness($color) > 40) {
+    @return scale-color($color, $lightness: -10%);
+  }
+
+  @else {
+    @return scale-color($color, $lightness: 10%);
+  }
+}

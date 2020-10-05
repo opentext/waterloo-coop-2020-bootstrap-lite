@@ -95,10 +95,9 @@ function App() {
     <a href="#">Examples</a>     
   </div> 
 </nav>`
+  
   return (
-    
   <div>
-     
     <nav className = "navbar navbar-fixed navbar-light" style={{"z-index": "1010"}}>
        <a className = "navbar-brand">
           BootStrap Lite
@@ -167,7 +166,7 @@ function App() {
             <p>They can also be used as notification counters</p>
             <div className = "outline-row">
             <button className = "button-primary">
-              Notifications <span className = "badge badge-warning">4</span>
+              Notifications <span className = "badge badge-info">4</span>
             </button>
             </div>
             <Highlight>
@@ -288,8 +287,8 @@ function App() {
             <li>The navbar is hidden when printing by default.</li>
           </ul>
           <h3>Example</h3>
-          <div className ="outline">
-            <nav class = "navbar navbar-light">
+          <div className ="outline" style= {{'z-index': '900'}}>
+            <nav class = "navbar navbar-light" >
               <a className = "navbar-brand">
                 Nav Light
               </a>

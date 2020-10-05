@@ -64,8 +64,8 @@ img {
 
 // Takes care of the class modifiers such
 // as navbar-dark etc.
-@each $color, $value, $value2, $value3 in $navbar-variants {
+@each $color, $value in $navbar-variants {
   .navbar-#{$color} {
-    @include navbar-variant($value, $value2, $value3);
+    @include navbar-variant($value);
   }
 }

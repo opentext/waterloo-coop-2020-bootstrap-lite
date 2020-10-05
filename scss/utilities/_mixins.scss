@@ -34,14 +34,14 @@
 }
 
 // navbar
-@mixin navbar-variant($color, $textColor, $highlightColor) {
+@mixin navbar-variant($color) {
   background-color: $color;
 
   a {
-    color: $textColor;
+    color: text-color($color);
 
     &:hover {
-      background: $highlightColor;
+      background: hover-color($color);
     }
   }
 }
@@ -49,9 +49,9 @@
 //button
 @mixin button-variant($backgroundColor, $textColor, $hover) {
   background-color: $backgroundColor;
-  color: $textColor;
+  color: text-color($backgroundColor);
 
   &:hover {
-    background: $hover;
+    background: hover-color($backgroundColor);
   }
 }

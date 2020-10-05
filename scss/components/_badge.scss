@@ -32,5 +32,7 @@
 @each $color, $value in $badge-variants {
   .badge-#{$color} {
     @include badge-variant($value);
+
+    color: text-color($value);
   }
 }

@@ -26,6 +26,10 @@ $ot-light-blue: #09bcef;
 $ot-steel: #7e929f;
 $ot-cloud: #e1e8f6;
 
+$ot-steel-darkest: #3f4950;
+$ot-steel-darker: #5f6377;
+$ot-steel-lighter: #98a8b2;
+
 $ot-firebrick: #df3324;
 $ot-burnt: #f05822;
 $ot-discovery: #eeb111;
@@ -37,6 +41,10 @@ $ot-lake: #0084ce;
 $ot-magenta: #a0006b;
 $ot-madder-red: #ba004c;
 $ot-raspberry: #e00051;
+
+$text-dark: #333;
+$text-light: #fff;
+$text-muted: #818a91;
 
 $blue: #06f;
 $darkBlue:#00009f;
@@ -52,10 +60,10 @@ $purple: #8c00b5;
 $yellow: #faad1f;
 $darkYellow: #c78b1c;
 
-$primary: $blue !default;
-$success: $green !default;
-$warning: $red !default;
-$info: $yellow;
+$primary: $ot-navy !default;
+$success: $ot-emerald !default;
+$warning: $ot-firebrick !default;
+$info: $ot-discovery;
 $light: #d7d5d1 !default;
 $dark: #414749 !default;
 $darker: $grey !default;
@@ -73,6 +81,7 @@ $badge-variants: (
   "primary": $primary,
   "success": $success,
   "warning": $warning,
+  "info": $info,
   "light": $light,
   "dark": $dark
 );
@@ -83,10 +92,10 @@ $fixed: "fixed";
 
 // "Modifer Name" "backgroundColor" "textColor" "hover"
 $navbar-variants: (
-  "light" $light $dark $dark,
-  "dark" $dark $light $darker,
-  "primary" $primary $light $bluer,
-  "transparent" transparent $dark $dark
+  "light" $ot-steel-lighter,
+  "dark" $ot-steel-darkest,
+  "primary" $primary,
+  "transparent" transparent,
 );
 
 //Button
