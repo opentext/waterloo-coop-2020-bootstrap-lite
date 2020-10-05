@@ -11,7 +11,7 @@
   background-color: $navbar-color;
   margin-bottom: 30px;
   padding-bottom: 0;
-  z-index: 1000;
+  z-index: 999;
 
   @media print {
     display: none !important;
@@ -25,7 +25,7 @@
     text-decoration: none;
     cursor: pointer;
     border-bottom: 5px solid transparent;
-    transition: border-bottom 275ms ease-in-out;
+    transition: border-bottom 27ms ease-in-out;
 
     &:hover {
       border-bottom: 4px solid $darkGrey;
