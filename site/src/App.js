@@ -54,42 +54,37 @@ function App() {
        <a className = "navbar-brand">
           BootStrap Lite
        </a>
-        <div class = "navbar-links">
+        <div className = "navbar-links">
           <a href="#">Home</a>
           <a href="#"><b>Documentation</b></a>
           <a href="#">Examples</a>     
         </div>   
      </nav>
-    
+
     <div className = "container" style = {{top: 90 + 'px'}}>
-      <div className = "con-sidebar sticky" style = {{display: "inherit"}}>
+
+      <div className = "side-bar sticky">
         <ul>
           <li>
             <a href="#Badge">Badge</a>
-            </li>
-            <li>
+
+          </li>
+          <li>
+            
             <a href="#Buttons">Buttons</a>
-            </li>
-            <li>
+          </li>
+          <li>
+            
             <a href="#Card">Card</a>
-            </li>
-            <li>
+          </li>
+          <li>
+            
             <a href="#Media-Object">Media Object</a>
-            </li>
-            <li>
+          </li>
+          <li>
             <a href="#Navbar">Navbar</a>
-            </li>
+          </li>
         </ul>
-      </div>
-      <div className = "sticky">
-        TEST
-      </div>
-      <div className = "side-bar sticky">
-        <a href="#Badge">Badge</a>
-        <a href="#Buttons">Buttons</a>
-        <a href="#Card">Card</a>
-        <a href="#Media-Object">Media Object</a>
-        <a href="#Navbar">Navbar</a>
       </div>
       
       <div className = "main-content con-content" >
@@ -128,7 +123,7 @@ function App() {
           <div className = "outline">
             <p>They can also be used as notification counters</p>
             <div className = "outline-row">
-            <button class = "button-primary">
+            <button className = "button-primary">
               Notifications <span className = "badge badge-warning">4</span>
             </button>
             </div>
@@ -140,7 +135,7 @@ function App() {
           
           <div className="outline">
           <p>Class modifiers can also be added to acheive unique appearances of the badges</p>
-            <div classname="outline-row">
+            <div className="outline-row">
             <span className = "badge badge-primary">primary</span>
               <span className = "badge badge-success">success</span>
             <span className = "badge badge-warning">warning</span>
@@ -214,12 +209,12 @@ function App() {
           <p>Some info on how to use</p>
           <p>example</p>
           <div className="outline">        
-          <div class="block">
+          <div className="block">
   <img src="./profile_pic.png" alt=""/>
   <h2>Henry</h2>
   <p>I like this comment</p>
 </div>
-<div class="block1">
+<div className="block1">
   <img src="./pro_file_re.png" alt=""/>
   <h2>John</h2>
   <p>me too!</p>

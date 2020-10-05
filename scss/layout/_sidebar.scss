@@ -6,20 +6,43 @@
   right: 0;
   z-index: 1000;
   color: white;
-  border-bottom: 1px solid rgba(black, 0.1);
   background-color: $darkGrey;
+
+  ul {
+    li {
+      float: left;
+      list-style-type: none;
+
+      @include desktop {
+        float: none;
+      }
+    }
+
+    @include tablet {
+      margin-bottom: 0;
+    }
+
+    @include phone {
+      margin-bottom: 0;
+      margin-top: 3px;
+    }
+  }
 
   a {
     font-size: 14px;
     color: white;
     text-decoration: none;
+
+    @include phone {
+      padding: 8px;
+    }
   }
 
   @include desktop {
-    flex-direction: column;
-    float: left;
+    top: 60px;
+    display: inline;
     order: 1;
-    flex: 1.5 0;
+    flex: 0 1 13%;
     height: calc(100vh - 4rem);
     background-color: inherit;
     border-right: 1px solid rgba(black, 0.1);
@@ -42,6 +65,7 @@
   }
 
   @include phone {
+    position: fixed;
     top: 92px;
     justify-content: space-evenly;
   }
