@@ -11,7 +11,7 @@
   background-color: $navbar-color;
   margin-bottom: 30px;
   padding-bottom: 0;
-  z-index: 1100;
+  z-index: 999;
 
   @media print {
     display: none !important;
@@ -24,9 +24,11 @@
     padding: 14px 16px;
     text-decoration: none;
     cursor: pointer;
+    border-bottom: 5px solid transparent;
+    transition: border-bottom 150ms ease-in-out;
 
     &:hover {
-      background: #402d5c;
+      border-bottom: 4px solid $darkGrey;
       color: white;
     }
   }
@@ -52,7 +54,6 @@
 }
 
 img {
-  width: 36px;
   height: 36px;
   margin: 10px;
 }
@@ -60,6 +61,14 @@ img {
 .navbar-brand {
   font-size: 30px;
   font-weight: 600;
+
+  &::before {
+    position: absolute;
+    content: attr(data-content);
+    color: midnightblue;
+    text-decoration: underline;
+    clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+  }
 }
 
 // Takes care of the class modifiers such

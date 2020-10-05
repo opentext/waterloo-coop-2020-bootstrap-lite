@@ -34,7 +34,7 @@
 }
 
 // navbar
-@mixin navbar-variant($color) {
+@mixin navbar-variant($color, $highlightColor) {
   background-color: $color;
 
   a {
@@ -42,6 +42,7 @@
 
     &:hover {
       background: hover-color($color);
+      border-bottom: 4px solid $highlightColor;
     }
   }
 }

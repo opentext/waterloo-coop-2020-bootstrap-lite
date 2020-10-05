@@ -8,6 +8,18 @@
   background-clip: border-box;
   border: 1px solid rgba(black, 0.125);
   border-radius: 0.25rem;
+  width: 35rem;
+  height: 40rem;
+
+  @media (max-width: $desktop-width) and (min-width: $tablet-width) {
+    width: 30rem;
+    height: 35rem;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 25rem;
+    height: 32rem;
+  }
 
   > .list-group {
     border-top: inherit;
@@ -60,15 +72,6 @@
   border-top: 1px solid rgba(black, 0.125);
 }
 
-.card-img-overlay {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 1rem;
-}
-
 .card-img,
 .card-img-top,
 .card-img-bottom {
@@ -91,14 +94,83 @@
   border-radius: 0.25rem;
 }
 
-.list-group-flush {
-  border-radius: 0;
+.cardimg {
+  height: auto;
+  width: 10rem;
+}
 
-  > .list-group-item {
-    border-width: 0 0 1px;
+.hover-card {
+  width: 35rem;
+  height: 40rem;
+
+  @media (max-width: $desktop-width) and (min-width: $tablet-width) {
+    width: 30rem;
+    height: 35rem;
   }
 
-  &:last-child {
-    border-bottom-width: 0;
+  @media (max-width: $tablet-width) {
+    width: 25rem;
+    height: 32rem;
+  }
+}
+
+.hovered {
+  width: 35rem;
+  height: 40rem;
+  text-align: center;
+  transform-style: preserve-3d;
+  transition: transform 2s;
+
+  @media (max-width: $desktop-width) and (min-width: $tablet-width) {
+    width: 30rem;
+    height: 35rem;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 25rem;
+    height: 32rem;
+  }
+}
+
+.hover-card:hover .hovered {
+  transform: rotateY(180deg);
+}
+
+.unhovered-card {
+  background-color: #bbb;
+  color: black;
+  border-radius: 10px;
+  position: absolute;
+  width: 35rem;
+  height: 40rem;
+
+  @media (max-width: $desktop-width) and (min-width: $tablet-width) {
+    width: 30rem;
+    height: 35rem;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 25rem;
+    height: 32rem;
+  }
+}
+
+.hovered-card {
+  background-color: $grey;
+  color: white;
+  transform: rotateY(180deg);
+  border-radius: 10px;
+  position: absolute;
+  width: 35rem;
+  height: 40rem;
+
+  @media (max-width: $desktop-width) and (min-width: $tablet-width) {
+    width: 30rem;
+    height: 35rem;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 25rem;
+    height: 32rem;
   }
 }

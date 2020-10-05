@@ -90,9 +90,9 @@ $badge-variants: (
 $navbar-color:  #563d7c;
 $fixed: "fixed";
 
-// "Modifer Name" "backgroundColor" "textColor" "hover"
+// "Modifer Name" "backgroundColor" "textColor" "hover" "hover text"
 $navbar-variants: (
-  "light" $ot-steel-lighter,
+  "light" $ot-steel-lighter ,
   "dark" $ot-steel-darkest,
   "primary" $primary,
   "transparent" transparent,
@@ -117,3 +117,5 @@ $button-variants: (
 $padding: 15px 32px;
 $text-align: center;
 $display: inline-block;
+$cardHeight : 50;
+$cardWidth : 18;
