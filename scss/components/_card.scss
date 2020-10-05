@@ -8,16 +8,16 @@
   background-clip: border-box;
   border: 1px solid rgba(black, 0.125);
   border-radius: 0.25rem;
-  width: 35rem;
+  width: 30rem;
   height: 40rem;
 
   @media (max-width: $desktop-width) and (min-width: $tablet-width) {
-    width: 30rem;
+    width: 25rem;
     height: 35rem;
   }
 
   @media (max-width: $tablet-width) {
-    width: 25rem;
+    width: 20rem;
     height: 32rem;
   }
 
@@ -96,38 +96,38 @@
 
 .cardimg {
   height: auto;
-  width: 10rem;
+  width: 5rem;
 }
 
 .hover-card {
-  width: 35rem;
+  width: 30rem;
   height: 40rem;
 
   @media (max-width: $desktop-width) and (min-width: $tablet-width) {
-    width: 30rem;
+    width: 25rem;
     height: 35rem;
   }
 
   @media (max-width: $tablet-width) {
-    width: 25rem;
+    width: 20rem;
     height: 32rem;
   }
 }
 
 .hovered {
-  width: 35rem;
+  width: 30rem;
   height: 40rem;
   text-align: center;
   transform-style: preserve-3d;
   transition: transform 2s;
 
   @media (max-width: $desktop-width) and (min-width: $tablet-width) {
-    width: 30rem;
+    width: 25rem;
     height: 35rem;
   }
 
   @media (max-width: $tablet-width) {
-    width: 25rem;
+    width: 20rem;
     height: 32rem;
   }
 }
@@ -141,16 +141,16 @@
   color: black;
   border-radius: 10px;
   position: absolute;
-  width: 35rem;
+  width: 30rem;
   height: 40rem;
 
   @media (max-width: $desktop-width) and (min-width: $tablet-width) {
-    width: 30rem;
+    width: 25rem;
     height: 35rem;
   }
 
   @media (max-width: $tablet-width) {
-    width: 25rem;
+    width: 20rem;
     height: 32rem;
   }
 }
@@ -161,16 +161,16 @@
   transform: rotateY(180deg);
   border-radius: 10px;
   position: absolute;
-  width: 35rem;
+  width: 30rem;
   height: 40rem;
 
   @media (max-width: $desktop-width) and (min-width: $tablet-width) {
-    width: 30rem;
+    width: 25rem;
     height: 35rem;
   }
 
   @media (max-width: $tablet-width) {
-    width: 25rem;
+    width: 20rem;
     height: 32rem;
   }
 }
