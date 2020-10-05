@@ -34,7 +34,7 @@
 }
 
 // navbar
-@mixin navbar-variant($color, $highlightColor) {
+@mixin navbar-variant($color) {
   background-color: $color;
 
   a {
@@ -42,17 +42,17 @@
 
     &:hover {
       background: hover-color($color);
-      border-bottom: 4px solid $highlightColor;
+      border-bottom: 4px solid highlight-color(hover-color($color));
     }
   }
 }
 
 //button
-@mixin button-variant($backgroundColor, $textColor, $hover) {
+@mixin button-variant($backgroundColor) {
   background-color: $backgroundColor;
   color: text-color($backgroundColor);
 
   &:hover {
-    background: hover-color($backgroundColor);
+    background: scale-color($backgroundColor, $lightness: -15%);
   }
 }

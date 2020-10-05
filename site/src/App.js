@@ -106,7 +106,7 @@ function App() {
   
   return (
   <div>
-    <nav className = "navbar navbar-fixed navbar-light" style={{"z-index": "1010"}}>
+    <nav className = "navbar navbar-fixed navbar-primary" style={{"z-index": "1010"}}>
        <a className = "navbar-brand">
           BootStrap Lite
        </a>
@@ -142,7 +142,7 @@ function App() {
       
       <div className = "main-content con-content" >
         
-        <div id="Badge">
+        <div className = "header-link" id="Badge">
           <h1><b>Badge</b></h1>
           <h4>Description of component</h4>
           <p>Badges display additional information next to a button or any other element. Its clear and consice.
@@ -197,7 +197,7 @@ function App() {
           </div>
         </div>
 
-        <div id="Buttons">
+        <div className = "header-link" id="Buttons">
           <h1><b>Buttons</b></h1>
           <h4>Description of component</h4>
           <h3>How it works</h3>
@@ -222,7 +222,7 @@ function App() {
           </Highlight>
         </div>
 
-        <div id="Card">
+        <div className = "header-link" id="Card">
           <h1><b>Card</b></h1>
           <h4>A content container with multiple options and wide variety of uses</h4>
           <h3>How it works</h3>
@@ -266,8 +266,8 @@ function App() {
           </Highlight>
         </div>              
         
-        <div id = "Media-Object">
-          <h1>Media Object</h1>
+        <div className = "header-link" id = "Media-Object">
+          <h1><b>Media Object</b></h1>
           <h4>Description of component</h4>
           <h3>How it works</h3>
           <p>Some info on how to use</p>
@@ -289,7 +289,7 @@ function App() {
           </Highlight>
         </div>
 
-        <div id="Navbar">
+        <div className = "header-link" id="Navbar">
           <h1><b>Navbar</b></h1>
           <h3>Description of component</h3>
           <p>A navbar or a navigation bar is exactly that. An important part of almost any
@@ -358,14 +358,7 @@ function App() {
             <p>Adding images to the navbar will require the following changes to its 
               implementation
             </p>
-            <nav class = "navbar navbar-light">
-              <img src="/favicon.ico"/>
-              <div>
-                <a href="#">Home</a>
-                <a href="#"><b>Documentation</b></a>
-                <a href="#">Examples</a>     
-              </div> 
-            </nav>
+            
             <nav class = "navbar navbar-light">
               <img src="https://i2.wp.com/www.deep-analysis.net/wp-content/uploads/2019/05/opentext-logo.png?fit=3515%2C1132&ssl=1"/>
               <div>

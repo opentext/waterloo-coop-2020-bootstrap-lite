@@ -39,6 +39,30 @@ html {
   }
 }
 
+.header-link {
+  &::before {
+    display: block;
+    content: " ";
+    visibility: hidden;
+    pointer-events: none;
+
+    @include desktop {
+      margin-top: -85px;
+      height: 85px;
+    }
+
+    @include tablet {
+      margin-top: -120px;
+      height: 120px;
+    }
+
+    @include phone {
+      margin-top: -140px;
+      height: 140px;
+    }
+  }
+}
+
 code {
   color: $purple;
 }

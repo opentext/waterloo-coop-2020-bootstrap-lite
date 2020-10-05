@@ -25,3 +25,13 @@
     @return scale-color($color, $lightness: 10%);
   }
 }
+
+@function highlight-color($color) {
+  @if (lightness($color) > 40) {
+    @return scale-color($color, $lightness: -40%);
+  }
+
+  @else {
+    @return scale-color($color, $lightness: 40%);
+  }
+}

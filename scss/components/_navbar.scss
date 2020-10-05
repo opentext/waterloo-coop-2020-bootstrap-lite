@@ -8,7 +8,6 @@
   left: 0;
   align-items: center;
   justify-content: flex-start;
-  background-color: $navbar-color;
   margin-bottom: 30px;
   padding-bottom: 0;
   z-index: 999;
@@ -19,7 +18,7 @@
 
   a {
     float: left;
-    color: #f2f2f2;
+    //color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -29,7 +28,7 @@
 
     &:hover {
       border-bottom: 4px solid $darkGrey;
-      color: white;
+      //color: white;
     }
   }
 

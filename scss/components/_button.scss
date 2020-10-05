@@ -14,8 +14,8 @@ button {
 
 // Takes care of the class modifiers such
 // as button-primary etc.
-@each $modifier, $backgroundColor, $textColor, $hover  in $button-variants {
+@each $modifier, $backgroundColor in $button-variants {
   .button-#{$modifier} {
-    @include button-variant($backgroundColor, $textColor, $hover);
+    @include button-variant($backgroundColor);
   }
 }

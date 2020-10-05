@@ -46,6 +46,9 @@ $text-dark: #333;
 $text-light: #fff;
 $text-muted: #818a91;
 
+$ot-light: #e6e6e6;
+$ot-dark: #212529;
+
 $blue: #06f;
 $darkBlue:#00009f;
 $red: #dc3545;
@@ -56,16 +59,16 @@ $grey: #666;
 $darkGrey: #333; // text color
 $green: #198754;
 $darkGreen:#146841;
-$purple: #8c00b5;
+$purple: $ot-plum;
 $yellow: #faad1f;
 $darkYellow: #c78b1c;
 
-$primary: $ot-navy !default;
+$primary: $ot-indigo !default;
 $success: $ot-emerald !default;
 $warning: $ot-firebrick !default;
-$info: $ot-discovery;
-$light: #d7d5d1 !default;
-$dark: #414749 !default;
+$info: $ot-discovery !default;
+$light: $ot-light !default;
+$dark: $ot-dark !default;
 $darker: $grey !default;
 $bluer: #0e52b8 !default;
 
@@ -87,13 +90,12 @@ $badge-variants: (
 );
 
 //Navbar
-$navbar-color:  #563d7c;
 $fixed: "fixed";
 
 // "Modifer Name" "backgroundColor" "textColor" "hover" "hover text"
 $navbar-variants: (
-  "light" $ot-steel-lighter ,
-  "dark" $ot-steel-darkest,
+  "light" $light,
+  "dark" $dark,
   "primary" $primary,
   "transparent" transparent,
 );
@@ -107,10 +109,10 @@ $button-border-radius:  8px !default;
 
 // "Modifier Name" "backgroundColor" "textColor" "hover"
 $button-variants: (
-  "primary" $primary $white $darkBlue,
-  "warning" $warning $white $darkRed,
-  "success" $success $white $darkGreen,
-  "info" $info $darkGrey $darkYellow,
+  "primary": $primary,
+  "warning": $warning,
+  "success": $success,
+  "info": $info,
 );
 
 //format
