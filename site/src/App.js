@@ -369,7 +369,7 @@ function App() {
         </div>
         <hr/>
         <div id="Downloads">
-          <h2 style = {{"margin":"0 auto 0 auto"}}>Download Bootstrap Lite</h2>
+          <h2 style = {{"margin":"0 auto 0 auto"}}><b>Download Bootstrap Lite</b></h2>
           <h3>Compiled CSS</h3>
           <p>The library is ready to use and can be dropped into an existing project. This 
             only includes the css files and no documentation, scss files or any JavaScript.
