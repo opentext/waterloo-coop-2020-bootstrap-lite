@@ -1,6 +1,9 @@
 // fonts
 $font-weight-bold: 700 !default;
 $font-family: "Inter var", "Helvetica Neue", helvetica, arial, sans-serif;
+$font-size-base: 1rem;
+$font-size-sm: $font-size-base * 0.875;
+$font-size-lg: $font-size-base * 1.05;
 $h1-font-size: 2.5rem;
 $h2-font-size: 2rem;
 $h3-font-size: 1.75rem;
@@ -15,6 +18,26 @@ $tablet-width: 769px;
 $phone-width: 413px;
 
 // Colours
+$ot-navy: #111b58;
+$ot-indigo: #2e3d98;
+$ot-plum: #4f3690;
+$ot-teal: #00b8ba;
+$ot-light-blue: #09bcef;
+$ot-steel: #7e929f;
+$ot-cloud: #e1e8f6;
+
+$ot-firebrick: #df3324;
+$ot-burnt: #f05822;
+$ot-discovery: #eeb111;
+$ot-green: #8cc53e;
+$ot-emerald: #08a61a;
+$ot-pine: #006353;
+$ot-cerulean: #007599;
+$ot-lake: #0084ce;
+$ot-magenta: #a0006b;
+$ot-madder-red: #ba004c;
+$ot-raspberry: #e00051;
+
 $blue: #06f;
 $darkBlue:#00009f;
 $red: #dc3545;
@@ -58,12 +81,12 @@ $badge-variants: (
 $navbar-color:  #563d7c;
 $fixed: "fixed";
 
-// "Modifer Name" "backgroundColor" "textColor" "hover"
+// "Modifer Name" "backgroundColor" "textColor" "hover" "hover text"
 $navbar-variants: (
-  "light" $light $dark $dark,
-  "dark" $dark $light $darker,
-  "primary" $primary $light $bluer,
-  "transparent" transparent $dark $dark
+  "light" $light $dark $dark $dark,
+  "dark" $dark $white $darkWhite $white,
+  "primary" $primary $light $bluer $white,
+  "transparent" transparent $dark $dark $dark
 );
 
 //Button
