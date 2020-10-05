@@ -11,6 +11,16 @@
   width: 35rem;
   height: 40rem;
 
+  @media (max-width: $desktop-width) and (min-width: $tablet-width) {
+    width: 30rem;
+    height: 35rem;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 25rem;
+    height: 32rem;
+  }
+
   > .list-group {
     border-top: inherit;
     border-bottom: inherit;
@@ -92,6 +102,16 @@
 .hover-card {
   width: 35rem;
   height: 40rem;
+
+  @media (max-width: $desktop-width) and (min-width: $tablet-width) {
+    width: 30rem;
+    height: 35rem;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 25rem;
+    height: 32rem;
+  }
 }
 
 .hovered {
@@ -100,6 +120,16 @@
   text-align: center;
   transform-style: preserve-3d;
   transition: transform 2s;
+
+  @media (max-width: $desktop-width) and (min-width: $tablet-width) {
+    width: 30rem;
+    height: 35rem;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 25rem;
+    height: 32rem;
+  }
 }
 
 .hover-card:hover .hovered {
@@ -113,6 +143,16 @@
   position: absolute;
   width: 35rem;
   height: 40rem;
+
+  @media (max-width: $desktop-width) and (min-width: $tablet-width) {
+    width: 30rem;
+    height: 35rem;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 25rem;
+    height: 32rem;
+  }
 }
 
 .hovered-card {
@@ -123,4 +163,14 @@
   position: absolute;
   width: 35rem;
   height: 40rem;
+
+  @media (max-width: $desktop-width) and (min-width: $tablet-width) {
+    width: 30rem;
+    height: 35rem;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 25rem;
+    height: 32rem;
+  }
 }
