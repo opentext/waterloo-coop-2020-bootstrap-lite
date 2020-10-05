@@ -305,7 +305,7 @@ function App() {
         </div>              
         
         <div id = "Media-Object">
-          <h1>Media Object</h1>
+          <h1><b>Media Object</b></h1>
           <h4>Description of component</h4>
           <p>Media Object demonstrates the users' comment, username, and profile picture, which creates a platform for users interacting with each other.</p>
           <h3>How it works</h3>
