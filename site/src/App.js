@@ -206,13 +206,24 @@ function App() {
           <h3>How it works</h3>
           <p>Some info on how to use</p>
           <p>example</p>
+          <div class="hover-card">
+  <div class="hovered">
+    
+  <div class="hovered-card">
+  <h>This is empty!</h>
+  </div>
+    <div class="unhovered-card">
+      
 
-          <div className = "card" style={{width: 36 + 'rem'}}>
+    
+          <div className = "card">
             <div className = "card-header"> Header </div>
-            <img src = "smallPic.png" className = "card-img" alt="ring" style= {{height: "auto", width: 256 + "px"}}/>
+            <div className ="cardimg">
+            <img src = "./profile_pic.png" />
+            </div>
             <div className = "card-body">
-              <h3 className= "card-title">Empty Circle</h3>
-              <p className = "card-subtitle">Ring</p>
+              <h3 className= "card-title">Profile</h3>
+              <p className = "card-subtitle">content</p>
               <p className = "card-text">Some text</p>
               <p className = "card-text">More text</p>
             </div>
@@ -223,6 +234,9 @@ function App() {
               <li className = "list-group-item">Item 4</li>
             </ul>
             <div className = "card-footer"> Footer </div>
+          </div>
+          </div>
+          </div>
           </div>
           <h4>Code</h4>
           <Highlight language = {"html"}>
