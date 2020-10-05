@@ -2,7 +2,7 @@ import React from 'react';
 import Highlight from 'react-highlight.js'
 
 function App() {
-  
+  // badge
   let badge_code = `<span className = "badge badge-primary">primary</span>
 <span className = "badge badge-success">success</span>
 <span className = "badge badge-warning">warning</span>`
@@ -11,20 +11,22 @@ function App() {
 <h4>Example <span className = "badge badge-dark">New</span></h4>
 <h5>Example <span className = "badge badge-dark">New</span></h5>
 <h6>Example <span className = "badge badge-dark">New</span></h6>`
-  let buttons_code = `<button className="button">
-  submit
+  let badge_notifications = `<button class = "button-primary">
+  Notifications <span className = "badge badge-warning">4</span>
+</button>`
+
+// buttons
+  let buttons_code = `<button className="button-primary">
+  Primary
 </button>
-<button className="button1">
-  submit
+<button className="button-warning">
+  Warning
 </button>
-<button className="button2">
-  submit
+<button className="button-success">
+  Success
 </button>
-<button className="button3">
-  submit
-</button>
-<button className="button4">
-  submit
+<button className="button-info">
+  Info
 </button>`
   let card_code = `<div className = "card" style="width: 36rem">
   <div className = "card-header"> Header </div>
@@ -44,17 +46,64 @@ function App() {
   <div className = "card-footer"> Footer </div>
 </div>`
   let media_object_code = `<h1>REPLACE ME WITH CODE</h1>`
-  let navbar_code = `<h1>REPLACE ME WITH CODE</h1>`
-
+  //Navbar
+  let navbar_code = `<nav class = "navbar navbar-light">
+  <a className = "navbar-brand">
+    Nav Light
+  </a>
+  <div>
+    <a href="#">Home</a>
+    <a href="#"><b>Documentation</b></a>
+    <a href="#">Examples</a>     
+  </div> 
+</nav>
+<nav class = "navbar navbar-dark">
+  <a className = "navbar-brand">
+    Nav Dark
+  </a>
+  <div>
+    <a href="#">Home</a>
+    <a href="#"><b>Documentation</b></a>
+    <a href="#">Examples</a>     
+  </div> 
+</nav>
+<nav class = "navbar navbar-primary">
+  <a className = "navbar-brand">
+    Nav Primary
+  </a>
+  <div>
+    <a href="#">Home</a>
+    <a href="#"><b>Documentation</b></a>
+    <a href="#">Examples</a>     
+  </div> 
+</nav>
+<nav class = "navbar navbar-transparent">
+  <a className = "navbar-brand">
+    Nav Transparent
+  </a>
+  <div>
+    <a href="#">Home</a>
+    <a href="#"><b>Documentation</b></a>
+    <a href="#">Examples</a>     
+  </div> 
+</nav>`
+  let navbar_img = `<nav class = "navbar navbar-light">
+  <img src="/favicon.ico"/>
+  <div>
+    <a href="#">Home</a>
+    <a href="#"><b>Documentation</b></a>
+    <a href="#">Examples</a>     
+  </div> 
+</nav>`
   return (
     
   <div>
      
-    <nav className = "navbar navbar-fixed navbar-light">
+    <nav className = "navbar navbar-fixed navbar-light" style={{"z-index": "1010"}}>
        <a className = "navbar-brand">
           BootStrap Lite
        </a>
-        <div className = "navbar-links">
+        <div>
           <a href="#">Home</a>
           <a href="#"><b>Documentation</b></a>
           <a href="#">Examples</a>     
@@ -67,18 +116,14 @@ function App() {
         <ul>
           <li>
             <a href="#Badge">Badge</a>
-
           </li>
           <li>
-            
             <a href="#Buttons">Buttons</a>
           </li>
           <li>
-            
             <a href="#Card">Card</a>
           </li>
           <li>
-            
             <a href="#Media-Object">Media Object</a>
           </li>
           <li>
@@ -96,17 +141,15 @@ function App() {
             It may also be used to add highlighed information to text making them stand out
           </p>
           <h3>How its used</h3>
-
-          <div className="outline">
-          <p>After installing our bootstrap lite library, developers can easily access badge styling by calling 
-            the badge class. Different scenerios call for different styling and this can be acheived by adding
-            class modifers which are as follows:</p>
-            <Highlight>
-            {badge_code_text}
-            </Highlight>
-            <p>The following section provides more detail about how badges might be used</p>
-          </div>
-          
+          <p>Here is what you need to know in order to implement badges:</p>
+          <ul>
+            <li>Badges require a wrapping <code>.badge</code></li>
+            <li>Different scenerios call for different styling. Three types of badges 
+              can be accesed using the class modifiers: <code>.badge-primary .badge-success
+                .badge-warning
+              </code>
+            </li>
+          </ul>
           <h3>Example</h3>
           
           <div className = "outline">
@@ -128,7 +171,7 @@ function App() {
             </button>
             </div>
             <Highlight>
-            {badge_code}
+            {badge_notifications}
           </Highlight>
           </div>
           <br />
@@ -137,7 +180,7 @@ function App() {
           <p>Class modifiers can also be added to acheive unique appearances of the badges</p>
             <div className="outline-row">
             <span className = "badge badge-primary">primary</span>
-              <span className = "badge badge-success">success</span>
+            <span className = "badge badge-success">success</span>
             <span className = "badge badge-warning">warning</span>
             </div>
             <Highlight>
@@ -165,7 +208,6 @@ function App() {
             <button className="button-info">
               Info
             </button>
-
           </div>
           <Highlight>
             {buttons_code}
@@ -226,14 +268,87 @@ function App() {
         </div>
 
         <div id="Navbar">
-          <h1>Navbar</h1>
-          <h4>Description of component</h4>
+          <h1><b>Navbar</b></h1>
+          <h3>Description of component</h3>
+          <p>A navbar or a navigation bar is exactly that. An important part of almost any
+            website these days. Its a section of the website that aids its visitors in accessing
+            information. 
+          </p>
           <h3>How it works</h3>
-          <p>Some info on how to use</p>
-          <p>example</p>
-          <Highlight>
-            {navbar_code}
-          </Highlight>
+          <p>Here is what you need to know inorder to use the navbar: </p>
+          <ul>
+            <li>It requires a <code>.navbar wrapping</code>. If its to be fixed towards the upper area
+              of the page use <code>.navbar-fixed</code>. Otherwise the implementation will be positioned 
+              relative to other content in the page.
+            </li>
+            <li>The Navbar is responsive by default</li>
+            <li>It comes with various colour schemes which are accessed using
+              class modifies: <code>.navbar-primary .navbar-light .navbar-dark
+              .navbar-transparent</code>. There implementationis detailed below</li>
+            <li>The navbar is hidden when printing by default.</li>
+          </ul>
+          <h3>Example</h3>
+          <div className ="outline">
+            <nav class = "navbar navbar-light">
+              <a className = "navbar-brand">
+                Nav Light
+              </a>
+              <div>
+                <a href="#">Home</a>
+                <a href="#"><b>Documentation</b></a>
+                <a href="#">Examples</a>     
+              </div> 
+            </nav>
+            <nav class = "navbar navbar-dark">
+              <a className = "navbar-brand">
+                Nav Dark
+              </a>
+              <div>
+                <a href="#">Home</a>
+                <a href="#"><b>Documentation</b></a>
+                <a href="#">Examples</a>     
+              </div> 
+            </nav>
+            <nav class = "navbar navbar-primary">
+              <a className = "navbar-brand">
+                Nav Primary
+              </a>
+              <div>
+                <a href="#">Home</a>
+                <a href="#"><b>Documentation</b></a>
+                <a href="#">Examples</a>     
+              </div> 
+            </nav>
+            <nav class = "navbar navbar-transparent">
+              <a className = "navbar-brand">
+                Nav Transparent
+              </a>
+              <div>
+                <a href="#">Home</a>
+                <a href="#"><b>Documentation</b></a>
+                <a href="#">Examples</a>     
+              </div> 
+            </nav>
+            <Highlight>
+              {navbar_code}
+            </Highlight>
+            <br/>
+            <p>Adding images to the navbar will require the following changes to its 
+              implementation
+            </p>
+            <nav class = "navbar navbar-light">
+              <img src="/favicon.ico"/>
+              <div>
+                <a href="#">Home</a>
+                <a href="#"><b>Documentation</b></a>
+                <a href="#">Examples</a>     
+              </div> 
+            </nav>
+            <Highlight>
+              {navbar_img}
+            </Highlight>
+          </div>
+         
         </div>
       
       </div>

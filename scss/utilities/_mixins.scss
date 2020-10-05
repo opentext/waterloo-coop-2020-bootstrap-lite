@@ -17,6 +17,12 @@
   }
 }
 
+@mixin rm-print {
+  @media print {
+    visibility: hidden;
+  }
+}
+
 // badge
 @mixin badge-variant($color) {
   background-color: $color;

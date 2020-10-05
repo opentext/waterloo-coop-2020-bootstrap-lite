@@ -13,13 +13,17 @@
   padding-bottom: 0;
   z-index: 1100;
 
+  @media print {
+    display: none !important;
+  }
+
   a {
     float: left;
-    display: block;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    cursor: pointer;
 
     &:hover {
       background: #402d5c;
@@ -32,7 +36,6 @@
 
     .navbar-brand {
       width: 100%;
-      //background-color: darkgrey;
       font-size: 20px;
       padding-bottom: 0;
 
@@ -48,14 +51,15 @@
   position: fixed;
 }
 
+img {
+  width: 36px;
+  height: 36px;
+  margin: 10px;
+}
+
 .navbar-brand {
   font-size: 30px;
   font-weight: 600;
-
-  img {
-    width: 36px;
-    height: 36px;
-  }
 }
 
 // Takes care of the class modifiers such

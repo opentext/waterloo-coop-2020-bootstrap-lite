@@ -86,6 +86,7 @@ $navbar-variants: (
   "light" $light $dark $dark,
   "dark" $dark $light $darker,
   "primary" $primary $light $bluer,
+  "transparent" transparent $dark $dark
 );
 
 //Button
