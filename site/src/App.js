@@ -2,7 +2,7 @@ import React from 'react';
 import Highlight from 'react-highlight.js'
 
 function App() {
-  
+  // badge
   let badge_code = `<span className = "badge badge-primary">primary</span>
 <span className = "badge badge-success">success</span>
 <span className = "badge badge-warning">warning</span>`
@@ -11,20 +11,22 @@ function App() {
 <h4>Example <span className = "badge badge-dark">New</span></h4>
 <h5>Example <span className = "badge badge-dark">New</span></h5>
 <h6>Example <span className = "badge badge-dark">New</span></h6>`
-  let buttons_code = `<button className="button">
-  submit
+  let badge_notifications = `<button class = "button-primary">
+  Notifications <span className = "badge badge-warning">4</span>
+</button>`
+
+// buttons
+  let buttons_code = `<button className="button-primary">
+  Primary
 </button>
-<button className="button1">
-  submit
+<button className="button-warning">
+  Warning
 </button>
-<button className="button2">
-  submit
+<button className="button-success">
+  Success
 </button>
-<button className="button3">
-  submit
-</button>
-<button className="button4">
-  submit
+<button className="button-info">
+  Info
 </button>`
   let card_code = `<div className = "card" style="width: 36rem">
   <div className = "card-header"> Header </div>
@@ -82,11 +84,7 @@ function App() {
           <div className="outline">
           <p>After installing our bootstrap lite library, developers can easily access badge styling by calling 
             the badge class. Different scenerios call for different styling and this can be acheived by adding
-            class modifers which are as follows:</p>
-            <Highlight>
-            {badge_code_text}
-            </Highlight>
-            <p>The following section provides more detail about how badges might be used</p>
+            class modifers. The following section provides more detail about how badges might be used</p>
           </div>
           
           <h3>Example</h3>
@@ -110,7 +108,7 @@ function App() {
             </button>
             </div>
             <Highlight>
-            {badge_code}
+            {badge_notifications}
           </Highlight>
           </div>
           <br />
@@ -119,7 +117,7 @@ function App() {
           <p>Class modifiers can also be added to acheive unique appearances of the badges</p>
             <div classname="outline-row">
             <span className = "badge badge-primary">primary</span>
-              <span className = "badge badge-success">success</span>
+            <span className = "badge badge-success">success</span>
             <span className = "badge badge-warning">warning</span>
             </div>
             <Highlight>
@@ -147,7 +145,6 @@ function App() {
             <button className="button-info">
               Info
             </button>
-
           </div>
           <Highlight>
             {buttons_code}
