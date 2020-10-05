@@ -11,6 +11,10 @@
   width: 30rem;
   height: 40rem;
 
+  .img {
+    width: 100%;
+  }
+
   @media (max-width: $desktop-width) and (min-width: $tablet-width) {
     width: 25rem;
     height: 35rem;

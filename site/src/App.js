@@ -2,6 +2,13 @@ import React from 'react';
 import Highlight from 'react-highlight.js'
 
 function App() {
+  // Variables
+  var Notifications = 391;
+  // methods
+  function changeNavbar(arg){
+    document.getElementById("navbarid").className = arg; 
+ }
+
   // badge
   let badge_code = `<span className = "badge badge-primary">primary</span>
 <span className = "badge badge-success">success</span>
@@ -107,7 +114,7 @@ function App() {
     
   <div>
      
-    <nav className = "navbar navbar-fixed navbar-light" style={{"z-index": "1010"}}>
+    <nav id="navbarid" className = "navbar navbar-fixed navbar-light" style={{"z-index": "1010"}}>
        <a className = "navbar-brand">
           BootStrap Lite
        </a>
@@ -115,7 +122,7 @@ function App() {
           <a href="#">Home</a>
           <a href="#"><b>Documentation</b></a>
           <a href="#">Examples</a>
-          <a>Download</a>     
+          <a href="#Downloads">Download</a>     
         </div>   
      </nav>
 
@@ -173,10 +180,10 @@ function App() {
           </div>
           <br />
           <div className = "outline">
-            <p>They can also be used as notification counters</p>
+            <p>They can also be used as notification counters. Click the Notifications button.</p>
             <div className = "outline-row">
             <button className = "button-primary">
-              Notifications <span className = "badge badge-warning">4</span>
+              Notifications <span className = "badge badge-warning">{Notifications}</span>
             </button>
             </div>
             <Highlight>
@@ -352,6 +359,13 @@ function App() {
                 <a href="#">Examples</a>     
               </div> 
             </nav>
+            <p>Click the following buttons to see how a main navbar would look with these styles:</p>
+            <div className = "outline-row">
+            <button onClick={() => changeNavbar("navbar navbar-transparent navbar-fixed")} className="button button-primary">Transparent</button>
+            <button onClick={() => changeNavbar("navbar navbar-primary navbar-fixed")} className="button button-primary">Primary</button>
+            <button onClick={() => changeNavbar("navbar navbar-dark navbar-fixed")} className="button button-primary">Dark</button>
+            <button onClick={() => changeNavbar("navbar navbar-light navbar-fixed")} className="button button-primary">Light</button>
+            </div>
             <Highlight>
               {navbar_code}
             </Highlight>
@@ -381,9 +395,12 @@ function App() {
           </div>
          
         </div>
+        <br/>
         <hr/>
+        <br/>
         <div id="Downloads">
           <h2 style = {{"margin":"0 auto 0 auto"}}><b>Download Bootstrap Lite</b></h2>
+          <br/>
           <h3>Compiled CSS</h3>
           <p>The library is ready to use and can be dropped into an existing project. This 
             only includes the css files and no documentation, scss files or any JavaScript.
