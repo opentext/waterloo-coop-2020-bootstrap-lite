@@ -94,6 +94,14 @@ function App() {
     <a href="#"><b>Documentation</b></a>
     <a href="#">Examples</a>     
   </div> 
+</nav>
+<nav class = "navbar navbar-light">
+  <img src="https://i2.wp.com/www.deep-analysis.net/wp-content/uploads/2019/05/opentext-logo.png?fit=3515%2C1132&ssl=1"/>
+  <div>
+    <a href="#">Products and Solutions</a>
+    <a href="#"><b>Industries</b></a>
+    <a href="#">Services</a>     
+  </div> 
 </nav>`
   return (
     
@@ -328,6 +336,14 @@ function App() {
                 <a href="#">Home</a>
                 <a href="#"><b>Documentation</b></a>
                 <a href="#">Examples</a>     
+              </div> 
+            </nav>
+            <nav class = "navbar navbar-light">
+              <img src="https://i2.wp.com/www.deep-analysis.net/wp-content/uploads/2019/05/opentext-logo.png?fit=3515%2C1132&ssl=1"/>
+              <div>
+                <a href="#">Products and Solutions</a>
+                <a href="#"><b>Industries</b></a>
+                <a href="#">Services</a>     
               </div> 
             </nav>
             <Highlight>

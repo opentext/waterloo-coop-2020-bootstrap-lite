@@ -34,14 +34,15 @@
 }
 
 // navbar
-@mixin navbar-variant($color, $textColor, $highlightColor) {
+@mixin navbar-variant($color, $textColor, $highlightColor, $hoverText) {
   background-color: $color;
 
   a {
     color: $textColor;
 
     &:hover {
-      background: $highlightColor;
+      color: $hoverText;
+      border-bottom: 4px solid $highlightColor;
     }
   }
 }

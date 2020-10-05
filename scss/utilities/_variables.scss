@@ -58,12 +58,12 @@ $badge-variants: (
 $navbar-color:  #563d7c;
 $fixed: "fixed";
 
-// "Modifer Name" "backgroundColor" "textColor" "hover"
+// "Modifer Name" "backgroundColor" "textColor" "hover" "hover text"
 $navbar-variants: (
-  "light" $light $dark $dark,
-  "dark" $dark $light $darker,
-  "primary" $primary $light $bluer,
-  "transparent" transparent $dark $dark
+  "light" $light $dark $dark $dark,
+  "dark" $dark $white $darkWhite $white,
+  "primary" $primary $light $bluer $white,
+  "transparent" transparent $dark $dark $dark
 );
 
 //Button
