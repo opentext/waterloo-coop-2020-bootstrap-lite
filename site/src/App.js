@@ -28,24 +28,46 @@ function App() {
 <button className="button-info">
   Info
 </button>`
-  let card_code = `<div className = "card" style="width: 36rem">
-  <div className = "card-header"> Header </div>
-  <img src = "smallPic.png" className = "card-img" alt="ring" style= "height: "auto", width: 256 + "px"}}/>
-  <div className = "card-body">
-    <h3 className= "card-title">Empty Circle</h3>
-    <p className = "card-subtitle">Ring</p>
-    <p className = "card-text">Some text</p>
-    <p className = "card-text">More text</p>
+  let card_code = `<div class="hover-card">
+  <div class="hovered">
+    <div class="hovered-card">
+      <h>This is empty!</h>
+    </div>
+    <div class="unhovered-card">
+      <div className = "card">
+        <div className = "card-header"> Header </div>
+          <div className ="cardimg">
+            <img src = "./profile_pic.png" />
+          </div>
+        <div className = "card-body">
+          <h3 className= "card-title">Profile</h3>
+          <p className = "card-subtitle">content</p>
+          <p className = "card-text">Some text</p>
+          <p className = "card-text">More text</p>
+        </div>
+        <ul className = "list-group list-group-flush">
+          <li className = "list-group-item">Item 1</li>
+          <li className = "list-group-item">Item 2</li>
+          <li className = "list-group-item">Item 3</li>
+          <li className = "list-group-item">Item 4</li>
+       </ul>
+        <div className = "card-footer"> Footer </div>
+      </div>
+    </div>
   </div>
-  <ul className = "list-group list-group-flush">
-    <li className = "list-group-item">Item 1</li>
-    <li className = "list-group-item">Item 2</li>
-    <li className = "list-group-item">Item 3</li>
-    <li className = "list-group-item">Item 4</li>
-  </ul>
-  <div className = "card-footer"> Footer </div>
 </div>`
-  let media_object_code = `<h1>REPLACE ME WITH CODE</h1>`
+  let media_object_code = `<div className="outline">        
+  <div className="block">
+    <img src="./profile_pic.png" alt=""/>
+    <h2>Henry</h2>
+    <p>I like this comment</p>
+  </div>
+  <div className="block1">
+    <img src="./pro_file_re.png" alt=""/>
+    <h2>John</h2>
+    <p>me too!</p>
+  </div>          
+</div> `
   //Navbar
   let navbar_code = `<nav class = "navbar navbar-light">
   <a className = "navbar-brand">
@@ -201,9 +223,15 @@ function App() {
         <div id="Buttons">
           <h1><b>Buttons</b></h1>
           <h4>Description of component</h4>
+          <p>Buttons provide the platform that allows users interact with web application such as login, register, submit a form.</p>
           <h3>How it works</h3>
-          <p>Some info on how to use</p>
-          <p>example</p>
+          <p>Here is what you need to know in order to implement button:</p>
+          <ul>          
+            <li>Different scenerios call for different styling. Three types of buttons can be accesed using the class modifiers: <code>.button-primary .button-success .buton-warning .button-info</code></li>
+          <li>Buttons require a wrapping <code>.button</code></li></ul>
+
+ 
+          <h4>Example</h4>
           <div>
             <button className="button-primary">
               Primary
@@ -225,41 +253,43 @@ function App() {
 
         <div id="Card">
           <h1><b>Card</b></h1>
-          <h4>A content container with multiple options and wide variety of uses</h4>
+          <h4>Description of component</h4>
+          <p>Card concentrates the infomation in the contents of business, personal information, promotions, advertisement</p>
           <h3>How it works</h3>
-          <p>Some info on how to use</p>
-          <p>example</p>
+          <p>Here is what you need to know in order to implement card:</p>
+          <ul>
+            <li>Card contains different sub-classes of its elements: <code>.card-body .card-titile .card-subtitile .card-header .card-footer</code></li>
+            <li>Card allows flipping when it is hovered by using the classes of <code>.hover-card .hovered .hover-card:hover .hovered .unhovered-card .hovered-card</code></li>
+          </ul>
+          <h4>Example</h4>
           <div class="hover-card">
-  <div class="hovered">
+            <div class="hovered">
     
-  <div class="hovered-card">
-  <h>This is empty!</h>
-  </div>
-    <div class="unhovered-card">
-      
-
-    
-          <div className = "card">
-            <div className = "card-header"> Header </div>
-            <div className ="cardimg">
-            <img src = "./profile_pic.png" />
+              <div class="hovered-card">
+                <h>This is empty!</h>
+              </div>
+              <div class="unhovered-card">
+                <div className = "card">
+                  <div className = "card-header"> Header </div>
+                    <div className ="cardimg">
+                      <img src = "./profile_pic.png" />
+                    </div>
+                  <div className = "card-body">
+                    <h3 className= "card-title">Profile</h3>
+                    <p className = "card-subtitle">content</p>
+                    <p className = "card-text">Some text</p>
+                    <p className = "card-text">More text</p>
+                  </div>
+                  <ul className = "list-group list-group-flush">
+                    <li className = "list-group-item">Item 1</li>
+                    <li className = "list-group-item">Item 2</li>
+                    <li className = "list-group-item">Item 3</li>
+                    <li className = "list-group-item">Item 4</li>
+                 </ul>
+                  <div className = "card-footer"> Footer </div>
+                </div>
+              </div>
             </div>
-            <div className = "card-body">
-              <h3 className= "card-title">Profile</h3>
-              <p className = "card-subtitle">content</p>
-              <p className = "card-text">Some text</p>
-              <p className = "card-text">More text</p>
-            </div>
-            <ul className = "list-group list-group-flush">
-              <li className = "list-group-item">Item 1</li>
-              <li className = "list-group-item">Item 2</li>
-              <li className = "list-group-item">Item 3</li>
-              <li className = "list-group-item">Item 4</li>
-            </ul>
-            <div className = "card-footer"> Footer </div>
-          </div>
-          </div>
-          </div>
           </div>
           <h4>Code</h4>
           <Highlight language = {"html"}>
@@ -270,21 +300,27 @@ function App() {
         <div id = "Media-Object">
           <h1>Media Object</h1>
           <h4>Description of component</h4>
+          <p>Media Object demonstrates the users' comment, username, and profile picture, which creates a platform for users interacting with each other.</p>
           <h3>How it works</h3>
-          <p>Some info on how to use</p>
-          <p>example</p>
-          <div className="outline">        
+          <p>Here is what you need to know inorder to use the Media Object:</p>
+          <ul>
+            <li>Media Object uses class of <code>.block</code> to implement a contianer for users' username and comments.</li>
+            <li>The class <code>.block img</code> allows users to setup their own profile picture</li>
+          </ul>
+
+          <h4>Example</h4>
+        <div className="outline">        
           <div className="block">
-  <img src="./profile_pic.png" alt=""/>
-  <h2>Henry</h2>
-  <p>I like this comment</p>
-</div>
-<div className="block1">
-  <img src="./pro_file_re.png" alt=""/>
-  <h2>John</h2>
-  <p>me too!</p>
-</div>          
-</div>          
+            <img src="./profile_pic.png" alt=""/>
+            <h2>Henry</h2>
+            <p>I like this comment</p>
+          </div>
+          <div className="block1">
+            <img src="./pro_file_re.png" alt=""/>
+            <h2>John</h2>
+            <p>me too!</p>
+          </div>          
+        </div>          
           <Highlight>
             {media_object_code}
           </Highlight>
