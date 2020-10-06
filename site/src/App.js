@@ -2,13 +2,6 @@ import React from 'react';
 import Highlight from 'react-highlight.js'
 
 function App() {
-  // Variables
-  var Notifications = 391;
-  // methods
-  function changeNavbar(arg){
-    document.getElementById("navbarid").className = arg; 
- }
-
   // badge
   let badge_code = `<span className = "badge badge-primary">primary</span>
 <span className = "badge badge-success">success</span>
@@ -132,11 +125,11 @@ function App() {
     <a href="#">Services</a>     
   </div> 
 </nav>`
-  
   return (
+    
   <div>
      
-    <nav id="navbarid" className = "navbar navbar-fixed navbar-light" style={{"z-index": "1010"}}>
+    <nav className = "navbar navbar-fixed navbar-light" style={{"z-index": "1010"}}>
        <a className = "navbar-brand">
           BootStrap Lite
        </a>
@@ -144,7 +137,7 @@ function App() {
           <a href="#">Home</a>
           <a href="#"><b>Documentation</b></a>
           <a href="#">Examples</a>
-          <a href="#Downloads">Download</a>     
+          <a>Download</a>     
         </div>   
      </nav>
 
@@ -172,7 +165,7 @@ function App() {
       
       <div className = "main-content con-content" >
         
-        <div className = "header-link" id="Badge">
+        <div id="Badge">
           <h1><b>Badge</b></h1>
           <h4>Description of component</h4>
           <p>Badges display additional information next to a button or any other element. Its clear and consice.
@@ -202,10 +195,10 @@ function App() {
           </div>
           <br />
           <div className = "outline">
-            <p>They can also be used as notification counters. Click the Notifications button.</p>
+            <p>They can also be used as notification counters</p>
             <div className = "outline-row">
             <button className = "button-primary">
-              Notifications <span className = "badge badge-warning">{Notifications}</span>
+              Notifications <span className = "badge badge-warning">4</span>
             </button>
             </div>
             <Highlight>
@@ -227,7 +220,7 @@ function App() {
           </div>
         </div>
 
-        <div className = "header-link" id="Buttons">
+        <div id="Buttons">
           <h1><b>Buttons</b></h1>
           <h4>Description of component</h4>
           <p>Buttons provide the platform that allows users interact with web application such as login, register, submit a form.</p>
@@ -240,19 +233,25 @@ function App() {
  
           <h4>Example</h4>
           <div>
-            <button className="button-primary"> Primary </button>
-            <button className="button-warning"> Warning </button>
-            <button className="button-success"> Success </button>
-            <button className="button-info"> Info </button>
-            <button className="button-dark"> Dark </button>
-            <button className="button-light"> Light </button>
+            <button className="button-primary">
+              Primary
+            </button>
+            <button className="button-warning">
+              Warning
+            </button>
+            <button className="button-success">
+              Success
+            </button>
+            <button className="button-info">
+              Info
+            </button>
           </div>
           <Highlight>
             {buttons_code}
           </Highlight>
         </div>
 
-        <div className = "header-link" id="Card">
+        <div id="Card">
           <h1><b>Card</b></h1>
           <h4>Description of component</h4>
           <p>Card concentrates the infomation in the contents of business, personal information, promotions, advertisement</p>
@@ -298,8 +297,8 @@ function App() {
           </Highlight>
         </div>              
         
-        <div className = "header-link" id = "Media-Object">
-          <h1><b>Media Object</b></h1>
+        <div id = "Media-Object">
+          <h1>Media Object</h1>
           <h4>Description of component</h4>
           <p>Media Object demonstrates the users' comment, username, and profile picture, which creates a platform for users interacting with each other.</p>
           <h3>How it works</h3>
@@ -327,7 +326,7 @@ function App() {
           </Highlight>
         </div>
 
-        <div className = "header-link" id="Navbar">
+        <div id="Navbar">
           <h1><b>Navbar</b></h1>
           <h3>Description of component</h3>
           <p>A navbar or a navigation bar is exactly that. An important part of almost any
@@ -348,8 +347,8 @@ function App() {
             <li>The navbar is hidden when printing by default.</li>
           </ul>
           <h3>Example</h3>
-          <div className ="outline" style= {{'z-index': '900'}}>
-            <nav class = "navbar navbar-light" >
+          <div className ="outline">
+            <nav class = "navbar navbar-light">
               <a className = "navbar-brand">
                 Nav Light
               </a>
@@ -389,13 +388,6 @@ function App() {
                 <a href="#">Examples</a>     
               </div> 
             </nav>
-            <p>Click the following buttons to see how a main navbar would look with these styles:</p>
-            <div className = "outline-row">
-            <button onClick={() => changeNavbar("navbar navbar-transparent navbar-fixed")} className="button button-primary">Transparent</button>
-            <button onClick={() => changeNavbar("navbar navbar-primary navbar-fixed")} className="button button-primary">Primary</button>
-            <button onClick={() => changeNavbar("navbar navbar-dark navbar-fixed")} className="button button-dark">Dark</button>
-            <button onClick={() => changeNavbar("navbar navbar-light navbar-fixed")} className="button button-light">Light</button>
-            </div>
             <Highlight>
               {navbar_code}
             </Highlight>
@@ -403,7 +395,14 @@ function App() {
             <p>Adding images to the navbar will require the following changes to its 
               implementation
             </p>
-            
+            <nav class = "navbar navbar-light">
+              <img src="/favicon.ico"/>
+              <div>
+                <a href="#">Home</a>
+                <a href="#"><b>Documentation</b></a>
+                <a href="#">Examples</a>     
+              </div> 
+            </nav>
             <nav class = "navbar navbar-light">
               <img src="https://i2.wp.com/www.deep-analysis.net/wp-content/uploads/2019/05/opentext-logo.png?fit=3515%2C1132&ssl=1"/>
               <div>
@@ -418,12 +417,9 @@ function App() {
           </div>
          
         </div>
-        <br/>
         <hr/>
-        <br/>
         <div id="Downloads">
-          <h2 style = {{"margin":"0 auto 0 auto"}}><b>Download Bootstrap Lite</b></h2>
-          <br/>
+          <h2 style = {{"margin":"0 auto 0 auto"}}>Download Bootstrap Lite</h2>
           <h3>Compiled CSS</h3>
           <p>The library is ready to use and can be dropped into an existing project. This 
             only includes the css files and no documentation, scss files or any JavaScript.
