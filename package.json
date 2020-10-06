@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "echo \"Error: Implement Build Steps\" && exit 1",
     "start": "npm-run-all --parallel watch",
-    "css": "npm-run-all css-compile css-prefix css-minify css-move",
+    "css": "npm-run-all css-lint css-compile css-prefix css-minify css-move",
     "css-compile": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/ -o dist/css/",
     "css-lint": "npm-run-all --continue-on-error --parallel css-lint-*",
     "css-lint-stylelint": "stylelint --fix \"**/*.scss\" --cache --cache-location .cache/.stylelintcache",

@@ -65,8 +65,9 @@ $darkYellow: #c78b1c;
 
 $primary: $ot-indigo !default;
 $success: $ot-green !default;
-$warning: $ot-firebrick !default;
-$info: $ot-discovery !default;
+$danger: $ot-firebrick !default;
+$warning: $ot-discovery !default;
+$info: $ot-light-blue !default;
 $light: $ot-light !default;
 $dark: $ot-dark !default;
 $darker: $grey !default;
@@ -123,3 +124,19 @@ $text-align: center;
 $display: inline-block;
 $cardHeight : 50;
 $cardWidth : 18;
+
+// hero
+$hero-variants: (
+  "light": $light,
+  "dark": $dark,
+  "primary": $primary,
+  "success": $success,
+  "warning": $warning,
+  "info": $info,
+  "danger": $danger,
+);
+
+$hero-padding: 3rem 1.5rem !default;
+$hero-padding-sm: 1.5rem !default;
+$hero-padding-md: 9rem 1.5rem !default;
+$hero-padding-lg: 18rem 1.5rem !default;

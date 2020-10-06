@@ -135,7 +135,7 @@ function App() {
   
   return (
   <>
-    <nav id="navbarid" className = "navbar navbar-fixed navbar-light" style={{"z-index": "1010"}}>
+    <nav id="navbarid" className = "navbar navbar-fixed navbar-light" style={{"display": "none","z-index": "1010"}}>
        <a className = "navbar-brand">
           BootStrap Lite
        </a>
@@ -146,6 +146,19 @@ function App() {
           <a href="#Downloads">Download</a>     
         </div>   
      </nav>
+
+    <section className="hero is-danger is-large is-bold">
+      <div className="hero-body">
+        <div className="">
+          <h1 className="title">
+            <b>"Quote Text"</b>
+          </h1>
+          <h2 className="subtitle">
+            <b>- source</b>
+          </h2>
+        </div>
+      </div>
+    </section>
 
     <div className = "container" style = {{top: 90 + 'px'}}>
 

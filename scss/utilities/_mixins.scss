@@ -56,3 +56,8 @@
     background: scale-color($backgroundColor, $lightness: -15%);
   }
 }
+
+@mixin hero-variant($color) {
+  background-color: $color;
+  color: text-color($color);
+}
