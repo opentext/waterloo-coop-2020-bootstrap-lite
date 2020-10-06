@@ -140,7 +140,8 @@
   transform: rotateY(180deg);
 }
 
-.unhovered-card {
+.card-front {
+  backface-visibility: hidden;
   background-color: #bbb;
   color: black;
   border-radius: 10px;
@@ -159,7 +160,8 @@
   }
 }
 
-.hovered-card {
+.card-back {
+  backface-visibility: hidden;
   background-color: $grey;
   color: white;
   transform: rotateY(180deg);

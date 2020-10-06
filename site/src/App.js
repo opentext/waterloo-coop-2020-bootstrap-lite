@@ -19,7 +19,7 @@ function App() {
 <h5>Example <span className = "badge badge-dark">New</span></h5>
 <h6>Example <span className = "badge badge-dark">New</span></h6>`
   let badge_notifications = `<button class = "button-primary">
-  Notifications <span className = "badge badge-warning">4</span>
+  Notifications <span className = "badge badge-info">391</span>
 </button>`
 
 // buttons
@@ -134,13 +134,12 @@ function App() {
 </nav>`
   
   return (
-  <div>
-     
+  <>
     <nav id="navbarid" className = "navbar navbar-fixed navbar-light" style={{"z-index": "1010"}}>
        <a className = "navbar-brand">
           BootStrap Lite
        </a>
-        <div>
+        <div tabindex="0">
           <a href="#">Home</a>
           <a href="#"><b>Documentation</b></a>
           <a href="#">Examples</a>
@@ -150,8 +149,8 @@ function App() {
 
     <div className = "container" style = {{top: 90 + 'px'}}>
 
-      <div className = "side-bar sticky">
-        <ul>
+      <aside className = "side-bar sticky">
+        <ul tabindex="0">
           <li>
             <a href="#Badge">Badge</a>
           </li>
@@ -168,17 +167,17 @@ function App() {
             <a href="#Navbar">Navbar</a>
           </li>
         </ul>
-      </div>
+      </aside>
       
-      <div className = "main-content con-content" >
+      <main className = "main-content con-content" >
         
         <div className = "header-link" id="Badge">
           <h1><b>Badge</b></h1>
-          <h4>Description of component</h4>
+          <h2>Description of component</h2>
           <p>Badges display additional information next to a button or any other element. Its clear and consice.
             It may also be used to add highlighed information to text making them stand out
           </p>
-          <h3>How its used</h3>
+          <h2>How its used</h2>
           <p>Here is what you need to know in order to implement badges:</p>
           <ul>
             <li>Badges require a wrapping <code>.badge</code></li>
@@ -188,7 +187,7 @@ function App() {
               </code>
             </li>
           </ul>
-          <h3>Example</h3>
+          <h2>Example</h2>
           
           <div className = "outline">
           <p>They scale to the immediate parent element</p>
@@ -205,7 +204,7 @@ function App() {
             <p>They can also be used as notification counters. Click the Notifications button.</p>
             <div className = "outline-row">
             <button className = "button-primary">
-              Notifications <span className = "badge badge-warning">{Notifications}</span>
+              Notifications <span className = "badge badge-info">{Notifications}</span>
             </button>
             </div>
             <Highlight>
@@ -229,16 +228,16 @@ function App() {
 
         <div className = "header-link" id="Buttons">
           <h1><b>Buttons</b></h1>
-          <h4>Description of component</h4>
+          <h2>Description of component</h2>
           <p>Buttons provide the platform that allows users interact with web application such as login, register, submit a form.</p>
-          <h3>How it works</h3>
+          <h2>How it works</h2>
           <p>Here is what you need to know in order to implement button:</p>
           <ul>          
             <li>Different scenerios call for different styling. Three types of buttons can be accesed using the class modifiers: <code>.button-primary .button-success .buton-warning .button-info</code></li>
           <li>Buttons require a wrapping <code>.button</code></li></ul>
 
  
-          <h4>Example</h4>
+          <h2>Example</h2>
           <div>
             <button className="button-primary"> Primary </button>
             <button className="button-warning"> Warning </button>
@@ -254,30 +253,30 @@ function App() {
 
         <div className = "header-link" id="Card">
           <h1><b>Card</b></h1>
-          <h4>Description of component</h4>
+          <h2>Description of component</h2>
           <p>Card concentrates the infomation in the contents of business, personal information, promotions, advertisement</p>
-          <h3>How it works</h3>
+          <h2>How it works</h2>
           <p>Here is what you need to know in order to implement card:</p>
           <ul>
             <li>Card contains different sub-classes of its elements: <code>.card-body .card-titile .card-subtitile .card-header .card-footer</code></li>
             <li>Card allows flipping when it is hovered by using the classes of <code>.hover-card .hovered .hover-card:hover .hovered .unhovered-card .hovered-card</code></li>
           </ul>
-          <h4>Example</h4>
+          <h2>Example</h2>
           <div class="hover-card">
             <div class="hovered">
     
-              <div class="hovered-card">
-                <h>This is empty!</h>
+              <div class="card-back">
+                <h1>This is empty!</h1>
               </div>
-              <div class="unhovered-card">
+              <div class="card-front">
                 <div className = "card">
                   <div className = "card-header"> Header </div>
                     <div className ="cardimg">
-                      <img src = "./profile_pic.png" />
+                      <img src = "./profile_pic.png" alt = "generic profile image"/>
                     </div>
                   <div className = "card-body">
                     <h3 className= "card-title">Profile</h3>
-                    <p className = "card-subtitle">content</p>
+                    <p className = "card-text">content</p>
                     <p className = "card-text">Some text</p>
                     <p className = "card-text">More text</p>
                   </div>
@@ -300,24 +299,24 @@ function App() {
         
         <div className = "header-link" id = "Media-Object">
           <h1><b>Media Object</b></h1>
-          <h4>Description of component</h4>
+          <h2>Description of component</h2>
           <p>Media Object demonstrates the users' comment, username, and profile picture, which creates a platform for users interacting with each other.</p>
-          <h3>How it works</h3>
+          <h2>How it works</h2>
           <p>Here is what you need to know inorder to use the Media Object:</p>
           <ul>
             <li>Media Object uses class of <code>.block</code> to implement a contianer for users' username and comments.</li>
             <li>The class <code>.block img</code> allows users to setup their own profile picture</li>
           </ul>
 
-          <h4>Example</h4>
+          <h2>Example</h2>
         <div className="outline">        
           <div className="block">
-            <img src="./profile_pic.png" alt=""/>
+            <img src="./profile_pic.png" alt="generic profile picture 1"/>
             <h2>Henry</h2>
             <p>I like this comment</p>
           </div>
           <div className="block1">
-            <img src="./pro_file_re.png" alt=""/>
+            <img src="./pro_file_re.png" alt="generic profile picture 2"/>
             <h2>John</h2>
             <p>me too!</p>
           </div>          
@@ -329,12 +328,12 @@ function App() {
 
         <div className = "header-link" id="Navbar">
           <h1><b>Navbar</b></h1>
-          <h3>Description of component</h3>
+          <h2>Description of component</h2>
           <p>A navbar or a navigation bar is exactly that. An important part of almost any
             website these days. Its a section of the website that aids its visitors in accessing
             information. 
           </p>
-          <h3>How it works</h3>
+          <h2>How it works</h2>
           <p>Here is what you need to know inorder to use the navbar: </p>
           <ul>
             <li>It requires a <code>.navbar wrapping</code>. If its to be fixed towards the upper area
@@ -347,7 +346,7 @@ function App() {
               .navbar-transparent</code>. There implementationis detailed below</li>
             <li>The navbar is hidden when printing by default.</li>
           </ul>
-          <h3>Example</h3>
+          <h2>Example</h2>
           <div className ="outline" style= {{'z-index': '900'}}>
             <nav class = "navbar navbar-light" >
               <a className = "navbar-brand">
@@ -405,7 +404,7 @@ function App() {
             </p>
             
             <nav class = "navbar navbar-light">
-              <img src="https://i2.wp.com/www.deep-analysis.net/wp-content/uploads/2019/05/opentext-logo.png?fit=3515%2C1132&ssl=1"/>
+              <img src="https://i2.wp.com/www.deep-analysis.net/wp-content/uploads/2019/05/opentext-logo.png?fit=3515%2C1132&ssl=1" alt = "openText logo"/>
               <div>
                 <a href="#">Products and Solutions</a>
                 <a href="#"><b>Industries</b></a>
@@ -432,9 +431,9 @@ function App() {
             Download
           </button>
         </div>
-      </div>
+      </main>
     </div>
-  </div>
+  </>
   );
 }
 

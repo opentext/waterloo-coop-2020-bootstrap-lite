@@ -7,16 +7,15 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "echo \"Error: Implement Build Steps\" && exit 1",
     "start": "npm-run-all --parallel watch",
-    "startSite": "npm run --prefix site start",
     "css": "npm-run-all css-compile css-prefix css-minify css-move",
     "css-compile": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/ -o dist/css/",
     "css-lint": "npm-run-all --continue-on-error --parallel css-lint-*",
     "css-lint-stylelint": "stylelint --fix \"**/*.scss\" --cache --cache-location .cache/.stylelintcache",
     "css-prefix": "postcss --config build/postcss.config.js --replace \"dist/css/*.css\" \"!dist/css/*.min.css\"",
-    "css-minify": "cleancss --level 1 --format breakWith=lf --source-map --source-map-inline-sources --output dist/css/bootstrap.min.css dist/css/bootstrap.css && cleancss --level 1 --format breakWith=lf --source-map --source-map-inline-sources --output dist/css/bootstrap-grid.min.css dist/css/bootstrap-grid.css && cleancss --level 1 --format breakWith=lf --source-map --source-map-inline-sources --output dist/css/bootstrap-utilities.min.css dist/css/bootstrap-utilities.css && cleancss --level 1 --format breakWith=lf --source-map --source-map-inline-sources --output dist/css/bootstrap-reboot.min.css dist/css/bootstrap-reboot.css",
+    "css-minify": "cleancss --level 1 --format breakWith=lf --source-map --source-map-inline-sources --output dist/css/bootstrap-lite.min.css dist/css/bootstrap-lite.css",
     "css-move": "cp dist/css/bootstrap-lite.css site/src",
     "watch": "npm-run-all --parallel watch-*",
-    "watch-css-main": "nodemon --watch scss/ --ext scss --exec \"npm-run-all css-lint css-compile css-prefix css-move\""
+    "watch-css-main": "nodemon --watch scss/ --ext scss --exec \"npm-run-all css\""
   },
   "repository": {
     "type": "git",
