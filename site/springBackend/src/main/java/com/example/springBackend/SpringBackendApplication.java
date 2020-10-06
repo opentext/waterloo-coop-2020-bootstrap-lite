@@ -1,13 +1,13 @@
-package com.example.ReactApp;
+package com.example.springBackend;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ReactAppApplication {
+public class SpringBackendApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ReactAppApplication.class, args);
+		SpringApplication.run(SpringBackendApplication.class, args);
 	}
 
 }
