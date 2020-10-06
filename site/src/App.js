@@ -266,7 +266,25 @@ function App() {
             <div class="hovered">
     
               <div class="hovered-card">
-                <h>This is empty!</h>
+                <div className = "card">
+                  <div className = "card-header"> Header </div>
+                    <div className ="cardimg">
+                      <img src = "./profile_pic.png" />
+                    </div>
+                  <div className = "card-body">
+                    <h3 className= "card-title">Profile</h3>
+                    <p className = "card-subtitle">content</p>
+                    <p className = "card-text">Some text</p>
+                    <p className = "card-text">More text</p>
+                  </div>
+                  <ul className = "list-group list-group-flush">
+                    <li className = "list-group-item">Item 1</li>
+                    <li className = "list-group-item">Item 2</li>
+                    <li className = "list-group-item">Item 3</li>
+                    <li className = "list-group-item">Item 4</li>
+                 </ul>
+                  <div className = "card-footer"> Footer </div>
+                </div>
               </div>
               <div class="unhovered-card">
                 <div className = "card">
