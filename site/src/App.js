@@ -147,7 +147,7 @@ function App() {
         </div>   
      </nav>
 
-    <section className="hero is-danger is-large is-bold">
+    <section className="hero is-primary is-large is-bold">
       <div className="hero-body">
         <div className="">
           <h1 className="title">
