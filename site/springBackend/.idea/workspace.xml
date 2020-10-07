@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f238e08e-6980-4fb0-934e-e51fc7ec3e0c" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Users\asaqib\.m2\wrapper\dists\apache-maven-3.6.3-bin\1iopthnavndlasol9gbrbg6bf2\apache-maven-3.6.3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1iVrYX14XftM8E1qzSSiN1C6rf8" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/static/css" />
+    <property name="restartRequiresConfirmation" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\GITHUBBING\waterloo-coop-2020-bootstrap-lite\site\springBackend\src\main\resources\static\css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\GITHUBBING\waterloo-coop-2020-bootstrap-lite\site\springBackend\src\main\resources\static\css" />
+      <recent name="C:\GITHUBBING\waterloo-coop-2020-bootstrap-lite\site\springBackend\src\main\resources\assets\css" />
+      <recent name="C:\GITHUBBING\waterloo-coop-2020-bootstrap-lite\site\springBackend\src\main\resources\templates" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="SpringBackendApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.springBackend.SpringBackendApplication" />
+      <module name="springBackend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.springBackend.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.SpringBackendApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f238e08e-6980-4fb0-934e-e51fc7ec3e0c" name="Default Changelist" comment="" />
+      <created>1602003650869</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602003650869</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="524" y="50" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602010463389">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="524" y="50" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1920.40.1920.1040/0.40.1920.1040@0.40.1920.1040" timestamp="1602010463389" />
+    <state x="498" y="58" key="FileChooserDialogImpl" timestamp="1602078276584">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="498" y="58" key="FileChooserDialogImpl/-1920.40.1920.1040/0.40.1920.1040@0.40.1920.1040" timestamp="1602078276584" />
+    <state width="1391" height="159" key="GridCell.Tab.0.bottom" timestamp="1602084816059">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1391" height="159" key="GridCell.Tab.0.bottom/-1920.40.1920.1040/0.40.1920.1040@0.40.1920.1040" timestamp="1602084816059" />
+    <state width="1391" height="159" key="GridCell.Tab.0.center" timestamp="1602084816058">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1391" height="159" key="GridCell.Tab.0.center/-1920.40.1920.1040/0.40.1920.1040@0.40.1920.1040" timestamp="1602084816058" />
+    <state width="1391" height="159" key="GridCell.Tab.0.left" timestamp="1602084816058">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1391" height="159" key="GridCell.Tab.0.left/-1920.40.1920.1040/0.40.1920.1040@0.40.1920.1040" timestamp="1602084816058" />
+    <state width="1391" height="159" key="GridCell.Tab.0.right" timestamp="1602084816059">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1391" height="159" key="GridCell.Tab.0.right/-1920.40.1920.1040/0.40.1920.1040@0.40.1920.1040" timestamp="1602084816059" />
+    <state width="1391" height="139" key="GridCell.Tab.1.bottom" timestamp="1602084714224">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1391" height="139" key="GridCell.Tab.1.bottom/-1920.40.1920.1040/0.40.1920.1040@0.40.1920.1040" timestamp="1602084714224" />
+    <state width="1391" height="139" key="GridCell.Tab.1.center" timestamp="1602084714223">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1391" height="139" key="GridCell.Tab.1.center/-1920.40.1920.1040/0.40.1920.1040@0.40.1920.1040" timestamp="1602084714223" />
+    <state width="1391" height="139" key="GridCell.Tab.1.left" timestamp="1602084714222">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1391" height="139" key="GridCell.Tab.1.left/-1920.40.1920.1040/0.40.1920.1040@0.40.1920.1040" timestamp="1602084714222" />
+    <state width="1391" height="139" key="GridCell.Tab.1.right" timestamp="1602084714223">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1391" height="139" key="GridCell.Tab.1.right/-1920.40.1920.1040/0.40.1920.1040@0.40.1920.1040" timestamp="1602084714223" />
+    <state x="380" y="401" width="672" height="678" key="search.everywhere.popup" timestamp="1602018701517">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="380" y="401" width="672" height="678" key="search.everywhere.popup/-1920.40.1920.1040/0.40.1920.1040@0.40.1920.1040" timestamp="1602018701517" />
+  </component>
+</project>
