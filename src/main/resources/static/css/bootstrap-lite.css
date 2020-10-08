@@ -124,7 +124,6 @@ p {
 .container {
   display: flex;
   flex-wrap: nowrap;
-  justify-content: center;
   width: 100%;
   min-width: 0;
   min-height: 0;
@@ -514,6 +513,7 @@ pre code {
 .side-bar ul li {
   float: left;
   list-style-type: none;
+  padding-left: 30px;
 }
 
 @media (min-width: 1200px) {
@@ -682,7 +682,7 @@ pre code {
 
 .hero.is-large {
   margin-top: 5rem;
-  padding: 10rem 1.5rem;
+  padding: 8rem 1.5rem;
 }
 
 .hero.is-fullheight {
@@ -769,6 +769,7 @@ button {
   border: 0;
   margin: 10px;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
