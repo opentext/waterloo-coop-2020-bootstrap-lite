@@ -459,9 +459,12 @@
                     <p>The library is ready to use and can be dropped into an existing project. This
                         only includes the css files and no documentation, scss files or any JavaScript.
                     </p>
-                    <button class = "button button-primary" style= "margin-left:0;">
-                        Download
-                    </button>
+
+                    <a th:href="@{/css/bootstrap-lite.css}" download>
+                        <button class = "button button-primary" style= "margin-left:0;">
+                            Download
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>
