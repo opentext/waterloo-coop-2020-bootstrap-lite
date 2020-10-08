@@ -1,0 +1,121 @@
+html {
+  font-family: $font-family;
+  font-size: $font-size-base;
+  color: $text-dark;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 0;
+  width: 100%;
+
+  @include tablet {
+    font-size: $font-size-base;
+  }
+
+  @include phone {
+    font-size: $font-size-sm;
+  }
+}
+
+.main {
+  margin: 0;
+}
+
+.content {
+  margin-top: 190px;
+}
+
+.outline {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: flex-start;
+  border: 2px solid $darkWhite;
+  background-color: $darkWhite;
+  border-radius: 10px;
+  padding: 14px;
+
+  .outline-row {
+    flex-direction: row;
+  }
+}
+
+.header-link {
+  &::before {
+    display: block;
+    content: " ";
+    visibility: hidden;
+    pointer-events: none;
+
+    @include desktop {
+      margin-top: -85px;
+      height: 85px;
+    }
+
+    @include tablet {
+      margin-top: -120px;
+      height: 120px;
+    }
+
+    @include phone {
+      margin-top: -140px;
+      height: 140px;
+    }
+  }
+}
+
+code {
+  color: $purple;
+}
+
+%heading {
+  display: table;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+h1 {
+  @extend %heading;
+
+  font-size: $h1-font-size;
+}
+
+h2 {
+  @extend %heading;
+
+  font-size: $h2-font-size;
+}
+
+h3 {
+  @extend %heading;
+
+  font-size: $h3-font-size;
+}
+
+h4 {
+  @extend %heading;
+
+  font-size: $h4-font-size;
+}
+
+h5 {
+  @extend %heading;
+
+  font-size: $h5-font-size;
+}
+
+h6 {
+  @extend %heading;
+
+  font-size: $h6-font-size;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.hljs {
+  background-color: transparent !important;
+}

@@ -18,7 +18,7 @@
     </div>
 </nav>
 
-<section class="hero is-primary is-large is-bold">
+<section class="hero is-primary is-medium is-bold">
     <div class="hero-body">
         <div class="">
             <h1 class="title">
@@ -60,15 +60,15 @@
         <div id="Badge">
             <h1><b>Badge</b></h1>
             <h2>Description of component</h2>
-            <p>Badges display additional information next to a button or any other element. Its clear and consice.
-                It may also be used to add highlighed information to text making them stand out
+            <p>Badges display additional information next to a button or any other element. Its clear and concise.
+                It may also be used to add highlighted information to text making them stand out
             </p>
             <h2>How its used</h2>
             <p>Here is what you need to know in order to implement badges:</p>
             <ul>
                 <li>Badges require a wrapping <code>.badge</code></li>
-                <li>Different scenerios call for different styling. Three types of badges
-                    can be accesed using the class modifiers: <code>.badge-primary .badge-success
+                <li>Different scenarios call for different styling. Three types of badges
+                    can be accessed using the class modifiers: <code>.badge-primary .badge-success
                         .badge-warning
                     </code>
                 </li>
@@ -100,11 +100,15 @@
             <br />
 
             <div class="outline">
-                <p>Class modifiers can also be added to acheive unique appearances of the badges</p>
+                <p>Class modifiers can also be added to achieve unique appearances of the badges</p>
                 <div class="outline-row">
                     <span class = "badge badge-primary">primary</span>
                     <span class = "badge badge-success">success</span>
-                    <span class = "badge badge-warning">warning</span>
+                    <span class = "badge badge-danger">Danger</span>
+                    <span class = "badge badge-warning">Warning</span>
+                    <span class = "badge badge-info">Info</span>
+                    <span class = "badge badge-light">Light</span>
+                    <span class = "badge badge-dark">Dark</span>
                 </div>
                 <Highlight>
                     {badge_code}
@@ -119,24 +123,19 @@
             <h2>How it works</h2>
             <p>Here is what you need to know in order to implement button:</p>
             <ul>
-                <li>Different scenerios call for different styling. Three types of buttons can be accesed using the class modifiers: <code>.button-primary .button-success .buton-warning .button-info</code></li>
+                <li>Different scenarios call for different styling. Three types of buttons can be accessed using the class modifiers: <code>.button-primary .button-success .button-warning .button-info</code></li>
                 <li>Buttons require a wrapping <code>.button</code></li></ul>
 
 
             <h2>Example</h2>
             <div>
-                <button class="button-primary">
-                    Primary
-                </button>
-                <button class="button-warning">
-                    Warning
-                </button>
-                <button class="button-success">
-                    Success
-                </button>
-                <button class="button-info">
-                    Info
-                </button>
+                <button class="button-primary">Primary</button>
+                <button class="button-success">Success</button>
+                <button class="button-danger">Danger</button>
+                <button class="button-warning">Warning</button>
+                <button class="button-info">Info</button>
+                <button class="button-light">Light</button>
+                <button class="button-dark">Dark</button>
             </div>
             <Highlight>
                 {buttons_code}
@@ -146,46 +145,21 @@
         <div id="Card">
             <h1><b>Card</b></h1>
             <h2>Description of component</h2>
-            <p>Card concentrates the infomation in the contents of business, personal information, promotions, advertisement</p>
+            <p>Card concentrates the information in the contents of business, personal information, promotions, advertisement</p>
             <h2>How it works</h2>
             <p>Here is what you need to know in order to implement card:</p>
             <ul>
-                <li>Card contains different sub-classes of its elements: <code>.card-body .card-titile .card-subtitile .card-header .card-footer</code></li>
+                <li>Card contains different sub-classes of its elements: <code>.card-body .card-title .card-subtitle .card-header .card-footer</code></li>
                 <li>Card allows flipping when it is hovered by using the classes of <code>.hover-card .hovered .hover-card:hover .hovered .unhovered-card .hovered-card</code></li>
             </ul>
             <h2>Example</h2>
             <div class="hover-card">
                 <div class="hovered">
 
-<<<<<<< HEAD
-                    <div class="card-front">
-                        <div class = "card">
-                            <div class = "card-header"> Header </div>
-                            <div class ="cardimg">
-                                <img th:src="@{image/profile_pic.png}">
-                            </div>
-                            <div class = "card-body">
-                                <h3 class= "card-title">Profile</h3>
-                                <p class = "card-subtitle">content</p>
-                                <p class = "card-text">Some text</p>
-                                <p class = "card-text">More text</p>
-                            </div>
-                            <ul class = "list-group list-group-flush">
-                                <li class = "list-group-item">Item 1</li>
-                                <li class = "list-group-item">Item 2</li>
-                                <li class = "list-group-item">Item 3</li>
-                                <li class = "list-group-item">Item 4</li>
-                            </ul>
-                            <div class = "card-footer"> Footer </div>
-                        </div>
-                    </div>
-                    <div class="card-back">
-=======
                     <div class="card-back">
                         <h1>This is empty!</h1>
                     </div>
                     <div class="card-front">
->>>>>>> 04b44031b0fdeb4db561cbb2d6d96bba6e2edb2c
                         <div class = "card">
                             <div class = "card-header"> Header </div>
                             <div class ="cardimg">
@@ -221,7 +195,7 @@
             <h2>How it works</h2>
             <p>Here is what you need to know inorder to use the Media Object:</p>
             <ul>
-                <li>Media Object uses class of <code>.block</code> to implement a contianer for users' username and comments.</li>
+                <li>Media Object uses class of <code>.block</code> to implement a container for users' username and comments.</li>
                 <li>The class <code>.block img</code> allows users to setup their own profile picture</li>
             </ul>
 
@@ -260,7 +234,7 @@
                 <li>The Navbar is responsive by default</li>
                 <li>It comes with various colour schemes which are accessed using
                     class modifies: <code>.navbar-primary .navbar-light .navbar-dark
-                        .navbar-transparent</code>. There implementationis detailed below</li>
+                        .navbar-transparent</code>. There implementations detailed below</li>
                 <li>The navbar is hidden when printing by default.</li>
             </ul>
             <h2>Example</h2>
@@ -306,7 +280,7 @@
                     </div>
                 </nav>
                 <p>Click the following buttons to see how a main navbar would look with these styles:</p>
-                <div className = "outline-row">
+                <div class = "outline-row">
                     <button class = "button button-primary" th:onClick = changeNavbar(transparent)>Transparent</button>
                     <button class = "button button-primary" th:onClick = changeNavbar(primary)>Primary</button>
                     <button class = "button button-dark" th:onClick = changeNavbar(dark)>Dark</button>

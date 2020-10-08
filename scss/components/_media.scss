@@ -1,0 +1,99 @@
+.block {
+  overflow: hidden;
+  background: #333;
+  padding: 1rem;
+  max-width: 20rem;
+  margin: 0 0 1rem 0;
+  border-radius: $button-border-radius;
+  color: $text-light;
+  font-size: 85%;
+  line-height: 1.4;
+
+  @include tablet {
+    padding: 15px;
+  }
+
+  @include phone {
+    padding: 1px;
+  }
+}
+
+.block img {
+  width: 75px;
+  height: 75px;
+  float: left;
+  margin: 0 1rem 0 0;
+
+  @include tablet {
+    width: 70px;
+    height: 70px;
+  }
+
+  @include phone {
+    width: 54px;
+    height: 54px;
+  }
+}
+
+.block h2 {
+  margin: 0 0 0.5rem 0;
+
+  @include tablet {
+    font-size: 32px;
+  }
+
+  @include phone {
+    font-size: 20px;
+  }
+}
+
+.block1 {
+  overflow: hidden;
+  background: #333;
+  padding: 1rem;
+  max-width: 20rem;
+  margin: 0 0 1rem 0;
+  border-radius: $button-border-radius;
+  color: $text-light;
+  font-size: 85%;
+  line-height: 1.4;
+  margin-left: 80px;
+
+  @include tablet {
+    padding: 15px;
+  }
+
+  @include phone {
+    padding: 1px;
+  }
+}
+
+.block1 img {
+  width: 75px;
+  height: 75px;
+  float: left;
+  margin: 0 1rem 0 0;
+
+  @include tablet {
+    width: 70px;
+    height: 70px;
+  }
+
+  @include phone {
+    width: 54px;
+    height: 54px;
+  }
+}
+
+.block1 h2 {
+  font-weight: 500;
+  margin: 0 0 0.5rem 0;
+
+  @include tablet {
+    font-size: 32px;
+  }
+
+  @include phone {
+    font-size: 20px;
+  }
+}

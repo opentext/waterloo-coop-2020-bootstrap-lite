@@ -1,0 +1,63 @@
+// reponsive and layout
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin phone {
+  @media (max-width: #{$tablet-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin rm-print {
+  @media print {
+    visibility: hidden;
+  }
+}
+
+// badge
+@mixin badge-variant($color) {
+  background-color: $color;
+}
+
+@mixin make-col($size, $columns: 12) {
+  flex: 0 0 auto;
+  width: percentage($size / $columns);
+}
+
+// navbar
+@mixin navbar-variant($color) {
+  background-color: $color;
+
+  a {
+    color: text-color($color);
+
+    &:hover {
+      background: hover-color($color);
+      border-bottom: 4px solid highlight-color(hover-color($color));
+    }
+  }
+}
+
+//button
+@mixin button-variant($backgroundColor) {
+  background-color: $backgroundColor;
+  color: text-color($backgroundColor);
+
+  &:hover {
+    background: scale-color($backgroundColor, $lightness: -15%);
+  }
+}
+
+@mixin hero-variant($color) {
+  background-color: $color;
+  color: text-color($color);
+}

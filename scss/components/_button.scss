@@ -1,0 +1,21 @@
+button {
+  font-size: $button-font-size;
+  font-weight: $button-font-weight;
+  color: $button-color;
+  padding: $button-padding;
+  border: 0;
+  margin: 10px;
+  border-radius: $button-border-radius;
+
+  @include phone {
+    padding: 10px;
+  }
+}
+
+// Takes care of the class modifiers such
+// as button-primary etc.
+@each $color, $value in $color-variants {
+  .button-#{$color} {
+    @include button-variant($value);
+  }
+}

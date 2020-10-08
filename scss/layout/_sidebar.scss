@@ -1,0 +1,80 @@
+.side-bar {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 10px;
+  right: 0;
+  z-index: 1000;
+  color: $text-light;
+  background-color: $dark;
+
+  ul {
+    li {
+      float: left;
+      list-style-type: none;
+
+      @include desktop {
+        float: none;
+      }
+    }
+
+    @include tablet {
+      margin-bottom: 0;
+    }
+
+    @include phone {
+      margin-bottom: 0;
+      margin-top: 3px;
+    }
+  }
+
+  a {
+    font-size: 14px;
+    color: $text-light;
+    text-decoration: none;
+
+    @include phone {
+      padding: 8px;
+    }
+  }
+
+  @include desktop {
+    top: 60px;
+    display: inline;
+    order: 1;
+    flex: 0 1 13%;
+    height: calc(100vh - 4rem);
+    background-color: inherit;
+    border-right: 1px solid rgba(black, 0.1);
+
+    a {
+      font-size: $font-size-base * 1.125;
+      color: black;
+      margin: 0 0 10px 0;
+    }
+
+    ul {
+      padding-left: 0;
+
+      li {
+        padding-bottom: 0.5rem;
+      }
+    }
+  }
+
+  @include tablet {
+    position: fixed;
+    top: 60px;
+    justify-content: center;
+
+    a {
+      margin: 0 20px 0 20px;
+    }
+  }
+
+  @include phone {
+    position: fixed;
+    top: 92px;
+    justify-content: space-evenly;
+  }
+}

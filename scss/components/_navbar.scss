@@ -1,0 +1,73 @@
+.navbar {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 14px;
+  top: 0;
+  width: 100%;
+  left: 0;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+  padding-bottom: 0;
+  z-index: 999;
+
+  @media print {
+    display: none !important;
+  }
+
+  a {
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    cursor: pointer;
+    border-bottom: 5px solid transparent;
+    transition: border-bottom 150ms ease-in-out;
+  }
+
+  @include phone {
+    justify-content: center;
+
+    .navbar-brand {
+      width: 100%;
+      font-size: 20px;
+      padding-bottom: 0;
+
+      a {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+}
+
+.navbar-fixed {
+  position: fixed;
+}
+
+img {
+  height: 36px;
+  margin: 10px;
+}
+
+.navbar-brand {
+  font-size: 30px;
+  font-weight: 600;
+
+  &::before {
+    position: absolute;
+    content: attr(data-content);
+    color: midnightblue;
+    text-decoration: underline;
+    clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+  }
+}
+
+// Takes care of the class modifiers such
+// as navbar-dark etc.
+@each $color, $value in $navbar-variants {
+  .navbar-#{$color} {
+    @include navbar-variant($value);
+  }
+}

@@ -1,0 +1,36 @@
+.badge {
+  display: inline-block;
+  padding: $badge-padding-y $badge-padding-x;
+  font-size: $badge-font-size;
+  font-weight: $badge-font-weight;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  margin-left: 3px;
+  border-radius: $badge-border-radius;
+  font-family: Arial, Helvetica, sans-serif;
+
+  &:hover {
+    cursor: default;
+  }
+
+  &:empty {
+    display: none;
+  }
+}
+
+.btn .badge {
+  position: relative;
+  top: -1px;
+}
+
+// Takes care of the class modifiers such
+// as badge-warning etc.
+@each $color, $value in $color-variants {
+  .badge-#{$color} {
+    @include badge-variant($value);
+
+    color: text-color($value);
+  }
+}

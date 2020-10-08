@@ -1,0 +1,124 @@
+// fonts
+$font-weight-bold: 700 !default;
+$font-family: "Inter var", "Helvetica Neue", helvetica, arial, sans-serif;
+$font-size-base: 1rem;
+$font-size-sm: $font-size-base * 0.875;
+$font-size-lg: $font-size-base * 1.05;
+$h1-font-size: 2.5rem;
+$h2-font-size: 2rem;
+$h3-font-size: 1.75rem;
+$h4-font-size: 1.5rem;
+$h5-font-size: 1.25rem;
+$h6-font-size: 1rem;
+
+// responsiveness and layout
+$desktop-width: 1200px;
+$laptop-width: 900px;
+$tablet-width: 769px;
+$phone-width: 413px;
+
+// Colours
+$ot-navy: #111b58;
+$ot-indigo: #2e3d98;
+$ot-plum: #4f3690;
+$ot-teal: #00b8ba;
+$ot-light-blue: #09bcef;
+$ot-steel: #7e929f;
+$ot-cloud: #e1e8f6;
+
+$ot-firebrick: #df3324;
+$ot-burnt: #f05822;
+$ot-discovery: #eeb111;
+$ot-green: #8cc53e;
+$ot-emerald: #08a61a;
+$ot-pine: #006353;
+$ot-cerulean: #007599;
+$ot-lake: #0084ce;
+$ot-magenta: #a0006b;
+$ot-madder-red: #ba004c;
+$ot-raspberry: #e00051;
+
+$text-dark: #333;
+$text-light: #fff;
+$text-muted: #818a91;
+
+$ot-light: #e6e6e6;
+$ot-dark: #212529;
+
+$white: #fff;
+$darkWhite: #f7f7f7;
+
+$blue: $ot-light-blue;
+$darkBlue:$ot-navy;
+$red: $ot-firebrick;
+$orange: $ot-burnt;
+$green: $ot-green;
+$purple: $ot-plum;
+$yellow: $ot-discovery;
+
+$primary: $darkBlue !default;
+$success: $green !default;
+$danger: $red !default;
+$warning: $yellow !default;
+$info: $blue !default;
+$light: $ot-light !default;
+$dark: $ot-dark !default;
+
+$color-variants:(
+  "light": $light,
+  "dark": $dark,
+  "primary": $primary,
+  "success": $success,
+  "warning": $warning,
+  "info": $info,
+  "danger": $danger,
+);
+
+//Badges
+$badge-font-size: 0.75em !default;
+$badge-font-weight: $font-weight-bold !default;
+$badge-padding-y: 0.35em !default;
+$badge-padding-x: 0.65em !default;
+$badge-border-radius: 0.25rem !default;
+
+$badge-variants: (
+  "primary": $primary,
+  "success": $success,
+  "warning": $warning,
+  "info": $info,
+  "light": $light,
+  "dark": $dark
+);
+
+//Navbar
+$fixed: "fixed";
+
+// "Modifer Name" "backgroundColor" "textColor" "hover" "hover text"
+$navbar-variants: (
+  "light" $light,
+  "dark" $dark,
+  "primary" $primary,
+  "transparent" transparent,
+);
+
+//Button
+$button-font-size: 16px !default;
+$button-font-weight: $font-weight-bold !default;
+$button-color: $text-light !default;
+$button-padding: 10px !default;
+$button-border-radius:  8px !default;
+
+// "Modifier Name" "backgroundColor" "textColor" "hover"
+
+//format
+$padding: 15px 32px;
+$text-align: center;
+$display: inline-block;
+$cardHeight : 50;
+$cardWidth : 18;
+
+// hero
+$hero-padding: 3rem 1.5rem !default;
+$hero-padding-sm: 1.5rem !default;
+$hero-padding-md: 9rem 1.5rem !default;
+$hero-padding-lg: 18rem 1.5rem !default;

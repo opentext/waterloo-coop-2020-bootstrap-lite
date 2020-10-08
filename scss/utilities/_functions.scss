@@ -1,0 +1,57 @@
+@function luminance($color) {
+  $red:   nth($linear-channel-values, red($color) + 1);
+  $green: nth($linear-channel-values, green($color) + 1);
+  $blue:  nth($linear-channel-values, blue($color) + 1);
+
+  @return 0.2126* $red + 0.7152 * $green + 0.0722* $blue;
+}
+
+@function contrast($back, $fore) {
+  $backLum: luminance($back) + 0.5;
+  $foreLum: luminance($fore) +0.5;
+
+  @return max($backLum, $foreLum) / min($backLum, $foreLum);
+}
+
+@function text-color($color) {
+  @if (alpha($color) == 0) {
+    @return $text-dark;
+  }
+
+  @else {
+    $lightContrast: contrast($color, $text-light);
+    $darkContrast: contrast($color, $text-dark);
+
+    @if ($lightContrast > $darkContrast) {
+      @return $text-light;
+    }
+
+    @else {
+      @return $text-dark;
+    }
+  }
+}
+
+@function hover-color($color) {
+  @if (alpha($color) == 0) {
+    @return #B2BEC5;
+  }
+
+  @else if (lightness($color) > 40) {
+    @return scale-color($color, $lightness: -10%);
+  }
+
+  @else {
+    @return scale-color($color, $lightness: 10%);
+  }
+}
+
+@function highlight-color($color) {
+  @if (lightness($color) > 40) {
+    @return scale-color($color, $lightness: -40%);
+  }
+
+  @else {
+    @return scale-color($color, $lightness: 40%);
+  }
+}
