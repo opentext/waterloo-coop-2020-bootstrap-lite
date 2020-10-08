@@ -826,7 +826,6 @@ button {
 .button-danger:hover {
   background: #c0291c;
 }
-
 .card {
   position: relative;
   display: flex;
@@ -890,6 +889,7 @@ button {
   color: grey;
   margin-top: -0.5rem;
   margin-bottom: 0;
+  font-size: 20px
 }
 
 .card-text:last-child {
@@ -983,8 +983,7 @@ button {
   transform: rotateY(180deg);
 }
 
-.card-front {
-  backface-visibility: hidden;
+.unhovered-card {
   background-color: #bbb;
   color: black;
   border-radius: 10px;
@@ -993,6 +992,7 @@ button {
   width: 30rem;
   height: 40rem;
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 @media (min-width: 769px) and (max-width: 1199px) {
@@ -1009,7 +1009,7 @@ button {
   }
 }
 
-.card-back {
+.hovered-card {
   background-color: #bbb;
   color: black;
   text-align: center;

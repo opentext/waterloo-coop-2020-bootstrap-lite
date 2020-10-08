@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>BootStrap Lite</title>
     <link th:href="@{/css/bootstrap-lite.css}" rel="stylesheet" />
+    <link rel="stylesheet"
+          href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/default.min.css">
 </head>
 <body>
 <nav id="navbarid" class = "navbar navbar-fixed navbar-light" style="z-index:1010">
@@ -33,10 +35,22 @@
     </div>
 </section>
 
-<div class = "container" style = "top: 90px">
+<nav class = "navbar navbar-fixed navbar-light" style="z-index: 1010;">
+    <a class = "navbar-brand">
+        BootStrap Lite
+    </a>
+    <div>
+        <a href="#">Homde</a>
+        <a href="#"><b>Documentation</b></a>
+        <a href="#">Examples</a>
+        <a>Download</a>
+    </div>
+</nav>
 
-    <aside class = "side-bar sticky">
-        <ul tabindex="0">
+<div class = "container" style = "top:90px;">
+
+    <div class = "side-bar sticky">
+        <ul>
             <li>
                 <a href="#Badge">Badge</a>
             </li>
@@ -53,17 +67,19 @@
                 <a href="#Navbar">Navbar</a>
             </li>
         </ul>
-    </aside>
+    </div>
 
-    <main class = "main-content con-content" >
+    <div class = "main-content con-content" >
+
 
         <div id="Badge">
+            <p th:text ="${buttons_code}">test</p>
             <h1><b>Badge</b></h1>
             <h2>Description of component</h2>
             <p>Badges display additional information next to a button or any other element. Its clear and concise.
                 It may also be used to add highlighted information to text making them stand out
             </p>
-            <h2>How its used</h2>
+            <h3>How its used</h3>
             <p>Here is what you need to know in order to implement badges:</p>
             <ul>
                 <li>Badges require a wrapping <code>.badge</code></li>
@@ -73,17 +89,17 @@
                     </code>
                 </li>
             </ul>
-            <h2>Example</h2>
+            <h3>Example</h3>
 
             <div class = "outline">
-                <p>They scale to the immediate parent element</p>
-                <h3>Example <span class = "badge badge-dark">New</span></h3>
-                <h4>Example <span class = "badge badge-dark">New</span></h4>
-                <h5>Example <span class = "badge badge-dark">New</span></h5>
-                <h6>Example <span class = "badge badge-dark">New</span></h6>
-                <Highlight>
-                    {badge_code_text}
-                </Highlight>
+<pre>
+    <code class="html">
+    &lt;h3&gt;Example &lt;span class = "badge badge-dark"&gt;New&lt;/span&gt;&lt;/h3&gt;
+    &lt;h4&gt;Example &lt;span class = "badge badge-dark"&gt;New&lt;/span&gt;&lt;/h4&gt;
+    &lt;h5&gt;Example &lt;span class = "badge badge-dark"&gt;New&lt;/span&gt;&lt;/h5&gt;
+    &lt;h6&gt;Example &lt;span class = "badge badge-dark"&gt;New&lt;/span&gt;&lt;/h6&gt;
+    </code>
+</pre>
             </div>
             <br />
             <div class = "outline">
@@ -93,9 +109,14 @@
                         Notifications <span class = "badge badge-warning">4</span>
                     </button>
                 </div>
-                <Highlight>
-                    {badge_notifications}
-                </Highlight>
+
+                <pre>
+    <code class="html">
+    &lt;button class = "button-primary"&gt;
+        Notifications &lt;span class = "badge badge-warning"&gt;4&lt;/span&gt;
+    &lt;/button&gt;
+    </code>
+</pre>
             </div>
             <br />
 
@@ -110,24 +131,29 @@
                     <span class = "badge badge-light">Light</span>
                     <span class = "badge badge-dark">Dark</span>
                 </div>
-                <Highlight>
-                    {badge_code}
-                </Highlight>
+
+                <pre>
+    <code class="html">
+    &lt;span className = "badge badge-primary"&gt;primary&lt;/span&gt;
+    &lt;span className = "badge badge-success"&gt;success&lt;/span&gt;
+    &lt;span className = "badge badge-warning"&gt;warning&lt;/span&gt;
+    </code>
+</pre>
             </div>
         </div>
 
         <div id="Buttons">
             <h1><b>Buttons</b></h1>
-            <h2>Description of component</h2>
+            <h4>Description of component</h4>
             <p>Buttons provide the platform that allows users interact with web application such as login, register, submit a form.</p>
-            <h2>How it works</h2>
+            <h3>How it works</h3>
             <p>Here is what you need to know in order to implement button:</p>
             <ul>
                 <li>Different scenarios call for different styling. Three types of buttons can be accessed using the class modifiers: <code>.button-primary .button-success .button-warning .button-info</code></li>
                 <li>Buttons require a wrapping <code>.button</code></li></ul>
 
 
-            <h2>Example</h2>
+            <h4>Example</h4>
             <div>
                 <button class="button-primary">Primary</button>
                 <button class="button-success">Success</button>
@@ -137,10 +163,24 @@
                 <button class="button-light">Light</button>
                 <button class="button-dark">Dark</button>
             </div>
-            <Highlight>
-                {buttons_code}
-            </Highlight>
+            <pre>
+    <code class="html">
+    &lt;button className="button-primary"&gt;
+        Primary
+    &lt;/button&gt;
+    &lt;button className="button-warning"&gt;
+        Warning
+    &lt;/button&gt;
+    &lt;button className="button-success"&gt;
+        Success
+    &lt;/button&gt;
+    &lt;button className="button-info"&gt;
+        Info
+    &lt;/button&gt;
+    </code>
+</pre>
         </div>
+
 
         <div id="Card">
             <h1><b>Card</b></h1>
@@ -152,22 +192,19 @@
                 <li>Card contains different sub-classes of its elements: <code>.card-body .card-title .card-subtitle .card-header .card-footer</code></li>
                 <li>Card allows flipping when it is hovered by using the classes of <code>.hover-card .hovered .hover-card:hover .hovered .unhovered-card .hovered-card</code></li>
             </ul>
-            <h2>Example</h2>
+            <h4>Example</h4>
             <div class="hover-card">
                 <div class="hovered">
 
-                    <div class="card-back">
-                        <h1>This is empty!</h1>
-                    </div>
-                    <div class="card-front">
+                    <div class="hovered-card">
                         <div class = "card">
-                            <div class = "card-header"> Header </div>
+                            <div class = "card-header"> Front Card</div>
                             <div class ="cardimg">
-                                <img src = "./profile_pic.png" alt = "generic profile image"/>
+                                <img th:src="@{image/profile_pic.png}">
                             </div>
                             <div class = "card-body">
                                 <h3 class= "card-title">Profile</h3>
-                                <p class = "card-text">content</p>
+                                <p class = "card-subtitle">Hover To Flip</p>
                                 <p class = "card-text">Some text</p>
                                 <p class = "card-text">More text</p>
                             </div>
@@ -180,146 +217,285 @@
                             <div class = "card-footer"> Footer </div>
                         </div>
                     </div>
+                    <div class="unhovered-card">
+                        <div class = "card">
+                            <div class = "card-header"> Back Card </div>
+                            <div class ="cardimg">
+                                <img th:src="@{image/profile_pic.png}">
+                            </div>
+                            <div class = "card-body">
+                                <h3 class= "card-title">Profile</h3>
+                                <p class = "card-subtitle">Unhover To Flip Back</p>
+                                <p class = "card-text">Some text</p>
+                                <p class = "card-text">More text</p>
+                            </div>
+                            <ul class = "list-group list-group-flush">
+                                <li class = "list-group-item">Item 5</li>
+                                <li class = "list-group-item">Item 6</li>
+                                <li class = "list-group-item">Item 7</li>
+                                <li class = "list-group-item">Item 8</li>
+                            </ul>
+                            <div class = "card-footer"> Footer </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <h4>Code</h4>
-            <Highlight language = {"html"}>
-                {card_code}
+            <Highlight language = "html">
+
             </Highlight>
+            <pre>
+    <code class="html">
+    &lt;div class="hover-card">
+        &lt;div class="hovered">
+
+            &lt;div class="hovered-card">
+                &lt;div class = "card">
+                    &lt;div class = "card-header"> Header &lt;/div>
+                    &lt;div class ="cardimg">
+                        &lt;img th:src="@{image/profile_pic.png}">
+                    &lt;/div>
+                    &lt;div class = "card-body">
+                        &lt;h3 class= "card-title">Profile&lt;/h3>
+                        &lt;p class = "card-subtitle">content&lt;/p>
+                        &lt;p class = "card-text">Some text&lt;/p>
+                        &lt;p class = "card-text">More text&lt;/p>
+                    &lt;/div>
+                    &lt;ul class = "list-group list-group-flush">
+                        &lt;li class = "list-group-item">Item 1&lt;/li>
+                        &lt;li class = "list-group-item">Item 2&lt;/li>
+                        &lt;li class = "list-group-item">Item 3&lt;/li>
+                        &lt;li class = "list-group-item">Item 4&lt;/li>
+                    &lt;/ul>
+                    &lt;div class = "card-footer"> Footer &lt;/div>
+                &lt;/div>
+            &lt;/div>
+            &lt;div class="unhovered-card">
+                &lt;div class = "card">
+                    &lt;div class = "card-header"> Header &lt;/div>
+                    &lt;div class ="cardimg">
+                        &lt;img th:src="@{image/profile_pic.png}">
+                    &lt;/div>
+                    &lt;div class = "card-body">
+                        &lt;h3 class= "card-title">Profile&lt;/h3>
+                        &lt;p class = "card-subtitle">content&lt;/p>
+                        &lt;p class = "card-text">Some text&lt;/p>
+                        &lt;p class = "card-text">More text&lt;/p>
+                    &lt;/div>
+                    &lt;ul class = "list-group list-group-flush">
+                        &lt;li class = "list-group-item">Item 1&lt;/li>
+                        &lt;li class = "list-group-item">Item 2&lt;/li>
+                        &lt;li class = "list-group-item">Item 3&lt;/li>
+                        &lt;li class = "list-group-item">Item 4&lt;/li>
+                    &lt;/ul>
+                    &lt;div class = "card-footer"> Footer &lt;/div>
+                &lt;/div>
+            &lt;/div>
+        &lt;/div>
+    &lt;/div>
+    </code>
+</pre>
         </div>
 
-        <div class = "header-link" id = "Media-Object">
-            <h1><b>Media Object</b></h1>
-            <h2>Description of component</h2>
+        <div id = "Media-Object">
+            <h1>Media Object</h1>
+            <h4>Description of component</h4>
             <p>Media Object demonstrates the users' comment, username, and profile picture, which creates a platform for users interacting with each other.</p>
-            <h2>How it works</h2>
+            <h3>How it works</h3>
             <p>Here is what you need to know inorder to use the Media Object:</p>
             <ul>
                 <li>Media Object uses class of <code>.block</code> to implement a container for users' username and comments.</li>
                 <li>The class <code>.block img</code> allows users to setup their own profile picture</li>
             </ul>
 
-            <h2>Example</h2>
+            <h4>Example</h4>
             <div class="outline">
                 <div class="block">
-                    <img src="./profile_pic.png" alt="generic profile picture 1"/>
+                    <img th:src="@{image/profile_pic.png}">
                     <h2>Henry</h2>
                     <p>I like this comment</p>
                 </div>
                 <div class="block1">
-                    <img src="./pro_file_re.png" alt="generic profile picture 2"/>
+                    <img th:src="@{image/pro_file_re.png}">
                     <h2>John</h2>
                     <p>me too!</p>
                 </div>
-            </div>
-            <Highlight>
-                {media_object_code}
-            </Highlight>
-        </div>
+<pre>
+    <code>
+    &lt;div className="block">
+        &lt;img src="./profile_pic.png" alt=""/>
+        &lt;h2>Henry&lt;/h2>
+        &lt;p>I like this comment&lt;/p>
+    &lt;/div>
+    &lt;div className="block1">
+        &lt;img src="./pro_file_re.png" alt=""/>
+        &lt;h2>John&lt;/h2>
+        &lt;p>me too!&lt;/p>
+    &lt;/div&gt;
+    </code>
+</pre>
+ <div id="Navbar">
+                    <h1><b>Navbar</b></h1>
+                    <h3>Description of component</h3>
+                    <p>A navbar or a navigation bar is exactly that. An important part of almost any
+                        website these days. Its a section of the website that aids its visitors in accessing
+                        information.
+                    </p>
+                    <h3>How it works</h3>
+                    <p>Here is what you need to know inorder to use the navbar: </p>
+                    <ul>
+                        <li>It requires a <code>.navbar wrapping</code>. If its to be fixed towards the upper area
+                            of the page use <code>.navbar-fixed</code>. Otherwise the implementation will be positioned
+                            relative to other content in the page.
+                        </li>
+                        <li>The Navbar is responsive by default</li>
+                        <li>It comes with various colour schemes which are accessed using
+                            class modifies: <code>.navbar-primary .navbar-light .navbar-dark
+                                .navbar-transparent</code>. There implementationis detailed below</li>
+                        <li>The navbar is hidden when printing by default.</li>
+                    </ul>
+                    <h3>Example</h3>
+                    <div class ="outline">
+                        <nav class = "navbar navbar-light">
+                            <a class = "navbar-brand">
+                                Nav Light
+                            </a>
+                            <div>
+                                <a href="#">Home</a>
+                                <a href="#"><b>Documentation</b></a>
+                                <a href="#">Examples</a>
+                            </div>
+                        </nav>
+                        <nav class = "navbar navbar-dark">
+                            <a class = "navbar-brand">
+                                Nav Dark
+                            </a>
+                            <div>
+                                <a href="#">Home</a>
+                                <a href="#"><b>Documentation</b></a>
+                                <a href="#">Examples</a>
+                            </div>
+                        </nav>
+                        <nav class = "navbar navbar-primary">
+                            <a class = "navbar-brand">
+                                Nav Primary
+                            </a>
+                            <div>
+                                <a href="#">Home</a>
+                                <a href="#"><b>Documentation</b></a>
+                                <a href="#">Examples</a>
+                            </div>
+                        </nav>
+                        <nav class = "navbar navbar-transparent">
+                            <a class = "navbar-brand">
+                                Nav Transparent
+                            </a>
+                            <div>
+                                <a href="#">Home</a>
+                                <a href="#"><b>Documentation</b></a>
+                                <a href="#">Examples</a>
+                            </div>
+                        </nav>
+                        <Highlight>
 
-        <div id="Navbar">
-            <h1><b>Navbar</b></h1>
-            <h2>Description of component</h2>
-            <p>A navbar or a navigation bar is exactly that. An important part of almost any
-                website these days. Its a section of the website that aids its visitors in accessing
-                information.
-            </p>
-            <h2>How it works</h2>
-            <p>Here is what you need to know inorder to use the navbar: </p>
-            <ul>
-                <li>It requires a <code>.navbar wrapping</code>. If its to be fixed towards the upper area
-                    of the page use <code>.navbar-fixed</code>. Otherwise the implementation will be positioned
-                    relative to other content in the page.
-                </li>
-                <li>The Navbar is responsive by default</li>
-                <li>It comes with various colour schemes which are accessed using
-                    class modifies: <code>.navbar-primary .navbar-light .navbar-dark
-                        .navbar-transparent</code>. There implementations detailed below</li>
-                <li>The navbar is hidden when printing by default.</li>
-            </ul>
-            <h2>Example</h2>
-            <div class ="outline" style= "z-index : 900">
-                <nav class = "navbar navbar-light" >
-                    <a class = "navbar-brand">
-                        Nav Light
-                    </a>
-                    <div>
-                        <a href="#">Home</a>
-                        <a href="#"><b>Documentation</b></a>
-                        <a href="#">Examples</a>
+                        </Highlight>
+                        <pre>
+    <code class="html">
+    &lt;nav class = "navbar navbar-light">
+        &lt;a className = "navbar-brand">
+            Nav Light
+        &lt;/a>
+        &lt;div>
+            &lt;a href="#">Home&lt;/a>
+            &lt;a href="#">&lt;b>Documentation&lt;/b>&lt;/a>
+            &lt;a href="#">Examples&lt;/a>
+        &lt;/div>
+    &lt;/nav>
+    &lt;nav class = "navbar navbar-dark">
+        &lt;a className = "navbar-brand">
+            Nav Dark
+        &lt;/a>
+        &lt;div>
+            &lt;a href="#">Home&lt;/a>
+            &lt;a href="#">&lt;b>Documentation&lt;/b>&lt;/a>
+        &lt;a href="#">Examples&lt;/a>
+        &lt;/div>
+    &lt;/nav>
+    &lt;nav class = "navbar navbar-primary">
+        &lt;a className = "navbar-brand">
+            Nav Primary
+        &lt;/a>
+        &lt;div>
+            &lt;a href="#">Home&lt;/a>
+            &lt;a href="#">&lt;b>Documentation&lt;/b>&lt;/a>
+            &lt;a href="#">Examples&lt;/a>
+        &lt;/div>
+    &lt;/nav>
+    &lt;nav class = "navbar navbar-transparent">
+        &lt;a className = "navbar-brand">
+            Nav Transparent
+        &lt;/a>
+        &lt;div>
+            &lt;a href="#">Home&lt;/a>
+            &lt;a href="#">&lt;b>Documentation&lt;/b>&lt;/a>
+            &lt;a href="#">Examples&lt;/a>
+        &lt;/div>
+    &lt;/nav>
+    </code>
+</pre>
+                        <br/>
+                        <p>Adding images to the navbar will require the following changes to its
+                            implementation
+                        </p>
+                        <nav class = "navbar navbar-light">
+                            <img th:src="@{image/opentext-logo.png}">
+                            <div>
+                                <a href="#">Products and Solutions</a>
+                                <a href="#"><b>Industries</b></a>
+                                <a href="#">Services</a>
+                            </div>
+                        </nav>
+                        <pre>
+    <code class="html">
+    &lt;nav class = "navbar navbar-light">
+        &lt;img src="/favicon.ico"/>
+        &lt;div>
+            &lt;a href="#">Home&lt;/a>
+            &lt;a href="#">&lt;b>Documentation&lt;/b>&lt;/a>
+            &lt;a href="#">Examples&lt;/a>
+        &lt;/div>
+    &lt;/nav>
+    &lt;nav class = "navbar navbar-light">
+        &lt;img src="https://i2.wp.com/www.deep-analysis.net/wp-content/uploads/2019/05/opentext-logo.png?fit=3515%2C1132&ssl=1"/>
+        &lt;div>
+            &lt;a href="#">Products and Solutions&lt;/a>
+            &lt;a href="#">&lt;b>Industries&lt;/b>&lt;/a>
+            &lt;a href="#">Services&lt;/a>
+        &lt;/div>
+    &lt;/nav>
+    </code>
+</pre>
                     </div>
-                </nav>
-                <nav class = "navbar navbar-dark">
-                    <a class = "navbar-brand">
-                        Nav Dark
-                    </a>
-                    <div>
-                        <a href="#">Home</a>
-                        <a href="#"><b>Documentation</b></a>
-                        <a href="#">Examples</a>
-                    </div>
-                </nav>
-                <nav class = "navbar navbar-primary">
-                    <a class = "navbar-brand">
-                        Nav Primary
-                    </a>
-                    <div>
-                        <a href="#">Home</a>
-                        <a href="#"><b>Documentation</b></a>
-                        <a href="#">Examples</a>
-                    </div>
-                </nav>
-                <nav class = "navbar navbar-transparent">
-                    <a class = "navbar-brand">
-                        Nav Transparent
-                    </a>
-                    <div>
-                        <a href="#">Home</a>
-                        <a href="#"><b>Documentation</b></a>
-                        <a href="#">Examples</a>
-                    </div>
-                </nav>
-                <p>Click the following buttons to see how a main navbar would look with these styles:</p>
-                <div class = "outline-row">
-                    <button class = "button button-primary" th:onClick = changeNavbar(transparent)>Transparent</button>
-                    <button class = "button button-primary" th:onClick = changeNavbar(primary)>Primary</button>
-                    <button class = "button button-dark" th:onClick = changeNavbar(dark)>Dark</button>
-                    <button class = "button button-light" th:onClick = changeNavbar(light)>Light</button>
+
                 </div>
-                <Highlight>
-                    {navbar_code}
-                </Highlight>
-                <br/>
-                <p>Adding images to the navbar will require the following changes to its
-                    implementation
-                </p>
-                <nav class = "navbar navbar-light">
-                    <img src="https://i2.wp.com/www.deep-analysis.net/wp-content/uploads/2019/05/opentext-logo.png?fit=3515%2C1132&ssl=1" alt = "openText logo"/>
-                    <div>
-                        <a href="#">Products and Solutions</a>
-                        <a href="#"><b>Industries</b></a>
-                        <a href="#">Services</a>
-                    </div>
-                </nav>
-                <Highlight>
-                    {navbar_img}
-                </Highlight>
+                <hr/>
+                <div id="Downloads">
+                    <h2 style = "margin:0 auto 0 auto">Download Bootstrap Lite</h2>
+                    <h3>Compiled CSS</h3>
+                    <p>The library is ready to use and can be dropped into an existing project. This
+                        only includes the css files and no documentation, scss files or any JavaScript.
+                    </p>
+                    <button class = "button button-primary" style= "margin-left:0;">
+                        Download
+                    </button>
+                </div>
             </div>
+        </div>
+    </div>
 
-        </div>
-        <hr/>
-        <div id="Downloads">
-            <h2 style = "margin: 0 auto 0 auto">Download Bootstrap Lite</h2>
-            <h3>Compiled CSS</h3>
-            <p>The library is ready to use and can be dropped into an existing project. This
-                only includes the css files and no documentation, scss files or any JavaScript.
-            </p>
-            <button class = "button button-primary" style="margin-left: 0">
-                Download
-            </button>
-        </div>
-    </main>
-</div>
+
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 </body>
 <link rel="stylesheet"
       href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/default.min.css">
