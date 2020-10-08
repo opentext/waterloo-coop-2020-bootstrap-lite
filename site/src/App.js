@@ -177,7 +177,7 @@ function App() {
       <main className = "main-content con-content" >
         
         <div id="Badge">
-          <h1><b>Badge</b></h1>
+          <h1 style={{"margin-top": "20px"}}><b>Badge</b></h1>
           <h2>Description of component</h2>
           <p>Badges display additional information next to a button or any other element. Its clear and consice.
             It may also be used to add highlighed information to text making them stand out
@@ -236,7 +236,7 @@ function App() {
         </div>
 
         <div id="Buttons">
-          <h1><b>Buttons</b></h1>
+          <h1 style={{"margin-top": "80px"}}><b>Buttons</b></h1>
           <h2>Description of component</h2>
           <p>Buttons provide the platform that allows users interact with web application such as login, register, submit a form.</p>
           <h2>How it works</h2>
@@ -247,7 +247,8 @@ function App() {
 
  
           <h2>Example</h2>
-          <div>
+          <div className = "outline">
+            <div className="outline-row">
             <button className="button-primary">Primary</button>
             <button className="button-success">Success</button>
             <button className="button-danger">Danger</button>
@@ -255,14 +256,16 @@ function App() {
             <button className="button-info">Info</button>
             <button className="button-light">Light</button>
             <button className="button-dark">Dark</button>
-          </div>
-          <Highlight>
+            </div>
+            <Highlight>
             {buttons_code}
           </Highlight>
+          </div>
+          
         </div>
 
         <div id="Card">
-          <h1><b>Card</b></h1>
+          <h1 style={{"margin-top": "80px"}}><b>Card</b></h1>
           <h2>Description of component</h2>
           <p>Card concentrates the infomation in the contents of business, personal information, promotions, advertisement</p>
           <h2>How it works</h2>
@@ -301,14 +304,16 @@ function App() {
               </div>
             </div>
           </div>
-          <h4>Code</h4>
+          <br/>
+          <div className = "outline">
           <Highlight language = {"html"}>
             {card_code}
           </Highlight>
+          </div>
         </div>              
         
         <div className = "header-link" id = "Media-Object">
-          <h1><b>Media Object</b></h1>
+          <h1 style={{"margin-top": "80px"}}><b>Media Object</b></h1>
           <h2>Description of component</h2>
           <p>Media Object demonstrates the users' comment, username, and profile picture, which creates a platform for users interacting with each other.</p>
           <h2>How it works</h2>
@@ -329,15 +334,15 @@ function App() {
             <img src="./pro_file_re.png" alt="generic profile picture 2"/>
             <h2>John</h2>
             <p>me too!</p>
-          </div>          
-        </div>          
+          </div>
           <Highlight>
             {media_object_code}
-          </Highlight>
+          </Highlight>          
+        </div>          
         </div>
 
         <div id="Navbar">
-          <h1><b>Navbar</b></h1>
+          <h1 style={{"margin-top": "80px"}}><b>Navbar</b></h1>
           <h2>Description of component</h2>
           <p>A navbar or a navigation bar is exactly that. An important part of almost any
             website these days. Its a section of the website that aids its visitors in accessing
@@ -429,7 +434,7 @@ function App() {
         </div>
         <hr/>
         <div id="Downloads">
-          <h2 style = {{"margin":"0 auto 0 auto"}}>Download Bootstrap Lite</h2>
+          <h2 style = {{"margin":"50px auto 0 auto"}}>Download Bootstrap Lite</h2>
           <h3>Compiled CSS</h3>
           <p>The library is ready to use and can be dropped into an existing project. This 
             only includes the css files and no documentation, scss files or any JavaScript.
