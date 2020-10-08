@@ -221,9 +221,13 @@ function App() {
           <div className="outline">
           <p>Class modifiers can also be added to acheive unique appearances of the badges</p>
             <div className="outline-row">
-            <span className = "badge badge-primary">primary</span>
-            <span className = "badge badge-success">success</span>
-            <span className = "badge badge-warning">warning</span>
+              <span className = "badge badge-primary">Primary</span>
+              <span className = "badge badge-success">Success</span>
+              <span className = "badge badge-danger">Danger</span>
+              <span className = "badge badge-warning">Warning</span>
+              <span className = "badge badge-info">Info</span>
+              <span className = "badge badge-light">Light</span>
+              <span className = "badge badge-dark">Dark</span>
             </div>
             <Highlight>
             {badge_code}
@@ -244,18 +248,13 @@ function App() {
  
           <h2>Example</h2>
           <div>
-            <button className="button-primary">
-              Primary
-            </button>
-            <button className="button-warning">
-              Warning
-            </button>
-            <button className="button-success">
-              Success
-            </button>
-            <button className="button-info">
-              Info
-            </button>
+            <button className="button-primary">Primary</button>
+            <button className="button-success">Success</button>
+            <button className="button-danger">Danger</button>
+            <button className="button-warning">Warning</button>
+            <button className="button-info">Info</button>
+            <button className="button-light">Light</button>
+            <button className="button-dark">Dark</button>
           </div>
           <Highlight>
             {buttons_code}
