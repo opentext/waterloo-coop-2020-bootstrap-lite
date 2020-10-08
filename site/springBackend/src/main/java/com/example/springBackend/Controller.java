@@ -7,8 +7,6 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
@@ -23,12 +21,11 @@ public class Controller {
 
     String quoteOfTheDay;
     String author;
-
+    String buttons_code = "working";
     ObjectMapper mapper = new ObjectMapper();
     JSONObject json;
 
     // home page
-
 
     @GetMapping("/quote")
     public String getPostsPlainJSON() throws JSONException {

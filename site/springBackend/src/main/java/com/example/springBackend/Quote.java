@@ -26,6 +26,7 @@ public class Quote {
     public void setAuthor(String author){
         this.author = author;
     }
+    @Override
     public String toString(){
         return "Quote: " + this.content + " Author: "+ this.author;
     }
