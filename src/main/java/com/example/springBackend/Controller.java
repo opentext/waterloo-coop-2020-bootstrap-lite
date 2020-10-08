@@ -33,12 +33,11 @@ public class Controller {
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("index");
         try {
-            String url = "http://quotes.rest/qod.json";
+            String url = "http://inspirational-quote-service-chatty-civet-xw.bp-paas.otxlab.net/quote";
             String quoteString = this.restTemplate.getForObject(url, String.class);
             json = new JSONObject(quoteString);
-            JSONObject quote = new JSONObject(json.getJSONObject("contents").getJSONArray("quotes").getString(0));
-            quoteOfTheDay = quote.get("quote").toString();
-            author = quote.get("author").toString();
+            quoteOfTheDay = json.get("quoteOfTheDay").toString();
+            author = json.get("author").toString();
 
         } catch (Exception e) {
             quoteOfTheDay = "If you respect yourself in stressful situations, it will help you see the positive.  It will help you see the message in the mess.";
