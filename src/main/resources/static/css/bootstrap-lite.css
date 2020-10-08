@@ -854,88 +854,73 @@ button {
   width: 30rem;
   height: 40rem;
 }
-
 .card .img {
   width: 100%;
 }
-
-@media (min-width: 769px) and (max-width: 1199px) {
+@media (max-width: 1200px) and (min-width: 769px) {
   .card {
     width: 25rem;
     height: 35rem;
   }
 }
-
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .card {
     width: 20rem;
     height: 32rem;
   }
 }
-
 .card > .list-group {
   border-top: inherit;
   border-bottom: inherit;
 }
-
 .card > .list-group:first-child {
   border-top-width: 0;
 }
-
 .card > .list-group:last-child {
   border-bottom-width: 0;
 }
-
 .card > .card-header + .list-group,
 .card > .list-group + .card-footer {
   border-top: 0;
 }
-
 .card-body {
   flex: 1 1 auto;
   padding: 1rem 1rem;
 }
-
 .card-title {
   margin-bottom: 1rem;
 }
-
 .card-subtitle {
   color: grey;
   margin-top: -0.5rem;
   margin-bottom: 0;
+  font-size: 20px
 }
-
 .card-text:last-child {
   margin-bottom: 0;
 }
-
 .card-header {
   padding: 0.5rem 1rem;
   margin-bottom: 0;
   background-color: rgba(0, 0, 0, 0.03);
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
-
 .card-footer {
   padding: 0.5rem 1rem;
   background-color: rgba(0, 0, 0, 0.03);
   border-top: 1px solid rgba(0, 0, 0, 0.125);
 }
-
 .card-img,
 .card-img-top,
 .card-img-bottom {
   width: 100%;
 }
-
 .list-group {
   display: flex;
   flex-direction: column;
   padding-left: 0;
   margin-bottom: 0;
 }
-
 .list-group-item {
   position: relative;
   display: block;
@@ -944,32 +929,27 @@ button {
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
 }
-
 .cardimg {
   height: auto;
   width: 5rem;
 }
-
 .hover-card {
   width: 30rem;
   height: 40rem;
   perspective: 1000px;
 }
-
-@media (min-width: 769px) and (max-width: 1199px) {
+@media (max-width: 1200px) and (min-width: 769px) {
   .hover-card {
     width: 25rem;
     height: 35rem;
   }
 }
-
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .hover-card {
     width: 20rem;
     height: 32rem;
   }
 }
-
 .hovered {
   width: 30rem;
   height: 40rem;
@@ -978,27 +958,22 @@ button {
   transform-style: preserve-3d;
   transition: transform 2s;
 }
-
-@media (min-width: 769px) and (max-width: 1199px) {
+@media (max-width: 1200px) and (min-width: 769px) {
   .hovered {
     width: 25rem;
     height: 35rem;
   }
 }
-
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .hovered {
     width: 20rem;
     height: 32rem;
   }
 }
-
 .hover-card:hover .hovered {
   transform: rotateY(180deg);
 }
-
-.card-front {
-  backface-visibility: hidden;
+.unhovered-card {
   background-color: #bbb;
   color: black;
   border-radius: 10px;
@@ -1007,23 +982,21 @@ button {
   width: 30rem;
   height: 40rem;
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
-
-@media (min-width: 769px) and (max-width: 1199px) {
-  .card-front {
+@media (max-width: 1200px) and (min-width: 769px) {
+  .unhovered-card {
     width: 25rem;
     height: 35rem;
   }
 }
-
-@media (max-width: 768px) {
-  .card-front {
+@media (max-width: 769px) {
+  .unhovered-card {
     width: 20rem;
     height: 32rem;
   }
 }
-
-.card-back {
+.hovered-card {
   background-color: #bbb;
   color: black;
   text-align: center;
@@ -1034,16 +1007,14 @@ button {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
-
-@media (min-width: 769px) and (max-width: 1199px) {
-  .card-back {
+@media (max-width: 1200px) and (min-width: 769px) {
+  .hovered-card {
     width: 25rem;
     height: 35rem;
   }
 }
-
-@media (max-width: 768px) {
-  .card-back {
+@media (max-width: 769px) {
+  .hovered-card {
     width: 20rem;
     height: 32rem;
   }
