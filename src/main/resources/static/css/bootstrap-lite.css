@@ -808,7 +808,6 @@ button {
 .button-dark:hover {
   background: #1c1f23;
 }
-
 .card {
   position: relative;
   display: flex;
@@ -872,6 +871,7 @@ button {
   color: grey;
   margin-top: -0.5rem;
   margin-bottom: 0;
+  font-size: 20px
 }
 
 .card-text:last-child {
@@ -965,8 +965,7 @@ button {
   transform: rotateY(180deg);
 }
 
-.card-front {
-  backface-visibility: hidden;
+.unhovered-card {
   background-color: #bbb;
   color: black;
   border-radius: 10px;
@@ -975,23 +974,24 @@ button {
   width: 30rem;
   height: 40rem;
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 @media (max-width: 1200px) and (min-width: 769px) {
-  .card-front {
+  .unhovered-card {
     width: 25rem;
     height: 35rem;
   }
 }
 
 @media (max-width: 769px) {
-  .card-front {
+  .unhovered-card {
     width: 20rem;
     height: 32rem;
   }
 }
 
-.card-back {
+.hovered-card {
   background-color: #bbb;
   color: black;
   text-align: center;
@@ -1004,14 +1004,14 @@ button {
 }
 
 @media (max-width: 1200px) and (min-width: 769px) {
-  .card-back {
+  .hovered-card {
     width: 25rem;
     height: 35rem;
   }
 }
 
 @media (max-width: 769px) {
-  .card-back {
+  .hovered-card {
     width: 20rem;
     height: 32rem;
   }

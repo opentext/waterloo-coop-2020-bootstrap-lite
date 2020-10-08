@@ -90,7 +90,7 @@
             <h3>Example</h3>
 
             <div class = "outline">
-                <pre>
+<pre>
     <code class="html">
     &lt;h3&gt;Example &lt;span class = "badge badge-dark"&gt;New&lt;/span&gt;&lt;/h3&gt;
     &lt;h4&gt;Example &lt;span class = "badge badge-dark"&gt;New&lt;/span&gt;&lt;/h4&gt;
@@ -197,13 +197,13 @@
 
                     <div class="hovered-card">
                         <div class = "card">
-                            <div class = "card-header"> Header </div>
+                            <div class = "card-header"> Front Card</div>
                             <div class ="cardimg">
                                 <img th:src="@{image/profile_pic.png}">
                             </div>
                             <div class = "card-body">
                                 <h3 class= "card-title">Profile</h3>
-                                <p class = "card-subtitle">content</p>
+                                <p class = "card-subtitle">Hover To Flip</p>
                                 <p class = "card-text">Some text</p>
                                 <p class = "card-text">More text</p>
                             </div>
@@ -218,21 +218,21 @@
                     </div>
                     <div class="unhovered-card">
                         <div class = "card">
-                            <div class = "card-header"> Header </div>
+                            <div class = "card-header"> Back Card </div>
                             <div class ="cardimg">
                                 <img th:src="@{image/profile_pic.png}">
                             </div>
                             <div class = "card-body">
                                 <h3 class= "card-title">Profile</h3>
-                                <p class = "card-subtitle">content</p>
+                                <p class = "card-subtitle">Unhover To Flip Back</p>
                                 <p class = "card-text">Some text</p>
                                 <p class = "card-text">More text</p>
                             </div>
                             <ul class = "list-group list-group-flush">
-                                <li class = "list-group-item">Item 1</li>
-                                <li class = "list-group-item">Item 2</li>
-                                <li class = "list-group-item">Item 3</li>
-                                <li class = "list-group-item">Item 4</li>
+                                <li class = "list-group-item">Item 5</li>
+                                <li class = "list-group-item">Item 6</li>
+                                <li class = "list-group-item">Item 7</li>
+                                <li class = "list-group-item">Item 8</li>
                             </ul>
                             <div class = "card-footer"> Footer </div>
                         </div>
@@ -319,8 +319,8 @@
                     <h2>John</h2>
                     <p>me too!</p>
                 </div>
-                <pre>
-    <code class="html">
+<pre>
+    <code>
     &lt;div className="block">
         &lt;img src="./profile_pic.png" alt=""/>
         &lt;h2>Henry&lt;/h2>
@@ -333,8 +333,7 @@
     &lt;/div&gt;
     </code>
 </pre>
-
-                <div id="Navbar">
+ <div id="Navbar">
                     <h1><b>Navbar</b></h1>
                     <h3>Description of component</h3>
                     <p>A navbar or a navigation bar is exactly that. An important part of almost any
@@ -447,14 +446,6 @@
                         <p>Adding images to the navbar will require the following changes to its
                             implementation
                         </p>
-                        <nav class = "navbar navbar-light">
-                            <img th:src="@{image/opentext-logo.png}">
-                            <div>
-                                <a href="#">Home</a>
-                                <a href="#"><b>Documentation</b></a>
-                                <a href="#">Examples</a>
-                            </div>
-                        </nav>
                         <nav class = "navbar navbar-light">
                             <img th:src="@{image/opentext-logo.png}">
                             <div>
