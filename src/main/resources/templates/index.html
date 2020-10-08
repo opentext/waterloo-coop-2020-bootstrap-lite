@@ -124,9 +124,9 @@
                     <span class = "badge badge-dark">Dark</span>
                 </div>
 
-<pre><code class="html">&lt;span className = "badge badge-primary"&gt;primary&lt;/span&gt;
-&lt;span className = "badge badge-success"&gt;success&lt;/span&gt;
-&lt;span className = "badge badge-warning"&gt;warning&lt;/span&gt;
+<pre><code class="html">&lt;span class = "badge badge-primary"&gt;primary&lt;/span&gt;
+&lt;span class = "badge badge-success"&gt;success&lt;/span&gt;
+&lt;span class = "badge badge-warning"&gt;warning&lt;/span&gt;
 </code></pre>
             </div>
         </div>
@@ -154,16 +154,16 @@
                 <button class="button-dark">Dark</button>
             </div>
             <pre>
-    <code class="html">&lt;button className="button-primary"&gt;
+    <code class="html">&lt;button class="button-primary"&gt;
     Primary
 &lt;/button&gt;
-&lt;button className="button-warning"&gt;
+&lt;button class="button-warning"&gt;
     Warning
 &lt;/button&gt;
-&lt;button className="button-success"&gt;
+&lt;button class="button-success"&gt;
     Success
 &lt;/button&gt;
-&lt;button className="button-info"&gt;
+&lt;button class="button-info"&gt;
     Info
 &lt;/button&gt;</code></pre>
             </div>
@@ -235,13 +235,13 @@
     &lt;div class="hovered">
         &lt;div class="hovered-card">
             &lt;div class = "card">
-                &lt;div class = "card-header"> Header &lt;/div>
+                &lt;div class = "card-header"> Front Card &lt;/div>
                 &lt;div class ="cardimg">
                     &lt;img th:src="@{image/profile_pic.png}">
                 &lt;/div>
                 &lt;div class = "card-body">
                     &lt;h3 class= "card-title">Profile&lt;/h3>
-                    &lt;p class = "card-subtitle">content&lt;/p>
+                    &lt;p class = "card-subtitle">Hover To Flip&lt;/p>
                     &lt;p class = "card-text">Some text&lt;/p>
                     &lt;p class = "card-text">More text&lt;/p>
                 &lt;/div>
@@ -256,21 +256,21 @@
         &lt;/div>
         &lt;div class="unhovered-card">
             &lt;div class = "card">
-                &lt;div class = "card-header"> Header &lt;/div>
+                &lt;div class = "card-header"> Back Card &lt;/div>
                 &lt;div class ="cardimg">
                     &lt;img th:src="@{image/profile_pic.png}">
                 &lt;/div>
                 &lt;div class = "card-body">
                     &lt;h3 class= "card-title">Profile&lt;/h3>
-                    &lt;p class = "card-subtitle">content&lt;/p>
+                    &lt;p class = "card-subtitle">Unhover To Flip Back&lt;/p>
                     &lt;p class = "card-text">Some text&lt;/p>
                     &lt;p class = "card-text">More text&lt;/p>
                 &lt;/div>
                 &lt;ul class = "list-group list-group-flush">
-                    &lt;li class = "list-group-item">Item 1&lt;/li>
-                    &lt;li class = "list-group-item">Item 2&lt;/li>
-                    &lt;li class = "list-group-item">Item 3&lt;/li>
-                    &lt;li class = "list-group-item">Item 4&lt;/li>
+                    &lt;li class = "list-group-item">Item 5&lt;/li>
+                    &lt;li class = "list-group-item">Item 6&lt;/li>
+                    &lt;li class = "list-group-item">Item 7&lt;/li>
+                    &lt;li class = "list-group-item">Item 8&lt;/li>
                 &lt;/ul>
                 &lt;div class = "card-footer"> Footer &lt;/div>
             &lt;/div>
@@ -304,13 +304,13 @@
                     <p>me too!</p>
                 </div>
                 <div class = "div">
-                    <pre><code>&lt;div className="block">
-    &lt;img src="./profile_pic.png" alt=""/>
+                    <pre><code>&lt;div class="block">
+    &lt;img th:src="@{image/profile_pic.png}">
     &lt;h2>Henry&lt;/h2>
     &lt;p>I like this comment&lt;/p>
 &lt;/div>
-&lt;div className="block1">
-    &lt;img src="./pro_file_re.png" alt=""/>
+&lt;div class="block1">
+    &lt;img th:src="@{image/pro_file_re.png}">
     &lt;h2>John&lt;/h2>
     &lt;p>me too!&lt;/p>
 &lt;/div&gt;</code></pre>
@@ -379,7 +379,7 @@
                             </div>
                         </nav>
 <pre><code class="html">&lt;nav class = "navbar navbar-light">
-    &lt;a className = "navbar-brand">
+    &lt;a class = "navbar-brand">
         Nav Light
     &lt;/a>
     &lt;div>
@@ -389,7 +389,7 @@
     &lt;/div>
 &lt;/nav>
 &lt;nav class = "navbar navbar-dark">
-    &lt;a className = "navbar-brand">
+    &lt;a class = "navbar-brand">
         Nav Dark
     &lt;/a>
     &lt;div>
@@ -399,7 +399,7 @@
     &lt;/div>
 &lt;/nav>
 &lt;nav class = "navbar navbar-primary">
-    &lt;a className = "navbar-brand">
+    &lt;a class = "navbar-brand">
         Nav Primary
     &lt;/a>
     &lt;div>
@@ -409,7 +409,7 @@
     &lt;/div>
 &lt;/nav>
 &lt;nav class = "navbar navbar-transparent">
-    &lt;a className = "navbar-brand">
+    &lt;a class = "navbar-brand">
         Nav Transparent
     &lt;/a>
     &lt;div>
@@ -432,15 +432,7 @@
                             </div>
                         </nav>
 <pre><code class="html">&lt;nav class = "navbar navbar-light">
-    &lt;img src="/favicon.ico"/>
-    &lt;div>
-        &lt;a href="#">Home&lt;/a>
-        &lt;a href="#">&lt;b>Documentation&lt;/b>&lt;/a>
-        &lt;a href="#">Examples&lt;/a>
-    &lt;/div>
-&lt;/nav>
-&lt;nav class = "navbar navbar-light">
-    &lt;img src="https://i2.wp.com/www.deep-analysis.net/wp-content/uploads/2019/05/opentext-logo.png?fit=3515%2C1132&ssl=1"/>
+    &lt;img th:src="@{image/opentext-logo.png}"/>
     &lt;div>
         &lt;a href="#">Products and Solutions&lt;/a>
         &lt;a href="#">&lt;b>Industries&lt;/b>&lt;/a>
