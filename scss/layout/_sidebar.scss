@@ -5,8 +5,8 @@
   padding: 10px;
   right: 0;
   z-index: 1000;
-  color: white;
-  background-color: $darkGrey;
+  color: $text-light;
+  background-color: $dark;
 
   ul {
     li {
@@ -30,7 +30,7 @@
 
   a {
     font-size: 14px;
-    color: white;
+    color: $text-light;
     text-decoration: none;
 
     @include phone {
@@ -51,6 +51,14 @@
       font-size: $font-size-base * 1.125;
       color: black;
       margin: 0 0 10px 0;
+    }
+
+    ul {
+      padding-left: 0;
+
+      li {
+        padding-bottom: 0.5rem;
+      }
     }
   }
 

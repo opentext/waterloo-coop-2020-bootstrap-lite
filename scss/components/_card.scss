@@ -15,12 +15,12 @@
     width: 100%;
   }
 
-  @media (max-width: $desktop-width) and (min-width: $tablet-width) {
+  @include tablet {
     width: 25rem;
     height: 35rem;
   }
 
-  @media (max-width: $tablet-width) {
+  @include phone {
     width: 20rem;
     height: 32rem;
   }
@@ -108,12 +108,12 @@
   height: 40rem;
   perspective: 1000px;
 
-  @media (max-width: $desktop-width) and (min-width: $tablet-width) {
+  @include tablet {
     width: 25rem;
     height: 35rem;
   }
 
-  @media (max-width: $tablet-width) {
+  @include phone {
     width: 20rem;
     height: 32rem;
   }
@@ -127,12 +127,12 @@
   transform-style: preserve-3d;
   transition: transform 2s;
 
-  @media (max-width: $desktop-width) and (min-width: $tablet-width) {
+  @include tablet {
     width: 25rem;
     height: 35rem;
   }
 
-  @media (max-width: $tablet-width) {
+  @include phone {
     width: 20rem;
     height: 32rem;
   }
@@ -153,12 +153,12 @@
   height: 40rem;
   -webkit-backface-visibility: hidden;
 
-  @media (max-width: $desktop-width) and (min-width: $tablet-width) {
+  @include tablet {
     width: 25rem;
     height: 35rem;
   }
 
-  @media (max-width: $tablet-width) {
+  @include phone {
     width: 20rem;
     height: 32rem;
   }
@@ -175,12 +175,12 @@
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 
-  @media (max-width: $desktop-width) and (min-width: $tablet-width) {
+  @include tablet {
     width: 25rem;
     height: 35rem;
   }
 
-  @media (max-width: $tablet-width) {
+  @include phone {
     width: 20rem;
     height: 32rem;
   }

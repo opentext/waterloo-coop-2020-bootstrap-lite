@@ -18,18 +18,12 @@
 
   a {
     float: left;
-    //color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     cursor: pointer;
     border-bottom: 5px solid transparent;
     transition: border-bottom 150ms ease-in-out;
-
-    &:hover {
-      border-bottom: 4px solid $darkGrey;
-      //color: white;
-    }
   }
 
   @include phone {

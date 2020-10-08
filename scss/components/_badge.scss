@@ -4,11 +4,9 @@
   font-size: $badge-font-size;
   font-weight: $badge-font-weight;
   line-height: 1;
-  color: $badge-color;
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
-  background-color: rgb(59, 59, 112);
   margin-left: 3px;
   border-radius: $badge-border-radius;
   font-family: Arial, Helvetica, sans-serif;
@@ -29,7 +27,7 @@
 
 // Takes care of the class modifiers such
 // as badge-warning etc.
-@each $color, $value in $badge-variants {
+@each $color, $value in $color-variants {
   .badge-#{$color} {
     @include badge-variant($value);
 

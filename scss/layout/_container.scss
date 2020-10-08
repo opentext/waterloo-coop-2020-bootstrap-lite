@@ -11,21 +11,18 @@
   padding-top: 1rem;
 
   @include desktop {
-    //background-color: beige;
     overflow: inherit;
     flex-direction: row;
     margin-top: 65px;
-    justify-content: space-between;
+    justify-content: start;
   }
 
   @include tablet {
-    //background-color: rgba(255, 0, 0, 0.479);
     flex-direction: row;
     margin-top: 120px;
   }
 
   @include phone {
-    //background-color: lightseagreen;
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 120px;
@@ -84,7 +81,7 @@
 }
 
 .main-content {
-  padding-left: 2rem;
+  padding-left: 3rem;
   padding-right: 2rem;
 
   @include desktop {

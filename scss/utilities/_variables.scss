@@ -26,10 +26,6 @@ $ot-light-blue: #09bcef;
 $ot-steel: #7e929f;
 $ot-cloud: #e1e8f6;
 
-$ot-steel-darkest: #3f4950;
-$ot-steel-darker: #5f6377;
-$ot-steel-lighter: #98a8b2;
-
 $ot-firebrick: #df3324;
 $ot-burnt: #f05822;
 $ot-discovery: #eeb111;
@@ -49,34 +45,38 @@ $text-muted: #818a91;
 $ot-light: #e6e6e6;
 $ot-dark: #212529;
 
-$blue: #06f;
-$darkBlue:#00009f;
-$red: #dc3545;
-$darkRed: #a72a36;
 $white: #fff;
-$darkWhite: #f7f7f8;
-$grey: #666;
-$darkGrey: #333; // text color
-$green: #198754;
-$darkGreen:#146841;
-$purple: $ot-plum;
-$yellow: #faad1f;
-$darkYellow: #c78b1c;
+$darkWhite: #f7f7f7;
 
-$primary: $ot-indigo !default;
-$success: $ot-green !default;
-$danger: $ot-firebrick !default;
-$warning: $ot-discovery !default;
-$info: $ot-light-blue !default;
+$blue: $ot-light-blue;
+$darkBlue:$ot-navy;
+$red: $ot-firebrick;
+$orange: $ot-burnt;
+$green: $ot-green;
+$purple: $ot-plum;
+$yellow: $ot-discovery;
+
+$primary: $darkBlue !default;
+$success: $green !default;
+$danger: $red !default;
+$warning: $yellow !default;
+$info: $blue !default;
 $light: $ot-light !default;
 $dark: $ot-dark !default;
-$darker: $grey !default;
-$bluer: #0e52b8 !default;
+
+$color-variants:(
+  "light": $light,
+  "dark": $dark,
+  "primary": $primary,
+  "success": $success,
+  "warning": $warning,
+  "info": $info,
+  "danger": $danger,
+);
 
 //Badges
 $badge-font-size: 0.75em !default;
 $badge-font-weight: $font-weight-bold !default;
-$badge-color: rgb(226, 224, 224) !default;
 $badge-padding-y: 0.35em !default;
 $badge-padding-x: 0.65em !default;
 $badge-border-radius: 0.25rem !default;
@@ -104,19 +104,11 @@ $navbar-variants: (
 //Button
 $button-font-size: 16px !default;
 $button-font-weight: $font-weight-bold !default;
-$button-color: rgb(226, 224, 224) !default;
+$button-color: $text-light !default;
 $button-padding: 10px !default;
 $button-border-radius:  8px !default;
 
 // "Modifier Name" "backgroundColor" "textColor" "hover"
-$button-variants: (
-  "primary": $primary,
-  "warning": $warning,
-  "success": $success,
-  "info": $info,
-  "light": $light,
-  "dark": $dark,
-);
 
 //format
 $padding: 15px 32px;
@@ -126,16 +118,6 @@ $cardHeight : 50;
 $cardWidth : 18;
 
 // hero
-$hero-variants: (
-  "light": $light,
-  "dark": $dark,
-  "primary": $primary,
-  "success": $success,
-  "warning": $warning,
-  "info": $info,
-  "danger": $danger,
-);
-
 $hero-padding: 3rem 1.5rem !default;
 $hero-padding-sm: 1.5rem !default;
 $hero-padding-md: 9rem 1.5rem !default;

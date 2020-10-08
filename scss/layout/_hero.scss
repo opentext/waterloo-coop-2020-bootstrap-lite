@@ -10,7 +10,7 @@
   position: relative;
   padding: $hero-padding;
 
-  @each $name, $color in $hero-variants {
+  @each $name, $color in $color-variants {
     &.is-#{$name} {
       @include hero-variant($color);
 
