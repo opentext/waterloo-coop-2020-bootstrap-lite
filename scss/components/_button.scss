@@ -6,6 +6,7 @@ button {
   border: 0;
   margin: 10px;
   border-radius: $button-border-radius;
+  cursor: pointer;
 
   @include phone {
     padding: 10px;
