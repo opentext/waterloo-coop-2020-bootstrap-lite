@@ -8,6 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>BootStrap Lite</title>
     <link th:href="@{/css/bootstrap-lite.css}" rel="stylesheet" />
+    <link rel="stylesheet"
+          href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/default.min.css">
 
 </head>
 <body>
@@ -81,7 +83,7 @@
             <p>Badges display additional information next to a button or any other element. Its clear and concise.
                 It may also be used to add highlighted information to text making them stand out
             </p>
-            <h3>How its used</h3>
+            <h3>How it's used</h3>
             <p>Here is what you need to know in order to implement badges:</p>
             <ul>
                 <li>Badges require a wrapping <code>.badge</code></li>
@@ -142,7 +144,7 @@
             <h1 style = "margin-top: 80px"><b>Buttons</b></h1>
             <h2>Description of component</h2>
             <p>Buttons provide the platform that allows users interact with web application such as login, register, submit a form.</p>
-            <h2>How it works</h2>
+            <h2>How it's used</h2>
             <p>Here is what you need to know in order to implement button:</p>
             <ul>
                 <li>Different scenarios call for different styling. Three types of buttons can be accessed using the class modifiers: <code>.button-primary .button-success .button-warning .button-info</code></li>
@@ -181,7 +183,7 @@
             <h1 style = "margin-top: 80px"><b>Card</b></h1>
             <h4>Description of component</h4>
             <p>Card concentrates the infomation in the contents of business, personal information, promotions, advertisement</p>
-            <h3>How it works</h3>
+            <h3>How it's used</h3>
             <p>Here is what you need to know in order to implement card:</p>
             <ul>
                 <li>Card contains different sub-classes of its elements: <code>.card-body .card-titile .card-subtitile .card-header .card-footer</code></li>
@@ -235,12 +237,12 @@
                     </div>
                 </div>
             </div>
-            <h4 style = "margin-top: 50px">Code</h4>
             <Highlight language = "html">
             </Highlight>
-            <pre><code class="html">&lt;div class="hover-card">
+            <pre><code class="html">
+&lt;div class="hover-card">
     &lt;div class="hovered">
-        &lt;div class="hovered-card">
+        &lt;div class="card-back">
             &lt;div class = "card">
                 &lt;div class = "card-header"> Front Card &lt;/div>
                 &lt;div class ="cardimg">
@@ -261,7 +263,7 @@
                 &lt;div class = "card-footer"> Footer &lt;/div>
             &lt;/div>
         &lt;/div>
-        &lt;div class="unhovered-card">
+        &lt;div class="card-front">
             &lt;div class = "card">
                 &lt;div class = "card-header"> Back Card &lt;/div>
                 &lt;div class ="cardimg">
@@ -291,7 +293,7 @@
             <h1 style = "margin-top: 80px"><b>Media Object</b></h1>
             <h4>Description of component</h4>
             <p>Media Object demonstrates the users' comment, username, and profile picture, which creates a platform for users interacting with each other.</p>
-            <h3>How it works</h3>
+            <h3>How it's used</h3>
             <p>Here is what you need to know inorder to use the Media Object:</p>
             <ul>
                 <li>Media Object uses class of <code>.block</code> to implement a container for users' username and comments.</li>
@@ -330,7 +332,7 @@
                         website these days. Its a section of the website that aids its visitors in accessing
                         information.
                     </p>
-                    <h3>How it works</h3>
+                    <h3>How it's used</h3>
                     <p>Here is what you need to know inorder to use the navbar: </p>
                     <ul>
                         <li>It requires a <code>.navbar wrapping</code>. If its to be fixed towards the upper area
