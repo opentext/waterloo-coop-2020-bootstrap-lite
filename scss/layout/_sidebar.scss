@@ -34,6 +34,7 @@
 
     @include tablet {
       margin-bottom: 0;
+      padding-inline-start: 0;
     }
 
     @include phone {

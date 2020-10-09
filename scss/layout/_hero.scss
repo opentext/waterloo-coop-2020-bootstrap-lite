@@ -4,49 +4,23 @@
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
+  color: white;
   left: -11px;
   right: 0;
   top: 0;
   position: relative;
-  padding: $hero-padding;
+  padding: 9rem 1.5rem 1.5rem 1.5rem;
+  background-image: linear-gradient(141deg, #061330 0%, #111b58 71%, #141271 100%);
 
-  @each $name, $color in $color-variants {
-    &.is-#{$name} {
-      @include hero-variant($color);
-
-      &.is-bold {
-        $gradient-tl: darken(saturate(adjust-hue($color, -10deg), 10%), 10%);
-        $gradient-br: lighten(saturate(adjust-hue($color, 10deg), 5%), 5%);
-
-        background-image: linear-gradient(141deg, $gradient-tl 0%, $color 71%, $gradient-br 100%);
-      }
-    }
+  @include phone {
+    padding: 7rem 1.5rem 1.5rem 1.5rem;
   }
 
-  &.is-small {
-    padding: $hero-padding-sm;
+  @include tablet {
+    padding: 6rem 1.5rem 3.5rem 1.5rem;
   }
 
-  &.is-medium {
-    padding: $hero-padding-md;
-  }
-
-  &.is-large {
-    margin-top: 5rem;
-    padding: $hero-padding-lg;
-  }
-
-  &.is-fullheight {
-    height: 100vh;
-
-    .hero-body {
-      align-items: center;
-      display: flex;
-
-      & > .container {
-        flex-grow: 1;
-        flex-shrink: 1;
-      }
-    }
+  @include desktop {
+    padding: 4rem 1.5rem 3.5rem 1.5rem;
   }
 }
