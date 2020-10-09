@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>BootStrap Lite</title>
     <link th:href="@{/css/bootstrap-lite.css}" rel="stylesheet" />
-    <link rel="stylesheet"
-          href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/default.min.css">
+
 </head>
 <body>
 <nav id="navbarid" class = "navbar navbar-fixed navbar-light" style="z-index:1010">
@@ -16,25 +19,24 @@
         <a href="#">Home</a>
         <a href="#"><b>Documentation</b></a>
         <a href="#">Examples</a>
-        <a>Download</a>
+        <a href="#">Download</a>
     </div>
 </nav>
 
 <section class="hero is-primary is-medium is-bold">
     <div class="hero-body">
         <div class="">
-            <h1 class="title">
-                <b style="color:#333">"</b>
+            <h1 class="title" style = "margin-top:30px;">
+                <b style="color:#007599">"</b>
                 <b th:text="${Quotes.content}" style="font-style: italic">"Quote Text"</b>
-                <b style="color:#333">"</b>
+                <b style="color:#007599">"</b>
             </h1>
             <h2 class="subtitle">
-                <b th:text="${Quotes.author}">Author</b>
+                <b th:text="${Quotes.author}" style="color:#0095EB">Author</b>
             </h2>
         </div>
     </div>
 </section>
-
 <nav class = "navbar navbar-fixed navbar-light" style="z-index: 1010;">
     <a class = "navbar-brand">
         BootStrap Lite
@@ -92,6 +94,11 @@
             <h3>Example</h3>
 
 <div class = "outline">
+    <p>They scale to the immediate parent element</p>
+    <h3>Example <span class = "badge badge-dark">New</span></h3>
+    <h4>Example <span class = "badge badge-dark">New</span></h4>
+    <h5>Example <span class = "badge badge-dark">New</span></h5>
+    <h6>Example <span class = "badge badge-dark">New</span></h6>
 <pre><code class="html">&lt;h3&gt;Example &lt;span class = "badge badge-dark"&gt;New&lt;/span&gt;&lt;/h3&gt;
 &lt;h4&gt;Example &lt;span class = "badge badge-dark"&gt;New&lt;/span&gt;&lt;/h4&gt;
 &lt;h5&gt;Example &lt;span class = "badge badge-dark"&gt;New&lt;/span&gt;&lt;/h5&gt;
@@ -184,7 +191,7 @@
             <div class="outline">
             <div class="hover-card">
                 <div class="hovered">
-                    <div class="hovered-card">
+                    <div class="card-back">
                         <div class = "card">
                             <div class = "card-header"> Front Card</div>
                             <div class ="cardimg">
@@ -205,7 +212,7 @@
                             <div class = "card-footer"> Footer </div>
                         </div>
                     </div>
-                    <div class="unhovered-card">
+                    <div class="card-front">
                         <div class = "card">
                             <div class = "card-header"> Back Card </div>
                             <div class ="cardimg">
