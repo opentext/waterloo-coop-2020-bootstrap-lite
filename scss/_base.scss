@@ -29,13 +29,15 @@ html {
   flex-direction: column;
   position: relative;
   justify-content: flex-start;
-  border: 2px solid $darkWhite;
   background-color: $darkWhite;
   border-radius: 10px;
-  padding: 14px;
+  padding: 6px;
 
   .outline-row {
     flex-direction: row;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 12px;
   }
 }
 
